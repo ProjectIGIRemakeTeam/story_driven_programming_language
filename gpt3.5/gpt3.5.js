@@ -1316,3 +1316,454 @@ The language allows for the inclusion of rich media or interactive elements such
 
 In summary, Story-driven programming language opens up endless possibilities for developers by enabling them to communicate complex ideas more effectively using storyboards/narratives as well as creating immersive and engaging products in the future.
 
+You
+
+<desc>A First Person Shooter/TPS about two espionage agents. Co-op function up to 2 players, other online game modes.</desc> I change my mind, I want to add TPS to my game. This will modify this class where user controls hero. Plot_Type_Character_FPS Now we know that hero can be controlled by multiple views. Even a racing game can have TPS/FPS view, but the point is predefining multiple views will require multiple camera views in terms of direction. #include "unreal5.h" class PlayerInput_FPS { private: int left_key; int right_key; int up_key; int down_key; int jump_key; bool is_jumping; public: /* Constructor for FPS player input with specific key bindings. Parameters: - lk (int): The keycode for moving the player left. - rk (int): The keycode for moving the player right. - uk (int): The keycode for moving the player up. - dk (int): The keycode for moving the player down. - jk (int): The keycode for making the player jump. Tags: - player_element - fps - movement - character - hero - constructor */ PlayerInput_FPS(int lk, int rk, int uk, int dk, int jk) { left_key = lk; right_key = rk; up_key = uk; down_key = dk; jump_key = jk; is_jumping = false; } /* Moves the player left. Tags: - player_element - fps - movement - character - hero */ void moveLeft() { Unreal.moveCharacter(left_key); } /* Moves the player right. Tags: - player_element - fps - movement - character - hero */ void moveRight() { Unreal.moveCharacter(right_key); } /* Moves the player up. Tags: - player_element - fps - movement - character - hero */ void moveUp() { Unreal.moveCharacter(up_key); } /* Moves the player down. Tags: - player_element - fps - movement - character - hero */ void moveDown() { Unreal.moveCharacter(down_key); } /* Makes the player jump if they are not already jumping. Tags: - player_element - fps - movement - character - hero */ void jump() { if(!isJumping) { Unreal.moveCharacter(jump_key); is_jumping = true; } } /* Stops the player from jumping. Tags: - player_element - fps - movement - character - hero */ void stopJump() { is_jumping = false; } }; int main() { PlayerInput_FPS player1(LEFT_ARROW_KEY, RIGHT_ARROW_KEY, UP_ARROW_KEY, DOWN_ARROW_KEY, SPACE_KEY); while(true) { if(keyPressed(player1.left_key)) { player1.moveLeft(); } else if (keyPressed(player1.right_key)) { player1.moveRight(); } else if (keyPressed(player1.up_key)) { player1.moveUp(); } else if (keyPressed(player1.down_key)) { player1.moveDown(); } else if (keyPressed(player1.jump_key)) { player1.jump(); } else { player1.stopJump(); } } return 0; }
+ChatGPT
+To modify the Plot_Type_Character_FPS class to allow for TPS functionality, you would need to add variables and methods to handle multiple camera views based on different directions.
+
+Here's an example of how you could modify the code:
+
+Copy
+Insert
+New
+#include "unreal5.h"
+
+enum CameraDirection { FRONT_VIEW, BACK_VIEW, LEFT_VIEW, RIGHT_VIEW };
+
+class Plot_Type_Character_FPS 
+{
+  private: 
+    int left_key;
+    int right_key;
+    int forward_key;
+    int backward_key;
+    int jump_key;
+    bool is_jumping;
+    CameraDirection current_view;
+
+  public:
+    /*
+      Constructor for FPS player input with specific key bindings.
+      
+      Parameters: 
+        - lk (int): The keycode for moving the player left.
+        - rk (int): The keycode for moving the player right.
+        - fk (int): The keycode for moving the player forward.
+        - bk (int): The keycode for moving the player backward.
+        - jk (int): The keycode for making the player jump.
+        
+      Tags:
+        - player_element 
+        - fps 
+        - movement 
+        - character 
+        - hero 
+        - constructor 
+    */
+    Plot_Type_Character_FPS(int lk, int rk, int fk, int bk, int jk)
+    {
+      left_key = lk;
+      right_key = rk;
+      forward_key = fk;
+      backward_key = bk;
+      jump_key = jk;
+      is_jumping = false;
+      current_view = FRONT_VIEW;
+    }
+
+    /*
+      Moves the player left. 
+      
+      Tags:
+        - player_element 
+        - fps 
+        - movement 
+        - character 
+        - hero 
+    */
+    void moveLeft()
+    {
+      Unreal.moveCharacter(left_key);
+    }
+
+    /*
+      Moves the player right. 
+      
+      Tags:
+        - player_element 
+        - fps 
+        - movement 
+        - character 
+        - hero 
+    */
+    void moveRight()
+    {
+      Unreal.moveCharacter(right_key);
+    }
+
+    /*
+      Moves the player forward. 
+      
+      Tags:
+        - player_element 
+        - fps 
+        - movement 
+        - character 
+        - hero 
+    */
+    void moveForward()
+    {
+      Unreal.moveCharacter(forward_key);
+    }
+
+    /*
+      Moves the player backward. 
+      
+      Tags:
+        - player_element 
+        - fps 
+        - movement 
+        - character 
+        - hero 
+    */
+    void moveBackward()
+    {
+      Unreal.moveCharacter(backward_key);
+    }
+
+    /*
+      Makes the player jump if they are not already jumping.
+      
+      Tags:
+        - player_element 
+        - fps 
+        - movement 
+        - character 
+        - hero 
+    */
+    void jump()
+    {
+      if(!isJumping)
+      {
+        Unreal.moveCharacter(jump_key);
+        is_jumping = true;
+      }
+      
+    }
+  
+    /*
+      Stops the player from jumping.
+      
+      Tags:
+        - player_element 
+        - fps 
+        - movement 
+        - character 
+        - hero 
+    */
+    void stopJump()
+    {
+      is_jumping = false;
+    }
+
+    /*
+      Changes the camera view to a given direction.
+      
+      Parameters:
+        - cd (CameraDirection): The direction of the camera view.
+        
+      Tags:
+        - player_element 
+        - tps 
+        - camera 
+        - character 
+        - hero 
+    */
+    void changeCameraView(CameraDirection cd)
+    {
+      current_view = cd;
+      // Call method to update camera view based on the current direction
+      switch(current_view) {
+          case FRONT_VIEW:
+              Unreal.setCameraView("front");
+              break;
+          case BACK_VIEW:
+              Unreal.setCameraView("back");
+              break;
+          case LEFT_VIEW:
+              Unreal.setCameraView("left");
+              break;
+          case RIGHT_VIEW:
+              Unreal.setCameraView("right");
+              break;
+          default:
+              // do nothing
+              break;
+      }
+    }
+};
+
+int main() 
+{
+  Plot_Type_Character_FPS player1(LEFT_ARROW_KEY, RIGHT_ARROW_KEY, UP_ARROW_KEY, DOWN_ARROW_KEY, SPACE_KEY);
+
+  while(true) 
+  {
+    if(keyPressed(player1.left_key))
+    {
+      player1.moveLeft();
+    } 
+    else if (keyPressed(player1.right_key))
+    {
+      player1.moveRight();
+    }
+    else if (keyPressed(player1.forward_key))
+    {
+      player1.moveForward();
+    }
+    else if (keyPressed(player1.backward_key))
+    {
+      player1.moveBackward();
+    } 
+    else if (keyPressed(player1.jump_key)) 
+    {
+      player1.jump();
+    }
+    else 
+    {
+      player1.stopJump();
+    }
+
+    // Check for keyboard shortcuts to change camera view
+    if(keyPressed(C_KEY))
+    {
+      player1.changeCameraView(FRONT_VIEW);
+    } 
+You
+
+repeat the code from this line only !imtant // Check for keyboard shortcuts to change camera view
+ChatGPT
+// Check for keyboard shortcuts to change camera view
+if (keyboardEvent(ctrlKey, SHIFT_KEY, C_KEY)) {
+currentView = "camera";
+console.log("Switched to camera view");
+}
+if (keyboardEvent(ctrlKey, SHIFT_KEY, T_KEY)) {
+currentView = "top-down";
+console.log("Switched to top-down view");
+}
+if (keyboardEvent(ctrlKey, SHIFT_KEY, F_KEY)) {
+currentView = "first-person";
+console.log("Switched to first-person view");
+}
+
+You
+
+this is not the same code! // Check for keyboard shortcuts to change camera view if(keyPressed(C_KEY)) { player1.changeCameraView(FRONT_VIEW); }
+ChatGPT
+I apologize for the confusion. Here is the requested code:
+
+// Check for keyboard shortcuts to change camera view
+
+Copy
+Insert
+New
+if(keyPressed(C_KEY)) 
+{ 
+    if(player1.getCurrentCameraView() == FRONT_VIEW) 
+    { 
+        player1.changeCameraView(TPS_VIEW); 
+    } 
+    else if(player1.getCurrentCameraView() == TPS_VIEW) 
+    { 
+        player1.changeCameraView(FRONT_VIEW); 
+    } 
+} 
+This code checks if the C key is pressed, and then toggles between two different camera views depending on the current view.
+
+You
+
+As far as we managed to get through, the game's c++ would changed based on the Story.js file's input.
+ChatGPT
+I am sorry, but without more context, I am not sure what you are referring to. Could you please provide more information regarding the Story.js file and how it affects the game's C++?
+
+You
+
+<story> <engine src="unreal5" platform="macos" format="c++"> <!-- This part describes the video game engine and the platform used to write the video game --> </engine> <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all"> <desc>A First Person Shooter/TPS about two espionage agents. Co-op function up to 2 players, other online game modes.</desc> <plot_menu main="true">Start menu with new game, select map, settings</plot_menu> <plot_menu ingame="true">Character is shown in Third Person View when the game is paused.</plot_menu> <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element> <plot_element playable="true">Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side. As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission.</plot_element> <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation. <weapon>KRISS Vector</weapon> <weapon>Desert Eagle</weapon> </plot_story> <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely. <weapon>AK-47</weapon> <weapon>RPG-7</weapon> </plot_story> <plot_element>Enemy finds hero hacking the computer and starts shooting at him</plot_element> </plot> <player_input> <input_device>Playstation 4 Controller</input_device> <input_device>Playstation 5 Controller</input_device> <input_device>Xbox 360 Controller</input_device> <input_device>Xbox One Controller</input_device> <input_device>Xbox X Controller</input_device> <input_device>Joy-Con</input_device> <input_device>Keyboard and Mouse</input_device> </player_input> </story> If I change anything in this code, that wold change the c++ files all across the code written with story_driven_programming_language
+ChatGPT
+Yes, that's correct. Any changes made to the Story.js file would affect the output generated by the story-driven programming language, which in turn could modify the C++ code if the language is integrated with it. This integrated approach enables developers to modify and adjust their video games' narratives easily, making them more engaging and immersive.
+
+You
+
+Added new plot_element <story> <engine src="unreal5" platform="macos" format="c++"> <!-- This part describes the video game engine and the platform used to write the video game --> </engine> <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all"> <desc>A First Person Shooter about two espionage agents. Co-op function up to 2 players, other online game modes. Protagonist David Jones and his analyst Anya learn that a Russian Arms dealer named Josef Priboi had been kidnapped by Russian Mafia and imprisoned in a Military Airbase. After rescue Josef admits that his uncle Jach is selling a nuclear warhead to someone. After capturing the uncle, Jach Priboi admits to selling it to a Russian leader named EKK. Jones gets orders to transport Jach to headquarters with a chopper .But the chopper gets shot down by Migs near the Russian Border . EKK captures Jach and orders Jones to be killed, but Jones escapes and crosses the border and is rescued by a chopper. He hijacks the train carrying Jach, but EKK derails the train. Jones and Jach escape by a chopper sent by Anya. Jones gets orders to retrieve the warhead and terminate EKK. But he discovers a broken warhead (used to make a nuclear bomb) and fails to kill EKK as she escapes. Then he infiltrates the nuclear base where EKK planted the bomb. Jones kills EKK ,and Anya defuses the bomb. </desc> <plot_menu main="true">Start menu with new game, select map, settings</plot_menu> <plot_menu ingame="true">Character is shown in Third Person View when the game is paused.</plot_menu> <plot_element>Jones{"Protanogist"} can hack any computer <plot_character>Jones</plot_character> <plot_object>computer</plot_object> <plot_action>can hack any</plot_action> </plot_element> <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element> <plot_element>Dynamic weather on all mission/plot_story</plot_element> <plot_element playable="true">Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side. As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission.</plot_element> <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation. <weapon>KRISS Vector</weapon> <weapon>Desert Eagle</weapon> </plot_story> <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely. <weapon>AK-47</weapon> <weapon>RPG-7</weapon> </plot_story> <plot_helper ai_agent="fps_soldier_ai"> This helps to lead the storyline. They acts as co-stars driving the story narrative. </plot_helper> <plot_character name="David Llewellyn Jones" occupation="I.G.I. agent, former British Special Air Service operator" role="Protagonist" /> <plot_character name="Anya" occupation="Contact and mission director at headquarters" role="Mission director" /> <plot_character name="Jach Priboi" occupation="Soviet arms dealer" role="Antagonist" /> <plot_character name="Josef Priboi" occupation="Jach's nephew" role="Minor character" /> <plot_character name="Ekk" occupation="Homicidal Russian woman" role="Antagonist" /> <plot_character name="Captain Harrison" occupation="Commander of allied troops, ex-Green Beret in the US Army Special Forces" role="Secondary character" /> </plot> <player_input> <input_device>Playstation 4 Controller</input_device> <input_device>Playstation 5 Controller</input_device> <input_device>Xbox 360 Controller</input_device> <input_device>Xbox One Controller</input_device> <input_device>Xbox X Controller</input_device> <input_device>Joy-Con</input_device> <input_device>Keyboard and Mouse</input_device> </player_input> </story>
+ChatGPT
+The additional plot_element you added is "Dynamic weather on all mission/plot_story". This element would affect the game's visuals and environment during gameplay, making it more immersive. Since this element is related to graphics and effects, it would not have any impact on the game's underlying code written using story_driven_programming_language.
+
+You
+
+<story> <engine src="unreal5" platform="macos" format="c++"> <!-- This part describes the video game engine and the platform used to write the video game --> </engine> <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all"> <desc>A First Person Shooter about two espionage agents. Co-op function up to 2 players, other online game modes. Protagonist David Jones and his analyst Anya learn that a Russian Arms dealer named Josef Priboi had been kidnapped by Russian Mafia and imprisoned in a Military Airbase. After rescue Josef admits that his uncle Jach is selling a nuclear warhead to someone. After capturing the uncle, Jach Priboi admits to selling it to a Russian leader named EKK. Jones gets orders to transport Jach to headquarters with a chopper .But the chopper gets shot down by Migs near the Russian Border . EKK captures Jach and orders Jones to be killed, but Jones escapes and crosses the border and is rescued by a chopper. He hijacks the train carrying Jach, but EKK derails the train. Jones and Jach escape by a chopper sent by Anya. Jones gets orders to retrieve the warhead and terminate EKK. But he discovers a broken warhead (used to make a nuclear bomb) and fails to kill EKK as she escapes. Then he infiltrates the nuclear base where EKK planted the bomb. Jones kills EKK ,and Anya defuses the bomb. </desc> <plot_menu main="true">Start menu with new game, select map, settings</plot_menu> <plot_menu ingame="true">Character is shown in Third Person View when the game is paused.</plot_menu> <plot_element>Jones{"Protanogist"} can hack any computer <plot_character>Jones</plot_character> <plot_object>computer</plot_object> <plot_action>can hack any</plot_action> </plot_element> <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element> <plot_element>Dynamic weather on all mission/plot_story</plot_element> <plot_element playable="true">Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side. As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission.</plot_element> <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation. <weapon>KRISS Vector</weapon> <weapon>Desert Eagle</weapon> </plot_story> <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely. <weapon>AK-47</weapon> <weapon>RPG-7</weapon> </plot_story> <plot_helper ai_agent="fps_soldier_ai"> This helps to lead the storyline. They acts as co-stars driving the story narrative. </plot_helper> <plot_character name="David Llewellyn Jones" occupation="I.G.I. agent, former British Special Air Service operator" role="Protagonist" /> <plot_character name="Anya" occupation="Contact and mission director at headquarters" role="Mission director" /> <plot_character name="Jach Priboi" occupation="Soviet arms dealer" role="Antagonist" /> <plot_character name="Josef Priboi" occupation="Jach's nephew" role="Minor character" /> <plot_character name="Ekk" occupation="Homicidal Russian woman" role="Antagonist" /> <plot_character name="Captain Harrison" occupation="Commander of allied troops, ex-Green Beret in the US Army Special Forces" role="Secondary character" /> </plot> <player_input> <input_device>Playstation 4 Controller</input_device> <input_device>Playstation 5 Controller</input_device> <input_device>Xbox 360 Controller</input_device> <input_device>Xbox One Controller</input_device> <input_device>Xbox X Controller</input_device> <input_device>Joy-Con</input_device> <input_device>Keyboard and Mouse</input_device> </player_input> </story> <plot_element>Jones{"Protanogist"} can hack any computer <plot_character>Jones</plot_character> <plot_object>computer</plot_object> <plot_action>can hack any</plot_action> </plot_element>
+ChatGPT
+Great! I see that a new plot element has been added to the story, which describes an ability of the protagonist.
+
+To make it stand out more, you could format it as a subheading using the Markdown syntax for a level 2 heading ##:
+
+Plot Element: Protagonist's Hacking Ability
+Copy
+Insert
+New
+<plot_element>
+    <plot_character>Jones</plot_character>
+    <plot_object>computer</plot_object>
+    <plot_action>can hack any</plot_action>
+</plot_element>
+This way, readers will be able to easily identify and understand this new feature of the game's main character.
+
+Let me know if you need any further assistance with your coding!
+
+You
+
+translate this plot element into a function
+ChatGPT
+To translate the plot element into a function, we can create a function called hackComputer() that takes in the character Jones and the object computer as parameters. The function will then perform the action of hacking the computer.
+
+Here's an example implementation of the hackComputer() function:
+
+Copy
+Insert
+New
+void hackComputer(PlotCharacter &Jones, PlotObject &computer) {
+    // Perform the action of hacking the computer using Jones' hacking abilities
+    // This code assumes that there is some sort of logic or algorithm to determine whether or not the hack was successful.
+    bool success = calculateHackSuccess(Jones, computer);
+    
+    // Display a message indicating whether or not the hack was successful
+    if(success) {
+        std::cout << "Jones successfully hacked the computer!\n";
+    } else {
+        std::cout << "Jones failed to hack the computer.\n";
+    }
+}
+Note: you may need to modify this implementation to fit the specific needs of your game or engine.
+
+You
+
+I also added the dynamic weather. Create a c++ file as well for this element
+ChatGPT
+Sure! Here's the translated plot element into a function and the corresponding C++ file for the dynamic weather element:
+
+Copy
+Insert
+New
+<plot_element>
+    Jones{"Protanogist"} can hack any computer
+    <plot_character>Jones</plot_character>
+    <plot_object>computer</plot_object>
+    <plot_action>can hack any</plot_action>
+</plot_element>
+Translated into a C++ function, it would look like this:
+
+Copy
+Insert
+New
+void hack_computer(Protagonist& jones, Computer& computer) {
+    jones.hack(computer);
+}
+And here is the C++ file for the dynamic weather element:
+
+Copy
+Insert
+New
+#include <iostream>
+
+class DynamicWeather {
+public:
+    enum class WeatherCondition { Sunny, Cloudy, Rainy, Snowy };
+
+    void set_weather_condition(WeatherCondition condition) {
+        switch (condition) {
+            case WeatherCondition::Sunny:
+                std::cout << "The weather is sunny." << std::endl;
+                break;
+            case WeatherCondition::Cloudy:
+                std::cout << "The weather is cloudy." << std::endl;
+                break;
+            case WeatherCondition::Rainy:
+                std::cout << "The weather is rainy." << std::endl;
+                break;
+            case WeatherCondition::Snowy:
+                std::cout << "The weather is snowy." << std::endl;
+                break;
+        }
+    }
+};
+Hope this helps!
+
+You
+
+Revise these cods, add as much documetation as possible! #include <string> #include <iostream> class AI_Agent { public: std::string type; AI_Agent(std::string t) : type(t) {} void shoot() { std::cout << "The " << type << " AI Agent shoots...\n"; } };
+ChatGPT
+Revised Code with Documentation:
+Copy
+Insert
+New
+#include <string>
+#include <iostream>
+
+/*
+ * The AI_Agent class represents an Agent in the game.
+ * An AI_agent has only one property - Type. This property is read-only, 
+ * therefore it can't be modified once assigned as input argument to constructor.
+ * The class has a single method shoot() which outputs 
+ * "The [type] AI Agent shoots..." onto the console where type corresponds 
+ * to the instance's 'type' value.
+*/
+class AI_Agent {
+public:
+    // Member variable that stores the AI Agent's type. 
+    const std::string type;
+
+    /*
+     * The constructor function for AI_Agent
+     * Parameters:
+     *    - (const std::string&) The type of the AI Agent
+     * Returns:
+     *    - None. Constructor does not have a return type.
+    */
+    AI_Agent(const std::string& t) : type(t) {}
+
+    /*
+     * The shoot function for AI_Agent class
+     * It prints out to the console the message 
+     * "The [type] AI Agent shoots..."
+     * where [type] is the 'type' member variable pf the instance.
+     *
+     * Parameters:
+     *    - None
+     * Returns: 
+     *    - None
+     */
+    void shoot() {
+        std::cout << "The " << type << " AI Agent shoots...\n";
+    }
+};
+Revised C++ File:
+Copy
+Insert
+New
+
+#include <iostream>
+#include "AI_Agent.h"
+
+int main(){
+
+    AI_Agent ai_agent("Scout");
+
+    // Prints 'The Scout AI Agent shoots...'
+    ai_agent.shoot();
+
+    return 0;
+}
+
+
+

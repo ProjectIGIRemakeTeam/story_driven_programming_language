@@ -8,6 +8,11 @@
         </desc>
         <plot_menu main="true">Start menu with new game, select map, settings</plot_menu>
         <plot_menu ingame="true">Character is shown in Third Person View when the game is paused.</plot_menu>
+        <plot_element>Jones{"Protanogist"} can hack any computer
+            <plot_character>Jones</plot_character>
+            <plot_object>computer</plot_object>
+            <plot_action>can hack any</plot_action>
+        </plot_element>
         <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element>
         <plot_element>Dynamic weather on all mission/plot_story</plot_element>
         <plot_element playable="true">Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side. As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission.</plot_element>

@@ -1,16 +1,18 @@
 #include "unreal5.h"
 
- 
-class PlayerInput_FPS 
+enum CameraDirection { FRONT_VIEW, BACK_VIEW, LEFT_VIEW, RIGHT_VIEW };
+
+class Plot_Type_Character_FPS 
 {
   private: 
     int left_key;
     int right_key;
-    int up_key;
-    int down_key;
+    int forward_key;
+    int backward_key;
     int jump_key;
     bool is_jumping;
-  
+    CameraDirection current_view;
+
   public:
     /*
       Constructor for FPS player input with specific key bindings.
@@ -18,8 +20,8 @@ class PlayerInput_FPS
       Parameters: 
         - lk (int): The keycode for moving the player left.
         - rk (int): The keycode for moving the player right.
-        - uk (int): The keycode for moving the player up.
-        - dk (int): The keycode for moving the player down.
+        - fk (int): The keycode for moving the player forward.
+        - bk (int): The keycode for moving the player backward.
         - jk (int): The keycode for making the player jump.
         
       Tags:
@@ -30,14 +32,15 @@ class PlayerInput_FPS
         - hero 
         - constructor 
     */
-    PlayerInput_FPS(int lk, int rk, int uk, int dk, int jk)
+    Plot_Type_Character_FPS(int lk, int rk, int fk, int bk, int jk)
     {
       left_key = lk;
       right_key = rk;
-      up_key = uk;
-      down_key = dk;
+      forward_key = fk;
+      backward_key = bk;
       jump_key = jk;
       is_jumping = false;
+      current_view = FRONT_VIEW;
     }
 
     /*
@@ -71,7 +74,7 @@ class PlayerInput_FPS
     }
 
     /*
-      Moves the player up. 
+      Moves the player forward. 
       
       Tags:
         - player_element 
@@ -80,13 +83,13 @@ class PlayerInput_FPS
         - character 
         - hero 
     */
-    void moveUp()
+    void moveForward()
     {
-      Unreal.moveCharacter(up_key);
+      Unreal.moveCharacter(forward_key);
     }
 
     /*
-      Moves the player down. 
+      Moves the player backward. 
       
       Tags:
         - player_element 
@@ -95,9 +98,9 @@ class PlayerInput_FPS
         - character 
         - hero 
     */
-    void moveDown()
+    void moveBackward()
     {
-      Unreal.moveCharacter(down_key);
+      Unreal.moveCharacter(backward_key);
     }
 
     /*
@@ -135,11 +138,46 @@ class PlayerInput_FPS
       is_jumping = false;
     }
 
+    /*
+      Changes the camera view to a given direction.
+      
+      Parameters:
+        - cd (CameraDirection): The direction of the camera view.
+        
+      Tags:
+        - player_element 
+        - tps 
+        - camera 
+        - character 
+        - hero 
+    */
+    void changeCameraView(CameraDirection cd)
+    {
+      current_view = cd;
+      // Call method to update camera view based on the current direction
+      switch(current_view) {
+          case FRONT_VIEW:
+              Unreal.setCameraView("front");
+              break;
+          case BACK_VIEW:
+              Unreal.setCameraView("back");
+              break;
+          case LEFT_VIEW:
+              Unreal.setCameraView("left");
+              break;
+          case RIGHT_VIEW:
+              Unreal.setCameraView("right");
+              break;
+          default:
+              // do nothing
+              break;
+      }
+    }
 };
 
 int main() 
 {
-  PlayerInput_FPS player1(LEFT_ARROW_KEY, RIGHT_ARROW_KEY, UP_ARROW_KEY, DOWN_ARROW_KEY, SPACE_KEY);
+  Plot_Type_Character_FPS player1(LEFT_ARROW_KEY, RIGHT_ARROW_KEY, UP_ARROW_KEY, DOWN_ARROW_KEY, SPACE_KEY);
 
   while(true) 
   {
@@ -151,13 +189,13 @@ int main()
     {
       player1.moveRight();
     }
-    else if (keyPressed(player1.up_key))
+    else if (keyPressed(player1.forward_key))
     {
-      player1.moveUp();
+      player1.moveForward();
     }
-    else if (keyPressed(player1.down_key))
+    else if (keyPressed(player1.backward_key))
     {
-      player1.moveDown();
+      player1.moveBackward();
     } 
     else if (keyPressed(player1.jump_key)) 
     {
@@ -167,7 +205,17 @@ int main()
     {
       player1.stopJump();
     }
-  }
 
-  return 0;
+    if(keyPressed(C_KEY)) 
+    { 
+        if(player1.getCurrentCameraView() == FRONT_VIEW) 
+        { 
+            player1.changeCameraView(TPS_VIEW); 
+        } 
+        else if(player1.getCurrentCameraView() == TPS_VIEW) 
+        { 
+            player1.changeCameraView(FRONT_VIEW); 
+        } 
+    } 
+  }
 }
