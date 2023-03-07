@@ -16,7 +16,7 @@
       <weapon>AK-47</weapon>
       <weapon>RPG-7</weapon>
     </plot_story>
-    <plot_element>Enemy finds Jones hacking the computer and starts shooting at him</plot_element>
+    <plot_element>Enemy finds hero hacking the computer and starts shooting at him</plot_element>
   </plot>
   <player_input>
     <input_device>Playstation 4 Controller</input_device>
