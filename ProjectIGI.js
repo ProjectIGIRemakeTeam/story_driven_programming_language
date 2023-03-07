@@ -8,6 +8,7 @@
         </desc>
         <plot_menu main="true">Start menu with new game, select map, settings</plot_menu>
         <plot_menu ingame="true">Character is shown in Third Person View when the game is paused.</plot_menu>
+        <plot_element>Jones{"Protanogist"} can destroy many object on each level.</plot_element>
         <plot_element>Jones{"Protanogist"} can hack any computer
             <plot_character>Jones</plot_character>
             <plot_object>computer</plot_object>
