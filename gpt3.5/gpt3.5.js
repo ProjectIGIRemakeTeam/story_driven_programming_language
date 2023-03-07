@@ -110,3 +110,175 @@ For example, an "airbase" level could be described with details such as layout o
 
 The beauty of this approach is that it allows game designers and developers to more easily create complex game environments by first designing them as a story, without having to worry about the technical implementation details upfront.
 
+You
+
+Let's create the basic file for the plot_story in c++. use informative descriptions, and tags selected. <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation.</plot_story> tags like: #hero, mission, arbase etc. also name the functions, for example in the text there is a reference of hacking into, ergo there has to be a function which allows the hero to hack into. Also that means, this has to change the player-input-controller, because it has to be triggered by a player's input
+ChatGPT
+Sure, let's create a C++ code file for this plot_story. We can use object-oriented programming to represent the different entities in the game such as the hero and the airbase. Here is an example implementation:
+
+Copy
+Insert
+New
+#include<iostream>
+#include<vector>
+#include<string>
+
+using namespace std;
+
+class PlayerInput {
+public:
+    virtual void update() = 0;
+};
+
+class PlayStation4Controller : public PlayerInput {
+public:
+    void update() override {
+        cout << "Updating with PlayStation 4 Controller" << endl;
+    }
+};
+class PlayStation5Controller : public PlayerInput {
+public:
+    void update() override {
+        cout << "Updating with PlayStation 5 Controller" << endl;
+    }
+};
+class Xbox360Controller : public PlayerInput {
+public:
+    void update() override {
+        cout << "Updating with Xbox 360 Controller" << endl;
+    }
+};
+class XboxOneController : public PlayerInput {
+public:
+    void update() override {
+        cout << "Updating with Xbox One Controller" << endl;
+    }
+};
+class XboxXController : public PlayerInput {
+public:
+    void update() override {
+        cout << "Updating with Xbox X Controller" << endl;
+    }
+};
+class JoyCon : public PlayerInput {
+public:
+    void update() override {
+        cout << "Updating with Joy-Con " << endl;
+    }
+};
+class KeyboardAndMouse : public PlayerInput {
+public:
+    void update() override {
+        cout << "Updating with Keyboard and Mouse" << endl;
+    }
+};
+
+class Hero {
+private:
+    string name_;
+    int hp_;
+    int ammo_;
+public:
+    Hero(string name, int hp = 100, int ammo = 0) : name_{name}, hp_{hp}, ammo_{ammo} {};
+    string getName() const { return name_; };
+    int getHp() const { return hp_; };
+    bool isAlive() const { return hp_ > 0; };
+    bool shoot() { 
+        if(ammo_ > 0){
+            ammo_--;
+            return true;
+        } else {
+            return false; 
+        }
+    };
+    void heal(int amount) { 
+        if(hp_ + amount <= 100){
+            hp_ += amount;
+        } else {
+            hp_ = 100;
+        }
+    };
+};
+
+class BaseLevel {
+public:
+    virtual void print() = 0;
+};
+
+class AirBaseLevel : public BaseLevel {
+public:
+    virtual void print() override {
+        cout << "AirBase Level Loaded!" << endl;
+    }
+};
+
+class Game {
+
+public:
+    Game() {
+        // create hero object
+        hero_ = new Hero("Hero");
+        // create player input objects
+        player_inputs_.push_back(new PlayStation4Controller);
+        player_inputs_.push_back(new PlayStation5Controller);
+        player_inputs_.push_back(new Xbox360Controller);
+        player_inputs_.push_back(new XboxOneController);
+        player_inputs_.push_back(new XboxXController);
+        player_inputs_.push_back(new JoyCon);
+        player_inputs_.push_back(new KeyboardAndMouse);
+    }
+    ~Game() {
+        // delete memory allocated 
+        delete hero_;
+        for(auto & input : player_inputs_) {
+            delete input;
+        }
+        // clear vector
+        player_inputs_.clear();
+    }
+
+    void run() {
+        level_->print();
+        for(auto & input : player_inputs_) {
+            input->update(); // update using each controller
+        }
+        if(hero_->isAlive()) {
+            cout << "Mission successful!" << endl;
+        } else {
+            cout << "Mission failed..." << endl;
+        }
+    }
+    void setLevel(BaseLevel* level) {
+        level_ = level;
+    }
+    void executeMission() {
+        if(hero_->shoot()) {
+            cout << "Gotcha!" << endl;
+        } else {
+            cout << "No ammo left." << endl;
+        }
+        hero_->heal(25);
+        cout << "Current HP: " << hero_->getHp() << endl;
+    }
+private:
+    Hero* hero_;
+    vector<PlayerInput*> player_inputs_;
+    BaseLevel* level_;
+};
+
+int main() {
+    AirBaseLevel* air_base_level = new AirBaseLevel();
+    Game fps_game;
+    fps_game.setLevel(air_base_level);
+    fps_game.run();
+    fps_game.executeMission();
+    delete air_base_level;
+
+    return 0;
+}
+In this implementation, we have a Hero class that represents the playable character. The BaseLevel class and the AirBaseLevel derived class represent the different levels in the game. We also have a PlayerInput interface that defines the update() function, which will update all player inputs in the game.
+
+The Game class is the main actor that sets up and runs the game. It creates a Hero object and a list of PlayerInput objects. It also holds a pointer to the current level and executes the mission logic when the
+
+
+
