@@ -10,7 +10,7 @@ The language allows for the inclusion of rich media or interactive elements such
 In summary, Story-driven programming language opens up endless possibilities for developers by enabling them to communicate complex ideas more effectively using storyboards/narratives as well as creating immersive and engaging products in the future.
 
 Created by: Gabriel Majorsky
-
+https://github.com/ProjectIGIRemakeTeam/story_driven_programming_language/blob/main/ProjectIGI.js
 
 Story example:
 
