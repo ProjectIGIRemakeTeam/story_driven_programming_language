@@ -707,3 +707,237 @@ New
         <input_device>Keyboard and Mouse</input_device>
     </player_input>
 </story>
+
+
+You
+
+IGI1 1 Trainyard The very first mission. Good Luck! And do not fret if you are not able to pass the very first mission, it simply takes a little more time time to grasp! Background Josef Priboi, a Russian arms dealer is kidnapped by the Russian Mafia for unknown reasons and is known to have sold them a nuclear warhead. He is kept at a Military Airfield according to intelligence. Breaking him out is necessary in order to get information about the location of the warhead, and prevent a nuclear disaster at the hands of the Russian mafia. However, the airfield at which he is held is protected by heavy anti-air SAM batteries, so direct air insertion isn't possible. In order to get close to SAM sites for their neutralization, Jones has to acquire a source of ground transportation from this coastline goods yard and then move onward to the SAM batteries. Briefing Anya: Good work getting here so fast. This mission has a top priority. Target; Josef Priboi. You are to locate him and bring him out for debriefing. Josef is our only link with the heist of the warhead. Jones: Yeah, yeah, I need to know one thing; Where he is. Anya: Josef is held at a military airfield. The whole area has excellent air defenses. We have to place you some distance from the target until those defenses are disabled. Jones: What! Is transport waiting? Anya: You'll cover the ground using locally resourced transportation assets. Jones: You mean I will have to steal something? Anya: Exactly. You will travel to the next goods yard. There, you will resource transportation. The whole operation is simple. There are three stages: One, acquire transportation assets. Two, disable air defenses. Three, find Josef Priboi and safely extract him for debriefing. Even... Jones: ....even a grunt like me can follow it. I see Anya: That's the best we have. Jones: Anya, just how did you track Josef down? Anya: We traced Josef's call to his apartment, right. Local agents raided it and found photos of Josef and his mobile number. So, we called it and triangulated the coordinates. The mobile's located at a military airfield. That's where Josef is. That's our primary target. Jones: Cunning. Assuming he's there. Anya: You must make your way through the goods yard to the truck. Avoid the cameras at all costs. If you alert the security, you'll have entire base zeroing in on your location. Get to the truck. This is your objective on this mission. Reach it and steal it. I want this mission to be brief and above all quiet. Get to work Jones! Objectives Steal the truck near the main entrance Weapons Knife: Given at the beginning of the mission Glock 17: Given at the beginning of the mission MP5SD3: Given at the beginning of the mission Uzi: Found in the small room of the security building AK47: Found on most of the guards Dragunov: Found on the water tower Minimi: Found in the large warehouse Hand Grenade: Found in the small warehouse close to the watchtower Medipack: Found in one of the three barracks near the watchtower Walkthrough For the walkthrough of this mission, click here. Aftermath Jones successfully infiltrates the yard, and while maintaining the element of surprise, reaches the main entrance of the yard, where he steals a parked truck and moves to the SAM batteries. Others like you also viewed create a plot story<plot_story></plot_story> based on this
+ChatGPT
+Following the successful mission to steal the truck from the goods yard, Jones must now disable the heavy anti-air SAM batteries that protect the Military Airfield where Josef Priboi is being held. With no air insertion possible and the defenses posing a challenge, Jones must use his skills to approach and neutralize the batteries without alerting security. As he makes his way past enemy guards and weapons cache, Jones reflects on the gravity of his mission. The fate of thousands, if not millions, rests in his hands. Failure is not an option. With his heart racing and adrenaline pumping, Jones finally reaches the SAM site undetected. Carefully planting explosives, he waits for the right moment to detonate them and take out the defenses. The explosion rocks the area as Jones makes his way to the military airfield. He knows the next phase of his mission is crucial - locate Josef Priboi and extract him for debriefing. As he approaches the airfield, gunfire erupts, and Jones is forced to fight his way through heavily armed guards. But nothing can stop him from finding Josef and getting the information he needs to prevent a nuclear disaster. Jones remains focused, determined, and prepared to do whatever it takes to complete his mission.
+You
+
+IGI1 1 Trainyard The very first mission. Good Luck! And do not fret if you are not able to pass the very first mission, it simply takes a little more time time to grasp! Background Josef Priboi, a Russian arms dealer is kidnapped by the Russian Mafia for unknown reasons and is known to have sold them a nuclear warhead. He is kept at a Military Airfield according to intelligence. Breaking him out is necessary in order to get information about the location of the warhead, and prevent a nuclear disaster at the hands of the Russian mafia. However, the airfield at which he is held is protected by heavy anti-air SAM batteries, so direct air insertion isn't possible. In order to get close to SAM sites for their neutralization, Jones has to acquire a source of ground transportation from this coastline goods yard and then move onward to the SAM batteries. Briefing Anya: Good work getting here so fast. This mission has a top priority. Target; Josef Priboi. You are to locate him and bring him out for debriefing. Josef is our only link with the heist of the warhead. Jones: Yeah, yeah, I need to know one thing; Where he is. Anya: Josef is held at a military airfield. The whole area has excellent air defenses. We have to place you some distance from the target until those defenses are disabled. Jones: What! Is transport waiting? Anya: You'll cover the ground using locally resourced transportation assets. Jones: You mean I will have to steal something? Anya: Exactly. You will travel to the next goods yard. There, you will resource transportation. The whole operation is simple. There are three stages: One, acquire transportation assets. Two, disable air defenses. Three, find Josef Priboi and safely extract him for debriefing. Even... Jones: ....even a grunt like me can follow it. I see Anya: That's the best we have. Jones: Anya, just how did you track Josef down? Anya: We traced Josef's call to his apartment, right. Local agents raided it and found photos of Josef and his mobile number. So, we called it and triangulated the coordinates. The mobile's located at a military airfield. That's where Josef is. That's our primary target. Jones: Cunning. Assuming he's there. Anya: You must make your way through the goods yard to the truck. Avoid the cameras at all costs. If you alert the security, you'll have entire base zeroing in on your location. Get to the truck. This is your objective on this mission. Reach it and steal it. I want this mission to be brief and above all quiet. Get to work Jones! Objectives Steal the truck near the main entrance Weapons Knife: Given at the beginning of the mission Glock 17: Given at the beginning of the mission MP5SD3: Given at the beginning of the mission Uzi: Found in the small room of the security building AK47: Found on most of the guards Dragunov: Found on the water tower Minimi: Found in the large warehouse Hand Grenade: Found in the small warehouse close to the watchtower Medipack: Found in one of the three barracks near the watchtower Walkthrough For the walkthrough of this mission, click here. Aftermath Jones successfully infiltrates the yard, and while maintaining the element of surprise, reaches the main entrance of the yard, where he steals a parked truck and moves to the SAM batteries. Others like you also viewed create a plot story<plot_story></plot_story> based on this <story> <engine src="unreal5" platform="macos" format="c++"> <!-- This part describes the video game engine and the platform used to write the video game --> </engine> <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all"> <desc>A First Person Shooter about two espionage agents. Co-op function up to 2 players, other online game modes. Protagonist David Jones and his analyst Anya learn that a Russian Arms dealer named Josef Priboi had been kidnapped by Russian Mafia and imprisoned in a Military Airbase. After rescue Josef admits that his uncle Jach is selling a nuclear warhead to someone. After capturing the uncle, Jach Priboi admits to selling it to a Russian leader named EKK. Jones gets orders to transport Jach to headquarters with a chopper .But the chopper gets shot down by Migs near the Russian Border . EKK captures Jach and orders Jones to be killed, but Jones escapes and crosses the border and is rescued by a chopper. He hijacks the train carrying Jach, but EKK derails the train. Jones and Jach escape by a chopper sent by Anya. Jones gets orders to retrieve the warhead and terminate EKK. But he discovers a broken warhead (used to make a nuclear bomb) and fails to kill EKK as she escapes. Then he infiltrates the nuclear base where EKK planted the bomb. Jones kills EKK ,and Anya defuses the bomb. </desc> <plot_menu main="true">Start menu with new game, select map, settings</plot_menu> <plot_menu ingame="true">Character is shown in Third Person View when the game is paused.</plot_menu> <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element> <plot_element playable="true">Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side. As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission.</plot_element> <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation.</plot_story> <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely. //INSERT STORY HERE WITH ELEMENTS LIKE <WEAPON></WEAPON> <plot_character > </plot_story> <plot_character name="David Llewellyn Jones" occupation="I.G.I. agent, former British Special Air Service operator" role="Protagonist" /> <plot_character name="Anya" occupation="Contact and mission director at headquarters" role="Mission director" /> <plot_character name="Jach Priboi" occupation="Soviet arms dealer" role="Antagonist" /> <plot_character name="Josef Priboi" occupation="Jach's nephew" role="Minor character" /> <plot_character name="Ekk" occupation="Homicidal Russian woman" role="Antagonist" /> <plot_character name="Captain Harrison" occupation="Commander of allied troops, ex-Green Beret in the US Army Special Forces" role="Secondary character" /> </plot> <player_input> <input_device>Playstation 4 Controller</input_device> <input_device>Playstation 5 Controller</input_device> <input_device>Xbox 360 Controller</input_device> <input_device>Xbox One Controller</input_device> <input_device>Xbox X Controller</input_device> <input_device>Joy-Con</input_device> <input_device>Keyboard and Mouse</input_device> </player_input> </story>
+ChatGPT
+The server had an error while processing your request, please try again. (HTTP 500 Internal Server Error)
+See https://platform.openai.com/docs/guides/error-codes for more details. ChatGPT error 500: {
+"error": {
+"message": "Internal server error",
+"type": "auth_subrequest_error",
+"param": null,
+"code": "internal_error"
+}
+}
+
+You
+
+IGI1 1 Trainyard The very first mission. Good Luck! And do not fret if you are not able to pass the very first mission, it simply takes a little more time time to grasp! Background Josef Priboi, a Russian arms dealer is kidnapped by the Russian Mafia for unknown reasons and is known to have sold them a nuclear warhead. He is kept at a Military Airfield according to intelligence. Breaking him out is necessary in order to get information about the location of the warhead, and prevent a nuclear disaster at the hands of the Russian mafia. However, the airfield at which he is held is protected by heavy anti-air SAM batteries, so direct air insertion isn't possible. In order to get close to SAM sites for their neutralization, Jones has to acquire a source of ground transportation from this coastline goods yard and then move onward to the SAM batteries. Briefing Anya: Good work getting here so fast. This mission has a top priority. Target; Josef Priboi. You are to locate him and bring him out for debriefing. Josef is our only link with the heist of the warhead. Jones: Yeah, yeah, I need to know one thing; Where he is. Anya: Josef is held at a military airfield. The whole area has excellent air defenses. We have to place you some distance from the target until those defenses are disabled. Jones: What! Is transport waiting? Anya: You'll cover the ground using locally resourced transportation assets. Jones: You mean I will have to steal something? Anya: Exactly. You will travel to the next goods yard. There, you will resource transportation. The whole operation is simple. There are three stages: One, acquire transportation assets. Two, disable air defenses. Three, find Josef Priboi and safely extract him for debriefing. Even... Jones: ....even a grunt like me can follow it. I see Anya: That's the best we have. Jones: Anya, just how did you track Josef down? Anya: We traced Josef's call to his apartment, right. Local agents raided it and found photos of Josef and his mobile number. So, we called it and triangulated the coordinates. The mobile's located at a military airfield. That's where Josef is. That's our primary target. Jones: Cunning. Assuming he's there. Anya: You must make your way through the goods yard to the truck. Avoid the cameras at all costs. If you alert the security, you'll have entire base zeroing in on your location. Get to the truck. This is your objective on this mission. Reach it and steal it. I want this mission to be brief and above all quiet. Get to work Jones! Objectives Steal the truck near the main entrance Weapons Knife: Given at the beginning of the mission Glock 17: Given at the beginning of the mission MP5SD3: Given at the beginning of the mission Uzi: Found in the small room of the security building AK47: Found on most of the guards Dragunov: Found on the water tower Minimi: Found in the large warehouse Hand Grenade: Found in the small warehouse close to the watchtower Medipack: Found in one of the three barracks near the watchtower Walkthrough For the walkthrough of this mission, click here. Aftermath Jones successfully infiltrates the yard, and while maintaining the element of surprise, reaches the main entrance of the yard, where he steals a parked truck and moves to the SAM batteries. Others like you also viewed create a plot story<plot_story></plot_story> based on this <story> <engine src="unreal5" platform="macos" format="c++"> <!-- This part describes the video game engine and the platform used to write the video game --> </engine> <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all"> <desc>A First Person Shooter about two espionage agents. Co-op function up to 2 players, other online game modes. Protagonist David Jones and his analyst Anya learn that a Russian Arms dealer named Josef Priboi had been kidnapped by Russian Mafia and imprisoned in a Military Airbase. After rescue Josef admits that his uncle Jach is selling a nuclear warhead to someone. After capturing the uncle, Jach Priboi admits to selling it to a Russian leader named EKK. Jones gets orders to transport Jach to headquarters with a chopper .But the chopper gets shot down by Migs near the Russian Border . EKK captures Jach and orders Jones to be killed, but Jones escapes and crosses the border and is rescued by a chopper. He hijacks the train carrying Jach, but EKK derails the train. Jones and Jach escape by a chopper sent by Anya. Jones gets orders to retrieve the warhead and terminate EKK. But he discovers a broken warhead (used to make a nuclear bomb) and fails to kill EKK as she escapes. Then he infiltrates the nuclear base where EKK planted the bomb. Jones kills EKK ,and Anya defuses the bomb. </desc> <plot_menu main="true">Start menu with new game, select map, settings</plot_menu> <plot_menu ingame="true">Character is shown in Third Person View when the game is paused.</plot_menu> <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element> <plot_element playable="true">Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side. As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission.</plot_element> <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation.</plot_story> <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely. //INSERT STORY HERE WITH ELEMENTS LIKE <WEAPON></WEAPON> <plot_character > </plot_story> <plot_character name="David Llewellyn Jones" occupation="I.G.I. agent, former British Special Air Service operator" role="Protagonist" /> <plot_character name="Anya" occupation="Contact and mission director at headquarters" role="Mission director" /> <plot_character name="Jach Priboi" occupation="Soviet arms dealer" role="Antagonist" /> <plot_character name="Josef Priboi" occupation="Jach's nephew" role="Minor character" /> <plot_character name="Ekk" occupation="Homicidal Russian woman" role="Antagonist" /> <plot_character name="Captain Harrison" occupation="Commander of allied troops, ex-Green Beret in the US Army Special Forces" role="Secondary character" /> </plot> <player_input> <input_device>Playstation 4 Controller</input_device> <input_device>Playstation 5 Controller</input_device> <input_device>Xbox 360 Controller</input_device> <input_device>Xbox One Controller</input_device> <input_device>Xbox X Controller</input_device> <input_device>Joy-Con</input_device> <input_device>Keyboard and Mouse</input_device> </player_input> </story>
+ChatGPT
+In our story, we follow the adventures of two espionage agents in a first-person shooter video game with co-op function for up to 2 players and various online modes.
+
+Our protagonist, David Jones, and his analyst Anya learn that a Russian arms dealer named Josef Priboi had been kidnapped by the Russian Mafia and imprisoned in a military airbase. They must rescue him to gather information about the location of a nuclear warhead sold to the Russians by Josef.
+
+After rescuing Josef, he admits that his uncle Jach is selling the nuclear warhead to someone else. The players then capture the uncle, Jach Priboi, who admits to selling it to a Russian leader named EKK. David Jones gets orders to transport Jach to headquarters with a chopper, but the chopper gets shot down by Migs near the Russian border. EKK captures Jach and orders Jones to be killed, but Jones escapes across the border and is rescued by a chopper sent by Anya.
+
+Jones and Jach escape by hijacking a train carrying Jach, but EKK derails the train. However, they manage to escape by another chopper sent by Anya. Jones gets orders to retrieve the warhead and terminate EKK. But when he finds the broken warhead used to make a nuclear bomb, he fails to kill EKK as she manages to escape again. Then Jones infiltrates the nuclear base where EKK planted the bomb. He kills EKK, and his analyst, Anya, defuses the bomb.
+
+As the players progress through the game, they encounter various enemies, including helicopters bringing soldiers on alarm. Our hero uses a variety of weapons, including Glock 17, MP5SD3, Uzi, AK47, Dragunov, Minimi, hand grenades, and medipacks throughout the game.
+
+The plot takes us through different locations such as an airbase where he needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation and a trainyard where he needs to secure a shipment of weapons before the enemy does and then extract safely.
+
+Our hero, David Llewellyn Jones, is an I.G.I. agent and a former British Special Air Service operator. Anya is an experienced contact and mission director at headquarters who becomes his partner in their journey. Jach Priboi is a Soviet arms dealer, Ekk is a homicidal Russian woman, and Captain Harrison is the commander of allied troops and a former ex-Green Beret in the US Army Special Forces.
+
+The players can use various input devices, including PlayStation 4 & 5 controllers, Xbox 360 & One controllers, Joy-Con, and keyboard & mouse to control the game characters.
+
+You
+
+<plot_story>?
+ChatGPT
+<plot_story> is a custom tag used to indicate the main plot or storyline of a video game. It is part of the markup language used to create the imaginary story around the gameplay experience, and usually contains the essential elements of a narrative such as setting, characters, conflict, and resolution.
+
+For example:
+
+Copy
+Insert
+New
+<plot_story>
+In a post-apocalyptic world, humanity has been ravaged by a deadly virus that turns people into zombies. The story follows a group of survivors who band together to find a safe haven in this new world. Along the way they encounter other survivors, some friendly and others hostile. Will they make it to their destination unscathed? You must navigate through the challenges of this dangerous landscape to find out.
+</plot_story>
+This would describe a video game with a plot about survival during a zombie apocalypse, where the player controls a group of survivors who need to navigate through a hostile environment to stay alive.
+
+Note that <plot_story> is not a standardized HTML or Markdown tag, but a custom tag used in this specific example.
+
+You
+
+<plot_story> Background Josef Priboi, a Russian arms dealer is kidnapped by the Russian Mafia for unknown reasons and is known to have sold them a nuclear warhead. He is kept at a Military Airfield according to intelligence. Breaking him out is necessary in order to get information about the location of the warhead, and prevent a nuclear disaster at the hands of the Russian mafia. However, the airfield at which he is held is protected by heavy anti-air SAM batteries, so direct air insertion isn't possible. In order to get close to SAM sites for their neutralization, Jones has to acquire a source of ground transportation from this coastline goods yard and then move onward to the SAM batteries. Briefing Anya: Good work getting here so fast. This mission has a top priority. Target; Josef Priboi. You are to locate him and bring him out for debriefing. Josef is our only link with the heist of the warhead. Jones: Yeah, yeah, I need to know one thing; Where he is. Anya: Josef is held at a military airfield. The whole area has excellent air defenses. We have to place you some distance from the target until those defenses are disabled. Jones: What! Is transport waiting? Anya: You'll cover the ground using locally resourced transportation assets. Jones: You mean I will have to steal something? Anya: Exactly. You will travel to the next goods yard. There, you will resource transportation. The whole operation is simple. There are three stages: One, acquire transportation assets. Two, disable air defenses. Three, find Josef Priboi and safely extract him for debriefing. Even... Jones: ....even a grunt like me can follow it. I see Anya: That's the best we have. Jones: Anya, just how did you track Josef down? Anya: We traced Josef's call to his apartment, right. Local agents raided it and found photos of Josef and his mobile number. So, we called it and triangulated the coordinates. The mobile's located at a military airfield. That's where Josef is. That's our primary target. Jones: Cunning. Assuming he's there. Anya: You must make your way through the goods yard to the truck. Avoid the cameras at all costs. If you alert the security, you'll have entire base zeroing in on your location. Get to the truck. This is your objective on this mission. Reach it and steal it. I want this mission to be brief and above all quiet. Get to work Jones! Objectives Steal the truck near the main entrance Weapons Knife: Given at the beginning of the mission Glock 17: Given at the beginning of the mission MP5SD3: Given at the beginning of the mission Uzi: Found in the small room of the security building AK47: Found on most of the guards Dragunov: Found on the water tower Minimi: Found in the large warehouse Hand Grenade: Found in the small warehouse close to the watchtower Medipack: Found in one of the three barracks near the watchtower -> <plot_weapon></plot_weapon> <plot_character></plot_character> </plot_story>
+ChatGPT
+Background
+
+Josef Priboi, a Russian arms dealer has been kidnapped by the Russian Mafia for unknown reasons and is known to have sold them a nuclear warhead. It is crucial to break him out to acquire information about the location of the warhead and prevent a nuclear disaster at the hands of the Russian mafia. However, the airfield where he is held has heavy anti-air SAM batteries, making it impossible for direct air insertion. To neutralize the SAM sites and get close to Josef, Jones must acquire local transportation assets from a nearby goods yard and proceed towards the target.
+
+Briefing
+
+Anya informs Jones about the mission's high priority and assigns him the task of locating and extracting Josef for debriefing, as he is the only link with the warhead's heist. After an exchange, Anya reveals that Josef is being held at a military airfield and orders Jones to travel to the next goods yard to resourced transportation. The process includes three phases, which involve acquiring transportation assets, disabling air defenses, and safely extracting Josef for debriefing.
+
+Weapons
+
+The mission provides various weapons, including a knife, Glock 17, MP5SD3, Uzi, AK47, Dragunov sniper rifle, Minimi, hand grenades, and medipacks.
+
+Characters
+
+The protagonist, David Llewellyn Jones, is an experienced I.G.I. agent and former British Special Air Service operator tasked with the mission's execution. Anya is his contact and mission director who provides guidance throughout the operation. Josef Priboi is the Russian arms dealer who has been kidnapped, while Jach Priboi, his uncle, sells the nuclear warhead to someone. Ekk, a homicidal Russian woman, is portrayed as one of the main antagonists, responsible for several setbacks faced by Jones on his mission.
+
+Objectives
+
+The objective of this mission is to steal the truck parked near the main entrance of the goods yard. Jones must follow stealth tactics to avoid alerting the security and reaching the truck unnoticed. He is expected to make minimum noise possible to complete the mission effectively without raising suspicions.
+
+Overall, the mission is crucial in saving many lives and preventing a potential nuclear disaster. Jones handles the challenges efficiently to extract Josef and later work his way up to eliminate Ekk and neutralize the nuclear threat successfully.
+
+You
+
+create <plot_weapon></plot_weapon> for each weapon please Weapons Knife: Given at the beginning of the mission Glock 17: Given at the beginning of the mission MP5SD3: Given at the beginning of the mission Uzi: Found in the small room of the security building AK47: Found on most of the guards Dragunov: Found on the water tower Minimi: Found in the large warehouse Hand Grenade: Found in the small warehouse close to the watchtower Medipack: Found in one of the three barracks near the watchtower
+ChatGPT
+The server had an error while processing your request, please try again. (HTTP 500 Internal Server Error)
+See https://platform.openai.com/docs/guides/error-codes for more details. ChatGPT error 500: {
+"error": {
+"message": "Internal server error",
+"type": "auth_subrequest_error",
+"param": null,
+"code": "internal_error"
+}
+}
+
+You
+
+create <plot_weapon></plot_weapon> for each weapon please Weapons Knife: Given at the beginning of the mission Glock 17: Given at the beginning of the mission MP5SD3: Given at the beginning of the mission Uzi: Found in the small room of the security building AK47: Found on most of the guards Dragunov: Found on the water tower Minimi: Found in the large warehouse Hand Grenade: Found in the small warehouse close to the watchtower Medipack: Found in one of the three barracks near the watchtower
+ChatGPT
+Name: Knife Description: A sharp and silent melee weapon, perfect for stealth takedowns. Location: Given at the beginning of the mission Name: Glock 17 Description: A standard issue semi-automatic pistol, reliable and easy to use. Location: Given at the beginning of the mission Name: MP5SD3 Description: A silenced submachine gun, perfect for stealth and close-range combat. Location: Given at the beginning of the mission Name: Uzi Description: A compact submachine gun with a high rate of fire, found in the small room of the security building. Location: Found in the small room of the security building. Name: AK47 Description: A powerful assault rifle widely used by the enemy forces, found on most of the guards. Location: Found on most of the guards. Name: Dragunov Description: A sniper rifle with a high accuracy and power, found on the water tower. Location: Found on the water tower. Name: Minimi Description: A light machine gun, great for suppressing enemies, found in the large warehouse. Location: Found in the large warehouse. Name: Hand Grenade Description: An explosive grenade, useful for taking out groups of enemies or creating distractions, found in the small warehouse close to the watchtower. Location: Found in the small warehouse close to the watchtower. Name: Medipack Description: A medical kit that can heal the player's wounds, found in one of the three barracks near the watchtower. Location: Found in one of the three barracks near the watchtower.
+
+
+
+
+
+You
+
+create <plot_weapon></plot_weapon> for each weapon please Weapons Knife: Given at the beginning of the mission Glock 17: Given at the beginning of the mission MP5SD3: Given at the beginning of the mission Uzi: Found in the small room of the security building AK47: Found on most of the guards Dragunov: Found on the water tower Minimi: Found in the large warehouse Hand Grenade: Found in the small warehouse close to the watchtower Medipack: Found in one of the three barracks near the watchtower
+ChatGPT
+Name: Knife Description: A sharp and silent melee weapon, perfect for stealth takedowns. Location: Given at the beginning of the mission Name: Glock 17 Description: A standard issue semi-automatic pistol, reliable and easy to use. Location: Given at the beginning of the mission Name: MP5SD3 Description: A silenced submachine gun, perfect for stealth and close-range combat. Location: Given at the beginning of the mission Name: Uzi Description: A compact submachine gun with a high rate of fire, found in the small room of the security building. Location: Found in the small room of the security building. Name: AK47 Description: A powerful assault rifle widely used by the enemy forces, found on most of the guards. Location: Found on most of the guards. Name: Dragunov Description: A sniper rifle with a high accuracy and power, found on the water tower. Location: Found on the water tower. Name: Minimi Description: A light machine gun, great for suppressing enemies, found in the large warehouse. Location: Found in the large warehouse. Name: Hand Grenade Description: An explosive grenade, useful for taking out groups of enemies or creating distractions, found in the small warehouse close to the watchtower. Location: Found in the small warehouse close to the watchtower. Name: Medipack Description: A medical kit that can heal the player's wounds, found in one of the three barracks near the watchtower. Location: Found in one of the three barracks near the watchtower.
+You
+
+You wrote this. Use this example and create the weapons Weapons Knife: Given at the beginning of the mission Glock 17: Given at the beginning of the mission MP5SD3: Given at the beginning of the mission Uzi: Found in the small room of the security building AK47: Found on most of the guards Dragunov: Found on the water tower Minimi: Found in the large warehouse Hand Grenade: Found in the small warehouse close to the watchtower Medipack: Found in one of the three barracks near the watchtower <game_mechanics> <weapons> <weapon id="1"> <name>Ak-47</name> <damage>200</damage> <range>20m</range> <ammo>30 rounds per clip</ammo> </weapon> <weapon id="2"> <name>Sniper Rifle</name> <damage>500</damage> <range>100m</range> <ammo>10 rounds per clip</ammo> </weapon> </weapons> <movement> <movement_type>walking</movement_type> <movement_type>crouching</movement_type> <movement_type>running</movement_type> <movement_type>jogging</movement_type> </movement> <environment> <interaction> <interact_with_object>pick_up</interact_with_object> <interact_with_object>open</interact_with_object> <interact_with_object>close</interact_with_object> <interact_with_enemy>shoot</interact_with_enemy> <interact_with_enemy>punch</interact_with_enemy> <interact_with_enemy>stun</interact_with_enemy> </interaction> </environment>
+ChatGPT
+Knife 50 1m N/A Glock 17 100 15m 17 rounds per clip MP5SD3 150 20m 30 rounds per clip Uzi 175 25m 25 rounds per clip AK47 200 30m 30 rounds per clip Dragunov 400 80m 10 rounds per clip Minimi 175 20m 100 rounds per clip Hand Grenade 500 10m - 15m (depending on throw) N/A walking crouching running jogging pick_up open close shoot punch stun
+You
+
+ok. put it in this format: <game_mechanics> <weapons> <weapon id="1"> <name>Ak-47</name> <damage>200</damage> <range>20m</range> <ammo>30 rounds per clip</ammo> </weapon> <weapon id="2"> <name>Sniper Rifle</name> <damage>500</damage> <range>100m</range> <ammo>10 rounds per clip</ammo> </weapon> </weapons> <movement> <movement_type>walking</movement_type> <movement_type>crouching</movement_type> <movement_type>running</movement_type> <movement_type>jogging</movement_type> </movement> <environment> <interaction> <interact_with_object>pick_up</interact_with_object> <interact_with_object>open</interact_with_object> <interact_with_object>close</interact_with_object> <interact_with_enemy>shoot</interact_with_enemy> <interact_with_enemy>punch</interact_with_enemy> <interact_with_enemy>stun</interact_with_enemy> </interaction> </environment> </game_mechanics>
+ChatGPT
+The mission offers a good variety of weapons to choose from, catering to various play styles. The available weapons are:
+Knife: Given at the beginning of the mission.
+Glock 17: Given at the beginning of the mission.
+MP5SD3: Given at the beginning of the mission.
+Uzi: Found in the small room of the security building.
+AK-47: Found on most of the guards. This weapon packs a punch with 200 damage per shot and a range of 20m. It comes with 30 rounds per clip, making it a reliable choice for taking out enemies.
+Dragunov: Found on the water tower. This sniper rifle boasts an impressive 500 damage per shot and has a range of up to 100m. It comes with 10 rounds per clip, so use it sparingly but effectively.
+Minimi: Found in the large warehouse. If you prefer a light machine gun, then this is the choice for you. It deals 150 damage per shot and has a range of 20m. It comes with 50 rounds per clip, enabling you to lay down a lot of suppressing fire.
+Hand Grenade: Found in the small warehouse close to the watchtower. Use this explosive to take out enemies or clear out a group of them.
+Medipack: Found in one of the three barracks near the watchtower. This item will help you heal your wounds and stay alive throughout the mission.
+Remember to choose your weapons wisely, and make sure that you're using them effectively based on the situation at hand.
+
+Knife 50 close combat only N/A Glock 17 80 25m 17 rounds per clip MP5SD3 120 35m 30 rounds per clip Uzi 150 40m 25 rounds per clip AK-47 200 20m 30 rounds per clip Dragunov 500 100m 10 rounds per clip Minimi 150 20m 50 rounds per clip Hand Grenade 300 throwing distance 1 per pick-up walking crouching running jogging pick_up open close shoot punch stun
+
+You
+
+ok. Go through this code: <story> <engine src="unreal5" platform="macos" format="c++"> <!-- This part describes the video game engine and the platform used to write the video game --> </engine> <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all"> <desc>A First Person Shooter about two espionage agents. Co-op function up to 2 players, other online game modes.</desc> <plot_menu main="true">Start menu with new game, select map, settings </plot_menu> <plot_menu ingame="true">Character is shown in Third Person View when the game is paused. </plot_menu> <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element> <plot_element playable="true">Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side. As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission.</plot_element> <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation.</plot_story> <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely.</plot_story> </plot> <player_input> <input_device>Playstation 4 Controller</input_device> <input_device>Playstation 5 Controller</input_device> <input_device>Xbox 360 Controller</input_device> <input_device>Xbox One Controller</input_device> <input_device>Xbox X Controller</input_device> <input_device>Joy-Con</input_device> <input_device>Keyboard and Mouse</input_device> </player_input> </story>
+ChatGPT
+This is a video game's story written in XML format. It includes information about the game engine, platform, type of game, playable characters, online and offline features, menus, playable elements and input devices.
+
+The game is a first-person shooter set in different locations where players take control of espionage agents to complete various missions. The game can be played in co-op mode with up to two players, and it also has other online modes.
+
+The game engine used for the development of the game is Unreal Engine 5, written in C++ language and built for macOS platform.
+
+The player can use a variety of input devices including several controllers such as Playstation 4, Playstation 5, Xbox 360, Xbox One, XBox X, Joy-Con, and keyboard and mouse.
+
+In-game menus include starting menu with new game, select map and settings options, and an in-game menu that shows the player's character in the third-person view when the game is paused.
+
+The game's plot includes two missions, one on an airbase where the player needs to infiltrate the base and hack into the mainframe to gather intel while the second mission is to secure weapons shipment from a trainyard before the enemy does and then extract safely.
+
+Overall, this code provides important details about the video game's story, development, and gameplay elements.
+
+You
+
+send me code please
+ChatGPT
+Here's the code:
+
+Copy
+Insert
+New
+<story>
+    <engine src="unreal5" platform="macos" format="c++">
+        <!-- This part describes the video game engine and the platform used to write the video game -->
+    </engine>
+    <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all">
+        <desc>A First Person Shooter about two espionage agents. Co-op function up to 2 players, other online game modes.</desc>
+        <plot_menu main="true">Start menu with new game, select map, settings</plot_menu>
+        <plot_menu ingame="true">Character is shown in Third Person View when the game is paused.</plot_menu>
+        <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element>
+        <plot_element playable="true">Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side. As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission.</plot_element>
+        <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation.</plot_story>
+        <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely.</plot_story>
+    </plot>
+    <player_input>
+        <input_device>Playstation 4 Controller</input_device>
+        <input_device>Playstation 5 Controller</input_device>
+        <input_device>Xbox 360 Controller</input_device>
+        <input_device>Xbox One Controller</input_device>
+        <input_device>Xbox X Controller</input_device>
+        <input_device>Joy-Con</input_device>
+        <input_device>Keyboard and Mouse</input_device>
+    </player_input>
+</story>
+You
+
+would you mind to add the weapons please? <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation. <weapon><weapon></plot_story>
+ChatGPT
+Sure, here's the updated code with the weapons added:
+
+A First Person Shooter about two espionage agents. Co-op function up to 2 players, other online game modes. Start menu with new game, select map, settings Character is shown in Third Person View when the game is paused. Enemy helicopter brings soldiers on alarm Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side. As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission. Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation. Pistol Beretta M9 15 rounds per clip Assault Rifle M4A1 30 rounds per clip Sniper Rifle M24 5 rounds per clip Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely. SMG MP7 40 rounds per clip Shotgun Mossberg 500 6 rounds per clip Rocket Launcher FIM-92 Stinger Single Shot Playstation 4 Controller Playstation 5 Controller Xbox 360 Controller Xbox One Controller Xbox X Controller Joy-Con Keyboard and Mouse
+You
+
+<plot_element>Enemy finds Jones hacking the computer and starts shooting at him</plot_element>
+ChatGPT
+Here is the updated code including the weapons and the new plot element:
+
+Copy
+Insert
+New
+<story>
+  <engine src="unreal5" platform="macos" format="c++">
+    <!-- This part describes the video game engine and the platform used to write the video game -->
+  </engine>
+  <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all">
+    <desc>A First Person Shooter about two espionage agents. Co-op function up to 2 players, other online game modes.</desc>
+    <plot_menu main="true">Start menu with new game, select map, settings</plot_menu>
+    <plot_menu ingame="true">Character is shown in Third Person View when the game is paused.</plot_menu>
+    <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element>
+    <plot_element playable="true">Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side. As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission.</plot_element>
+    <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation.
+      <weapon>KRISS Vector</weapon>
+      <weapon>Desert Eagle</weapon>
+    </plot_story>
+    <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely.
+      <weapon>AK-47</weapon>
+      <weapon>RPG-7</weapon>
+    </plot_story>
+    <plot_element>Enemy finds Jones hacking the computer and starts shooting at him</plot_element>
+  </plot>
+  <player_input>
+    <input_device>Playstation 4 Controller</input_device>
+    <input_device>Playstation 5 Controller</input_device>
+    <input_device>Xbox 360 Controller</input_device>
+    <input_device>Xbox One Controller</input_device>
+    <input_device>Xbox X Controller</input_device>
+    <input_device>Joy-Con</input_device>
+    <input_device>Keyboard and Mouse</input_device>
+  </player_input>
+</story>
+Ask a question...
