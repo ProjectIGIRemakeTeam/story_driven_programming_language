@@ -19,6 +19,9 @@
             <weapon>AK-47</weapon>
             <weapon>RPG-7</weapon>
         </plot_story>
+        <plot_helper ai_agent="fps_soldier_ai">
+            This helps to lead the storyline. They acts as co-stars driving the story narrative.
+        </plot_helper>
         <plot_character name="David Llewellyn Jones" occupation="I.G.I. agent, former British Special Air Service operator" role="Protagonist" />
         <plot_character name="Anya" occupation="Contact and mission director at headquarters" role="Mission director" />
         <plot_character name="Jach Priboi" occupation="Soviet arms dealer" role="Antagonist" />

@@ -1241,3 +1241,78 @@ int main() {
 
     return 0;
 }
+
+
+You
+
+create a ai_agent class: <plot_helper ai_agent="fps_soldier_ai"> This helps to lead the storyline. They acts as co-stars driving the story narrative. </plot_helper>
+ChatGPT
+Sure, here's an example code for the AI_Agent class:
+
+Copy
+Insert
+New
+#include <string>
+#include <iostream>
+
+class AI_Agent {
+public:
+    std::string type;
+
+    AI_Agent(std::string t) : type(t) {}
+
+    void shoot() {
+        std::cout << "The " << type << " AI Agent shoots...\n";
+    }
+};
+You can update it according to your needs. In this example, the AI_Agent class takes in a type parameter and has a shoot() method that outputs a message indicating the agent's action.
+
+You can instantiate an instance of this class as follows:
+
+Copy
+Insert
+New
+AI_Agent fps_soldier("fps_soldier_ai");
+And call the shoot() method:
+
+Copy
+Insert
+New
+fps_soldier.shoot();
+Output: "The fps_soldier_ai AI Agent shoots..."
+
+
+
+You
+
+I'd like to write a description for github about this language. would you give a hand in that please/
+ChatGPT
+Sure, I can definitely help you write a description for a coding language. However, please clarify which language you are referring to specifically.
+
+You
+
+Story-driven programming language
+ChatGPT
+Story-driven programming language is a unique type of programming language that integrates a detailed and structured story into code-writing. It is called story-driven programming because it allows developers to build their project's storyline parallelly alongside the code, helping them to visualize the end product while working simultaneously.
+
+This innovative approach to programming provides a more focused and intuitive way of working with a better understanding of the use case and desired outcomes. With this language, developers can tailor their code directly to specific needs within a broader context of the entire story or narrative.
+
+The language allows for the inclusion of rich media or interactive elements such as music, images, and animations within the source code, making it more captivating than traditional dull code. Besides, it enables developers to create affective connections between character interactions, scenes, and conversations, adding depth to their work that would be challenging to achieve otherwise.
+
+In summary, Story-driven programming language opens up endless possibilities for developers by enabling them to communicate complex ideas more effectively using storyboards/narratives as well as creating immersive and engaging products in the future.
+
+You
+
+would you mind to style it in README.md please? Story-driven programming language is a unique type of programming language that integrates a detailed and structured story into code-writing. It is called story-driven programming because it allows developers to build their project's storyline parallelly alongside the code, helping them to visualize the end product while working simultaneously. This innovative approach to programming provides a more focused and intuitive way of working with a better understanding of the use case and desired outcomes. With this language, developers can tailor their code directly to specific needs within a broader context of the entire story or narrative. The language allows for the inclusion of rich media or interactive elements such as music, images, and animations within the source code, making it more captivating than traditional dull code. Besides, it enables developers to create affective connections between character interactions, scenes, and conversations, adding depth to their work that would be challenging to achieve otherwise. In summary, Story-driven programming language opens up endless possibilities for developers by enabling them to communicate complex ideas more effectively using storyboards/narratives as well as creating immersive and engaging products in the future.
+ChatGPT
+Sure, here's the styled version of the description:
+
+Story-driven programming language
+Story-driven programming language is a unique type of programming language that integrates a detailed and structured story into code-writing. It is called story-driven programming because it allows developers to build their project's storyline parallelly alongside the code, helping them to visualize the end product while working simultaneously.
+
+This innovative approach to programming provides a more focused and intuitive way of working with a better understanding of the use case and desired outcomes. With this language, developers can tailor their code directly to specific needs within a broader context of the entire story or narrative.
+
+The language allows for the inclusion of rich media or interactive elements such as music, images, and animations within the source code, making it more captivating than traditional dull code. Besides, it enables developers to create affective connections between character interactions, scenes, and conversations, adding depth to their work that would be challenging to achieve otherwise.
+
+In summary, Story-driven programming language opens up endless possibilities for developers by enabling them to communicate complex ideas more effectively using storyboards/narratives as well as creating immersive and engaging products in the future.
+
