@@ -1,25 +1,15 @@
-class TrainYard {
-private:
-    int size; // Size of the level in sq2.
-    std::vector<Object> objects // All objects on this level.
-
-public:
-    TrainYard(int size, std::vector<Object> objects) {
-        this->size = size;
-        this->objects = objects;
-    }
-    
-    // Getters 
-    int getSize() const { return size; }
-    std::vector<Object> getObjects() const { return objects; }
+class level_Trainyard {
+    public:
+        // Some variables to store information about the level
+        int width = 800;
+        int height = 800;
+        string name = "Trainyard";
+        
+        void load_level() {
+            // Load assets and objects specific to this level
+        }
+        
+        void activate_mission() {
+            // Set up the mission objectives, enemies, weapons, etc.
+        }
 };
-
-
-// Create a TrainYard object.
-std::vector<Object> trainyardObjects;
-int trainyardSize = 1000;
-TrainYard trainyard(trainyardSize, trainyardObjects);
-
-// Access the size and objects.
-std::cout << "TrainYard size: " << trainyard.getSize() << std::endl;
-std::cout << "Number of objects: " << trainyard.getObjects().size() << std::endl;

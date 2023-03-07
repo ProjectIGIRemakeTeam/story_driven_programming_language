@@ -323,4 +323,115 @@ This is good, but I'd like to ask you to create the Map object. <plot_story>Our 
 
 
 
-    
+    You
+
+Ok. The easier it is: When the author creates a story. <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation.</plot_story> THIS PART: Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation. Will be included into the new file as a <!-- This part describes the plot_story <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely.</plot_story> --> So we can follow how the story changes
+ChatGPT
+I see what you mean now. Here's an example template for the level_airbase class based on the description from the <plot_story> tag:
+
+Copy
+Insert
+New
+class level_airbase {
+    public:
+        // Some variables to store information about the level
+        int width = 1000;
+        int height = 1000;
+        string name = "Airbase";
+        
+        void load_level() {
+            // Load assets and objects specific to this level
+        }
+        
+        void activate_mission() {
+            // Set up the mission objectives, enemies, weapons, etc.
+        }
+};
+And here's a similar template for the level_trainyard class:
+
+Copy
+Insert
+New
+class level_trainyard {
+    public:
+        // Some variables to store information about the level
+        int width = 800;
+        int height = 800;
+        string name = "Trainyard";
+        
+        void load_level() {
+            // Load assets and objects specific to this level
+        }
+        
+        void activate_mission() {
+            // Set up the mission objectives, enemies, weapons, etc.
+        }
+};
+As the story progresses and new <plot_story> tags are added, more functions can be added to these classes to handle the specific requirements of those levels. For example, if the airbase level requires the player to hack into a mainframe, we could add a hack_mainframe() function to the level_airbase class.
+
+
+
+
+
+You
+
+class level_Trainyard { public: // Some variables to store information about the level int width = 800; int height = 800; string name = "Trainyard"; void load_level() { // Load assets and objects specific to this level } void activate_mission() { // Set up the mission objectives, enemies, weapons, etc. } }; class level_Airbase { public: // Some variables to store information about the level int width = 1000; int height = 1000; string name = "Airbase"; void load_level() { // Load assets and objects specific to this level } void activate_mission() { // Set up the mission objectives, enemies, weapons, etc. } }; <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation.</plot_story> <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely.</plot_story> please insert the plot_story into the correct classes
+ChatGPT
+To insert the plot_stories into the correct classes, we can add them as member variables and update the activate_mission() function to reflect the mission objectives for each level. Here's an updated version of the code:
+
+Copy
+Insert
+New
+class LevelTrainyard {
+public:
+    // Some variables to store information about the level
+    int width = 800;
+    int height = 800;
+    string name = "Trainyard";
+    string mission = "secure a shipment of weapons before the enemy does and then extract safely.";
+        
+    void loadLevel() {
+        // Load assets and objects specific to this level
+    }
+        
+    void activateMission() {
+        // Set up the mission objectives, enemies, weapons, etc.
+        cout << "Mission objective: " << mission << endl;
+    }
+};
+
+
+class LevelAirbase {
+public:
+    // Some variables to store information about the level
+    int width = 1000;
+    int height = 1000;
+    string name = "Airbase";
+    string mission = "infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation.";
+        
+    void loadLevel() {
+        // Load assets and objects specific to this level
+    }
+        
+    void activateMission() {
+        // Set up the mission objectives, enemies, weapons, etc.
+        cout << "Mission objective: " << mission << endl;
+    }
+};
+
+// Create instances of the levels
+LevelTrainyard trainyard;
+LevelAirbase airbase;
+
+// Now we can access the mission descriptions for each level like this:
+cout << "Trainyard mission: " << trainyard.mission << endl;
+cout << "Airbase mission: " << airbase.mission << endl;
+
+// And activate the mission objectives like this:
+trainyard.activateMission();
+airbase.activateMission();
+With this code, we can keep track of the mission objectives for each level and activate them when necessary.
+
+
+
+

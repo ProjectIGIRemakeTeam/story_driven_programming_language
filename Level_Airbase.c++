@@ -1,5 +1,15 @@
-class Level_Airbase {
-    // Every level has objects/actors on it.
-    // 1 thing is the size of the level, 
-    // how big in sq2: is it a small room, a house, a city, a country, space etc
+class level_Airbase {
+    public:
+        // Some variables to store information about the level
+        int width = 1000;
+        int height = 1000;
+        string name = "Airbase";
+        
+        void load_level() {
+            // Load assets and objects specific to this level
+        }
+        
+        void activate_mission() {
+            // Set up the mission objectives, enemies, weapons, etc.
+        }
 };
