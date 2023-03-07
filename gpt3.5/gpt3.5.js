@@ -282,3 +282,45 @@ The Game class is the main actor that sets up and runs the game. It creates a He
 
 
 
+This is good, but I'd like to ask you to create the Map object. <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely.</plot_story> from this part has a mission on a trainyard, trainyard is a place for story element to happen. the mission is an action will be induced by the player, and the trainyard is the place of action. Our hero has a mission on a trainyard. From this sencence, the first c++ to be created not the mission itself, but the location. example: class level_trainyard { // every level has objects/actors on it. //1 thing is the size of the level, how big in sq2. is it a small room, a house, a city, a country, space etc }
+    ChatGPT
+    Agreed, creating the Map object is essential to give context and provide a foundation for the level. Here's how it could look like in C++:
+    
+    Copy
+    Insert
+    New
+    class TrainYard {
+    private:
+        int size; // Size of the level in sq2.
+        std::vector<Object> objects // All objects on this level.
+    
+    public:
+        TrainYard(int size, std::vector<Object> objects) {
+            this->size = size;
+            this->objects = objects;
+        }
+        
+        // Getters 
+        int getSize() const { return size; }
+        std::vector<Object> getObjects() const { return objects; }
+    };
+    Here, there's a TrainYard class that stores the size of the level in square units along with all the objects present in the level. The getSize() and getObjects() methods provide a way to access these values from outside the class - for example:
+    
+    Copy
+    Insert
+    New
+    // Create a TrainYard object.
+    std::vector<Object> trainyardObjects;
+    int trainyardSize = 1000;
+    TrainYard trainyard(trainyardSize, trainyardObjects);
+    
+    // Access the size and objects.
+    std::cout << "TrainYard size: " << trainyard.getSize() << std::endl;
+    std::cout << "Number of objects: " << trainyard.getObjects().size() << std::endl;
+    This creates a TrainYard object with a size of 1000 square units and no objects, and then prints out its size and number of objects.
+    
+    With the TrainYard object created, we can now proceed to define the mission objectives within the specified location (trainyard) as well as functions and player controls necessary for them.
+
+
+
+    
