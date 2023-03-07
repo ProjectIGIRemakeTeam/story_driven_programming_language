@@ -57,3 +57,82 @@ public:
         // Code to reload Desert Eagle
     }
 };
+
+
+#include <string>
+
+class Weapon {
+public:
+    std::string name;
+    std::string description;
+    double damage;
+    std::string model_path;
+
+    Weapon(std::string n, std::string d, double dmg, std::string path)
+        : name(n), description(d), damage(dmg), model_path(path) {}
+
+    virtual void fire() = 0;
+};
+
+class KrissVector : public Weapon {
+public:
+    KrissVector() : Weapon("KRISS Vector", "Submachine gun", 27.0, "models/weapons/kriss_vector.mdl") {}
+
+    void fire() override {
+        // Fire behavior for KRISS Vector
+    }
+};
+
+class DesertEagle : public Weapon {
+public:
+    DesertEagle() : Weapon("Desert Eagle", "Handgun", 50.0, "models/weapons/desert_eagle.mdl") {}
+
+    void fire() override {
+        // Fire behavior for Desert Eagle
+    }
+};
+
+class Weapon {
+private:
+    std::string model;
+public:
+    Weapon(std::string model) : model(model) {} 
+    void setModel(std::string model) { this->model = model; }
+};
+
+
+#include <vector>
+#include <string>
+
+struct Animation {
+    std::string name;
+    int duration;
+    std::vector<std::string> actionSequences;
+
+    Animation(std::string n, int d, std::vector<std::string> as)
+        : name(n), duration(d), actionSequences(as) {}
+};
+
+class Weapon {
+private:
+    std::string model;
+    std::vector<Animation> animations;
+
+public:
+    Weapon(
+        std::string model, 
+        std::vector<Animation> animations
+    ) : model(model), animations(animations) {}
+
+    const std::vector<Animation>& getAnimations() const {
+        return animations;
+    }
+
+    void setAnimations(const std::vector<Animation>& animations) {
+        this->animations = animations;
+    }
+
+    void playAnimation(std::string name) {
+        // logic to find and play the animation by its name
+    }
+};
