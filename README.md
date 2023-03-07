@@ -62,3 +62,20 @@ Story example:
         <input_device>Keyboard and Mouse</input_device>
     </player_input>
 </story>
+
+Installation guide:
+
+Visual Studio Code:
+https://code.visualstudio.com/download
+
+Visual Studio Code Extensions:
+-ChatGPT
+https://marketplace.visualstudio.com/items?itemName=gencay.vscode-chatgpt
+-C/C++ Extension Pack
+https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack
+-Unreal Engine Python
+https://marketplace.visualstudio.com/items?itemName=NilsSoderman.ue-python
+
+ChatGPT API Visual Studio Code YouTube Tutorial:
+https://www.youtube.com/watch?v=jRl1mav35Tg
+
