@@ -488,3 +488,115 @@ public:
 <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation.</plot_story>
 <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely.</plot_story>
 Ask a question...
+
+
+Ok, that's pretty good! I'd like to add a new <plot_element>Enemy helicopter brings soldiers on alarm<plot_element> -> by this <plot_element enemy="true"></plot_element>
+ChatGPT
+class LevelAirbase {
+public:
+// Some variables to store information about the level
+int width = 1000; #airbase,#airbase_width, #width, #level, #plot_story
+int height = 1000; #airbase,#airbase_height, #height, #level, #plot_story
+string name = "Airbase"; #airbase,#airbase_name
+string mission = "infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation.";
+bool enemyHelicopterAlarm = true; #airbase,#enemy_helicopter, #alarm
+
+Copy
+Insert
+New
+void loadLevel() {
+    // Load assets and objects specific to this level
+}
+    
+void activateMission() {
+    // Set up the mission objectives, enemies, weapons, etc.
+    cout << "Mission objective: " << mission << endl;
+    if(enemyHelicopterAlarm){
+        cout << "Enemy helicopter brings soldiers on alarm" << endl;
+    }
+}
+};
+
+You
+
+Now I adde this code: <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element> -> this will create a new c++ class which desribes the new plot_element. An enemy helicopter <story> <engine src="unreal5" platform="macos" format="c++"> <!-- This part describes the video game engine and the platform used to write the video game --> </engine> <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all"> <desc>A First Person Shooter about two espionage agents. Co-op function up to 2 players, other online game modes.</desc> <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element> <plot_element playable="true">Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side. As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission.</plot_element> <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation.</plot_story> <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely.</plot_story> </plot> <player_input> <input_device>Playstation 4 Controller</input_device> <input_device>Playstation 5 Controller</input_device> <input_device>Xbox 360 Controller</input_device> <input_device>Xbox One Controller</input_device> <input_device>Xbox X Controller</input_device> <input_device>Joy-Con</input_device> <input_device>Keyboard and Mouse</input_device> </player_input> </story>
+ChatGPT
+Based on the added plot_element tag:
+
+Copy
+Insert
+New
+class EnemyHelicopter {
+public:
+    // Some variables to store information about the enemy helicopter
+    int health = 100; #enemy,#airbase,#helicopter,#health
+    int damage = 50; #enemy,#airbase,#helicopter,#damage
+    string name = "Enemy helicopter"; #enemy,#airbase,#helicopter,#name
+
+    void attack() {
+        // Perform attack actions
+    }
+
+    void retreat() {
+        // Retreat upon receiving damage
+    }
+};
+The activateMission function of LevelAirbase class can make a use of this by adding an instance of EnemyHelicopter in one of its level's stages when the mission starts i.e.
+
+Copy
+Insert
+New
+void activateMission() {
+    // Set up the mission objectives, enemies, weapons, etc.
+    cout << "Mission objective: " << mission << endl;
+
+    // Spawn enemy helicopter and soldiers
+    EnemyHelicopter enemy_helicopter;
+    vector<Soldier> soldiers;
+
+    // Proceed with the mission
+}
+This way, we can add more dynamic elements to the mission in the Airbase level based on what we have described in the XML file.
+
+
+You
+
+I'm going to add a new plot type. plot menu. <plot_menu main="true"> Start menu with new game, select map, settings </plot_menu> <plot_menu ingame="true> Character is shown in Third Person View when the game is paused. </plot_menu> -> from this a c++ class created form each plot_menu
+ChatGPT
+Great, here are the C++ classes for the two plot_menu elements:
+
+Copy
+Insert
+New
+class PlotMenu_Main {
+public:
+    // Variables to store information about the main menu
+    string title = "Game Menu"; // #plot_menu, #main_menu, #title
+    vector<string> options = {"New Game", "Select Map", "Settings"}; // #plot_menu, #main_menu, #options
+    
+    void displayMenu() {
+        // Display the main menu with its options
+        cout << "===== " << title << " =====" << endl;
+        for(int i=0; i<options.size(); i++) {
+            cout << i+1 << ". " << options[i] << endl;
+        }
+    }
+};
+
+class PlotMenu_Ingame {
+public:
+    // Variables to store information about the ingame menu
+    bool isPaused = false; // #plot_menu, #ingame_menu, #is_paused
+    string characterViewMode = "Third Person View"; // #plot_menu, #ingame_menu, #view_mode
+        
+    void displayMenu() {
+        // Display the ingame menu and its options
+        if(isPaused) {
+            cout << "===== In-Game Menu =====" << endl;
+            cout << "Character View: " << characterViewMode << endl;
+            // ...
+        }
+    }
+};
+You can use these C++ classes to implement the functionality of the plot_menu elements in your game.
+
