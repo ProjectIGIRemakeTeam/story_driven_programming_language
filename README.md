@@ -49,7 +49,8 @@ https://github.com/ProjectIGIRemakeTeam/story_driven_programming_language/blob/m
 
 # Story example:
 
-```<story>
+```
+<story>
     <engine src="unreal5" platform="macos" format="c++">
         <!-- This part describes the video game engine and the platform used to write the video game -->
     </engine>
