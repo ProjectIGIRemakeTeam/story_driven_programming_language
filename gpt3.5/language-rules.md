@@ -16,7 +16,7 @@ Created by: Gabriel Majorsky
 
 
 
-## <story>
+# <story>
 
 
 ```
@@ -25,7 +25,7 @@ Without story, there is nothing.
 You can start to create a story by creating <story></story>.
 ```
 
-## <engine>
+# <engine>
 
 
 ```
@@ -37,7 +37,7 @@ Engine can be e.g: "Unreal Engine", "Unity", "Xcode", "Android Studio", "CryEngi
 </engine> 
 ```
 
-## <plot>
+# <plot>
 
 
 ```
