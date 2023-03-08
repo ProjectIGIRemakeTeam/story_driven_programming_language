@@ -1,5 +1,8 @@
-#include <string>
-#include <iostream>
+#include<iostream>
+#include<vector>
+#include<string>
+
+using namespace std;
 
 /*
  * The AI_Agent class represents an Agent in the game.

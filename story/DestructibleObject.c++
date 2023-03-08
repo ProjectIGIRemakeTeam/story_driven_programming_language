@@ -1,3 +1,9 @@
+#include<iostream>
+#include<vector>
+#include<string>
+
+using namespace std;
+
 /*
 * This class represents a destructible object in the game world.
 */
