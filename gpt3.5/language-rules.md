@@ -1,11 +1,11 @@
-STORY-DRIVEN PROGRAMMING LANGUAGE
+# STORY-DRIVEN PROGRAMMING LANGUAGE
 under development v1.0
 
 Authors can convert text prompts into story elements, 
 story elements will be devided into smaller stories,
 smaller stories will have equalivent c++ code which describes the story.
 This c++ code will be translated in the selected engine c++ code.
-This language let's author to 
+
 
 Story-driven programming language is a unique type of programming language that integrates a detailed and structured story into code-writing. It is called story-driven programming because it allows developers to build their project's storyline parallelly alongside the code, helping them to visualize the end product while working simultaneously.
 This innovative approach to programming provides a more focused and intuitive way of working with a better understanding of the use case and desired outcomes. With this language, developers can tailor their code directly to specific needs within a broader context of the entire story or narrative.
