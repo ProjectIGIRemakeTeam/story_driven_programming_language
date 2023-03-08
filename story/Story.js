@@ -17,6 +17,19 @@
       <weapon>AK-47</weapon>
       <weapon>RPG-7</weapon>
     </plot_story>
+    {/* <plot_story>
+    EXT. SUBURBAN HOME - NIGHT
+      WE OPEN on a modern suburban home. The front window illuminated by the lights inside. We see the silhouette of a small human figure as it runs back and forth.    
+    </plot_story> */}
+    <plot_story>
+    <description>EXT. SUBURBAN HOME - NIGHT WE OPEN on a modern suburban home. The front window illuminated by the lights inside. We see the silhouette of a small human figure as it runs back and forth.</description>
+    {/* <!--Generate plot_element(s) from description and separate into plot_character, plot_action, plot_object--> */}
+      <plot_element>
+          <plot_character>a small human figure</plot_character>
+          <plot_action>runs back and forth</plot_action>
+          <plot_object>in front of the illuminated window of a modern suburban home</plot_object>
+      </plot_element>
+  </plot_story>
     <plot_element>Enemy finds hero hacking the computer and starts shooting at him</plot_element>
   </plot>
   <player_input>
