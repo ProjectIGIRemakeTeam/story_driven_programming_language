@@ -14,14 +14,16 @@ In summary, Story-driven programming language opens up endless possibilities for
 Created by: Gabriel Majorsky
 
 
-<story>
+## <story>
+
 ```
 <story></story> is the building block of story-driven programming language.
 Without story, there is nothing.
 You can start to create a story by creating <story></story>.
 ```
 
-<engine>
+## <engine>
+
 ```
 <engine></engine> is the second building block of story-driven programming language.
 Engine will decide what is the c++ output of your story. This can be wary based on the choice of Author.
@@ -31,7 +33,8 @@ Engine can be e.g: "Unreal Engine", "Unity", "Xcode", "Android Studio", "CryEngi
 </engine> 
 ```
 
-<plot>
+## <plot>
+
 ```
 <plot></plot> is the third building block of story-driven programming language.
 Plot describes the whole program in a story-driven way.
@@ -40,19 +43,22 @@ A plot contains all story elements referring to what is going to happen on the s
 ```
 
 
-<plot_menu>
+## <plot_menu>
+
 ```
 <plot_menu></plot_menu> is element of the story. It let's author to create main/in-game menus.
 ```
 
-<player_input>
+## <player_input>
+
 ```
 <player_input></player_input> is element of the story. 
 This describes HOW the player interacts with the story.
 For example: Keyboard + mouse input or controllers etc.
 ```
 
-<plot> 
+## <plot> 
+
 ```
 <plot></plot> can be devided into smaller stories.
 <plot type="?" number_of_playable_heroes="?">
@@ -66,7 +72,8 @@ EXAMPLE 2: if I type:: A First Person Shooter. Co-op function up to 2 players, o
 <plot type="refers the story structure" number_of_playable_heroes="refers the playable characters"
 ```
 
-<plot_story>
+## <plot_story>
+
 ```
 <plot_story></plot_story> is a very important element of the story,
 it answers the: who do what where with who/what?
@@ -74,7 +81,9 @@ this equalivent to the map/level/stage.
 This is where the action happens. Without plot_story the action has no place to happen.
 EXAMPLE: If you are making an FPS game with 10 maps, each map will be a <plot_story></plot_story>.
 ```
-<plot_element>
+
+## <plot_element>
+
 ```
 <plot_element></plot_element> is an element of the story. Plot elements can be global, 
 or local/within a <plot_story>.
@@ -83,7 +92,8 @@ If it's local, means this plot_element can be invoked in the specific <plot_stor
 <plot_element> can be effects, scenes, sounds, media, dialogues, actions.
 ```
 
-<plot_character>
+## <plot_character>
+
 ```
 <plot_character></plot_character> is an actor in the story. The protagonists, antagonists, 
 every playable/non-playable character(AI/NPC) is a plot_character.
@@ -93,7 +103,8 @@ EXAMPLE: Hero opens the window.
 <plot_character>Hero</plot_character> opens the window. 
 ```
 
-<plot_action>
+## <plot_action>
+
 ```
 <plot_action></plot_action> is describing the action happening on screen.
 plot action refers to animation induced by <plot_character/>.
@@ -102,7 +113,8 @@ EXAMPLE: Hero opens the window.
 <plot_character>Hero</plot_character><plot_action>opens</plot_action> the window. 
 ```
 
-<plot_object>
+## <plot_object>
+
 ```
 <plot_object></plot_object> is describing the action with an object happening on screen.
 plot object refers to objects/other actors induced by 1 <plot_character/>.
@@ -111,7 +123,8 @@ EXAMPLE: Hero opens the window.
 <plot_character>Hero</plot_character><plot_action>opens</plot_action><plot_object>the window</plot_object> 
 ```
 
-<plot_helper>
+## <plot_helper>
+
 ```
 <plot_helper></plot_helper> is an element of the story. 
 Plot helpers are global, and serves as a sub-director of the author.
