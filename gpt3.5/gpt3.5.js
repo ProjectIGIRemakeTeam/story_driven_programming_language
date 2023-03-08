@@ -2149,3 +2149,259 @@ public:
     }
 };
 With the getAnimations() and setAnimations() methods, you can modify the list of available animations for a weapon. The playAnimation() method takes the name of an existing animation and plays it.
+
+
+You
+
+add more detailed description and more tags: <plot_element playable="true">Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side. As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission.</plot_element> this was the original plot element above and below is the equalivent c++ code for this story. In this story element it says there is a playable helicopter plot_element and becuase it's playable it has input_controller elements #include "unreal5.h" class Helicopter { private: float x_loc; float y_loc; float z_loc; float pitch; float yaw; float roll; int forward_key; int backward_key; int left_key; int right_key; int up_key; int down_key; bool is_flying; public: // Constructor to initialize properties Helicopter(float x, float y, float z, float p, float ya, float r, int fk, int bk, int lk, int rk, int uk, int dk) { x_loc = x; y_loc = y; z_loc = z; pitch = p; yaw = ya; roll = r; forward_key = fk; backward_key = bk; left_key = lk; right_key = rk; up_key = uk; down_key = dk; is_flying = false; } // Methods for controlling helicopter movement void Pitch(float amount) { pitch += amount; Unreal.rotateObject("Helicopter", "X Axis", amount); } void Yaw(float amount) { yaw += amount; Unreal.rotateObject("Helicopter", "Y Axis", amount); } void Roll(float amount) { roll += amount; Unreal.rotateObject("Helicopter", "Z Axis", amount); } void MoveForward() { Unreal.moveObjectForward("Helicopter", forward_key); is_flying = true; } void MoveBackward() { Unreal.moveObjectBackward("Helicopter", backward_key); is_flying = true; } void TurnLeft() { Unreal.moveObjectLeft("Helicopter", left_key); is_flying = true; } void TurnRight() { Unreal.moveObjectRight("Helicopter", right_key); is_flying = true; } void FlyUp() { Unreal.moveObjectUp("Helicopter", up_key); is_flying = true; } void FlyDown() { Unreal.moveObjectDown("Helicopter", down_key); is_flying = true; } void StopFlying() { is_flying = false; } bool IsFlying() { return is_flying; } // Method for describing the helicopter void Describe() { std::cout << "Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with \"U.S. Army\" written in bold yellow letters on its side. As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission." << std::endl; } }; int main() { Helicopter heli(2.5f, 5.5f, 5.5f, 0, 0, 0, 119, 115, 97, 100, 27, 32); heli.Describe(); // Describe the helicopter in the story while (true) { if (keyPressed(heli.forward_key)) { heli.MoveForward(); } else if (keyPressed(heli.backward_key)) { heli.MoveBackward(); } // Other key handlers omitted for brevity } }
+ChatGPT
+Enhanced Plot Element
+Copy
+Insert
+New
+<plot_element playable="true">
+    <!-- Our hero reaches the helicopter -->
+    <description>
+        Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side.
+     </description>
+
+    <!-- Helicopter take off -->
+    <action>
+        As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission.</action>
+
+    <!-- Additional tags for categorization -->
+    <setting>Army Base</setting>
+    <character>Our hero</character>
+    <vehicle>Black Hawk helicopter</vehicle>
+    <location>Airborne</location>
+</plot_element>
+C++ Code for the Story
+Copy
+Insert
+New
+#include "unreal5.h"
+
+class Helicopter {
+  private:
+    float x_loc;
+    float y_loc;
+    float z_loc;
+    float pitch;
+    float yaw;
+    float roll;
+
+    int forward_key;
+    int backward_key;
+    int left_key;
+    int right_key;
+    int up_key;
+    int down_key;
+
+    bool is_flying;
+
+  public:
+    // Constructor to initialize properties
+    Helicopter(float x, float y, float z, float p, float ya, float r, int fk, int bk, int lk, int rk, int uk, int dk) {
+      x_loc = x;
+      y_loc = y;
+      z_loc = z;
+      pitch = p;
+      yaw = ya;
+      roll = r;
+
+      forward_key = fk;
+      backward_key = bk;
+      left_key = lk;
+      right_key = rk;
+      up_key = uk;
+      down_key = dk;
+
+      is_flying = false;
+    }
+
+    // Methods for controlling helicopter movement
+    void Pitch(float amount) {
+      pitch += amount;
+      Unreal.rotateObject("Helicopter", "X Axis", amount);
+    }
+
+    void Yaw(float amount) {
+      yaw += amount; 
+      Unreal.rotateObject("Helicopter", "Y Axis", amount);
+    }
+
+    void Roll(float amount) { 
+      roll += amount; 
+      Unreal.rotateObject("Helicopter", "Z Axis", amount);
+    }
+
+    void MoveForward() {
+      Unreal.moveObjectForward("Helicopter", forward_key);
+      is_flying = true;
+    }
+
+    void MoveBackward() {
+      Unreal.moveObjectBackward("Helicopter", backward_key);
+      is_flying = true;
+    }
+
+    void TurnLeft() {
+      Unreal.moveObjectLeft("Helicopter", left_key);
+      is_flying = true;
+    }
+
+    void TurnRight() {
+      Unreal.moveObjectRight("Helicopter", right_key);
+      is_flying = true;
+    }
+
+    void FlyUp() {
+      Unreal.moveObjectUp("Helicopter", up_key);
+      is_flying = true;
+    }
+
+    void FlyDown() {
+      Unreal.moveObjectDown("Helicopter", down_key);
+      is_flying = true;
+    }
+
+    void StopFlying() {
+      is_flying = false; 
+    } 
+
+    bool IsFlying() {
+      return is_flying; 
+    } 
+
+    // Method for describing the helicopter
+    void Describe() {
+      std::cout << "Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with \"U.S. Army\" written in bold yellow letters on its side. As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission." << std::endl;
+    }
+};
+
+int main() {
+  Helicopter heli(2.5f, 5.5f, 5.5f, 0, 0, 0, 119, 115, 97, 100, 27, 32);
+  
+  heli.Describe(); // Describe the helicopter in the story
+  
+  while (true) {
+    if (keyPressed(heli.forward_key)) {
+      heli.MoveForward();
+    } else if (keyPressed(heli.backward_key)) {
+      heli.MoveBackward();
+    }
+    // Other key handlers omitted for brevity
+  }
+}
+The original plot element has been enhanced by adding more descriptive details and tags for categorization. The additional description tag describes the helicopter in more detail, including its appearance and the sound of its engines. The action tag describes the helicopter's takeoff.
+
+The C++ code creates an object Helicopter that defines the properties and methods of a helicopter. It includes keyboard mappings for controlling the helicopter's movements. The Describe() method outputs the description of the helicopter as mentioned in the plot element.
+
+You
+
+add more detailed description in the c++ file please! add tags related to story elements. float x_loc; #playable #helicopter #direction_x #plot_element float y_loc; #playable #helicopter #direction_y #plot_element float z_loc; #playable #helicopter #direction_z #plot_element float pitch; #playable #helicopter #direction_pitch #plot_element float yaw; #playable #helicopter #direction_yaw #plot_element float roll; #playable #helicopter #direction_roll #plot_element etc.
+ChatGPT
+// Declare the Helicopter class
+class Helicopter {
+private:
+float x_loc; // The X location of the helicopter #playable #helicopter #direction_x #plot_element
+float y_loc; // The Y location of the helicopter #playable #helicopter #direction_y #plot_element
+float z_loc; // The Z location of the helicopter #playable #helicopter #direction_z #plot_element
+float pitch; // The pitch of the helicopter #playable #helicopter #direction_pitch #plot_element
+float yaw; // The yaw of the helicopter #playable #helicopter #direction_yaw #plot_element
+float roll; // The roll of the helicopter #playable #helicopter #direction_roll #plot_element
+
+Copy
+Insert
+New
+int forward_key; // The key used to move the helicopter forward #playable #helicopter #control_forward
+int backward_key; // The key used to move the helicopter backward #playable #helicopter #control_backward
+int left_key; // The key used to turn the helicopter left #playable #helicopter #control_left
+int right_key; // The key used to turn the helicopter right #playable #helicopter #control_right
+int up_key; // The key used to make the helicopter go up #playable #helicopter #control_up
+int down_key; // The key used to make the helicopter go down #playable #helicopter #control_down
+
+bool is_flying; // A boolean value representing if the helicopter is currently in flight or not #playable #helicopter #state_flying
+public:
+// Constructor to initialize properties
+Helicopter(float x, float y, float z, float p, float ya, float r, int fk, int bk, int lk, int rk, int uk, int dk) {
+x_loc = x;
+y_loc = y;
+z_loc = z;
+pitch = p;
+yaw = ya;
+roll = r;
+
+Copy
+Insert
+New
+  forward_key = fk;
+  backward_key = bk;
+  left_key = lk;
+  right_key = rk;
+  up_key = uk;
+  down_key = dk;
+
+  is_flying = false;
+}
+
+// Methods for controlling helicopter movement
+void Pitch(float amount) {
+  pitch += amount;
+  Unreal.rotateObject("Helicopter", "X Axis", amount);
+}
+
+void Yaw(float amount) {
+  yaw += amount; 
+  Unreal.rotateObject("Helicopter", "Y Axis", amount);
+}
+
+void Roll(float amount) { 
+  roll += amount; 
+  Unreal.rotateObject("Helicopter", "Z Axis", amount);
+}
+
+void MoveForward() {
+  Unreal.moveObjectForward("Helicopter", forward_key);
+  is_flying = true;
+}
+
+void MoveBackward() {
+  Unreal.moveObjectBackward("Helicopter", backward_key);
+  is_flying = true;
+}
+
+void TurnLeft() {
+  Unreal.moveObjectLeft("Helicopter", left_key);
+  is_flying = true;
+}
+
+void TurnRight() {
+  Unreal.moveObjectRight("Helicopter", right_key);
+  is_flying = true;
+}
+
+void FlyUp() {
+  Unreal.moveObjectUp("Helicopter", up_key);
+  is_flying = true;
+}
+
+void FlyDown() {
+  Unreal.moveObjectDown("Helicopter", down_key);
+  is_flying = true;
+}
+
+void StopFlying() {
+  is_flying = false; 
+} 
+
+bool IsFlying() {
+  return is_flying; 
+} 
+
+// Method for describing the helicopter
+void Describe() {
+  std::cout << "Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with \"U.S. Army\" written in bold yellow letters on its side. As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission." << std::endl;
+}
+};
+
