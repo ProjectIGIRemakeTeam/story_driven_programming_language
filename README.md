@@ -1,8 +1,12 @@
 # story_driven_programming_language
 ## story->chatgpt->c++
 
-[![Follow on GitHub](https://img.shields.io/github/followers/USERNAME?label=Follow%20%40USERNAME&style=social)](https://github.com/USERNAME)
+[![Follow on GitHub](https://img.shields.io/github/followers/ProjectIGIRemakeTeam?label=Follow%20%40ProjectIGIRemakeTeam&style=social)](https://github.com/ProjectIGIRemakeTeam)
 
+[![Discord](https://img.shields.io/discord/wWQtdzaSj3)](https://discord.gg/wWQtdzaSj3)
+[![GitHub stars](https://img.shields.io/github/stars/ProjectIGIRemakeTeam/story_driven_programming_language)](https://github.com/ProjectIGIRemakeTeam/story_driven_programming_language/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/ProjectIGIRemakeTeam/story_driven_programming_language)](https://github.com/ProjectIGIRemakeTeam/story_driven_programming_language/network)
+[![GitHub issues](https://img.shields.io/github/issues/ProjectIGIRemakeTeam/story_driven_programming_language)](https://github.com/ProjectIGIRemakeTeam/story_driven_programming_language/issues)
 
 Story-driven programming language is a unique type of programming language that integrates a detailed and structured story into code-writing. It is called story-driven programming because it allows developers to build their project's storyline parallelly alongside the code, helping them to visualize the end product while working simultaneously.
 
