@@ -29,8 +29,8 @@ The <plot_element> tag defines the building blocks of your story, including scen
 
 
 Plot Character
-Use the <plot_character> tag to define characters in your story, including their name, occupation, role, source, and platform.
-<plot_character name="[name]" occupation="[occupation]" role="[role]" src="[source]" platform="[platform]">
+Use the <plot_character> tag to define characters in your story, including their name, occupation, role, source.
+<plot_character name="[name]" occupation="[occupation]" role="[role]" src="[source]">
 
 Plot Action
 The <plot_action> tag is used to describe actions that happen on screen during gameplay.
