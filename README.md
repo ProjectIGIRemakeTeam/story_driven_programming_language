@@ -1,5 +1,5 @@
 # story_driven_programming_language
-story->chagpt->c++
+story->chatgpt->c++
 
 Story-driven programming language is a unique type of programming language that integrates a detailed and structured story into code-writing. It is called story-driven programming because it allows developers to build their project's storyline parallelly alongside the code, helping them to visualize the end product while working simultaneously.
 
@@ -11,6 +11,38 @@ In summary, Story-driven programming language opens up endless possibilities for
 
 Created by: Gabriel Majorsky
 https://github.com/ProjectIGIRemakeTeam/story_driven_programming_language/blob/main/ProjectIGI.js
+
+Installation guide:
+
+Visual Studio Code:
+https://code.visualstudio.com/download
+
+Visual Studio Code Extensions:
+-ChatGPT
+https://marketplace.visualstudio.com/items?itemName=gencay.vscode-chatgpt
+-C/C++ Extension Pack
+https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack
+-Unreal Engine Python
+https://marketplace.visualstudio.com/items?itemName=NilsSoderman.ue-python
+
+ChatGPT API Visual Studio Code YouTube Tutorial:
+https://www.youtube.com/watch?v=jRl1mav35Tg
+
+
+How to start react editor:
+-Open terminal in Visual Studio Code:
+<Terminal><New Terminal>
+-In terminal:
+cd react/story-editor-1.0
+npm start
+-Open Browser:
+enter: localhost:3000
+
+
+Language rules:
+https://github.com/ProjectIGIRemakeTeam/story_driven_programming_language/blob/main/gpt3.5/language-rules.js
+
+
 
 Story example:
 
@@ -63,29 +95,4 @@ Story example:
     </player_input>
 </story>
 
-Installation guide:
 
-Visual Studio Code:
-https://code.visualstudio.com/download
-
-Visual Studio Code Extensions:
--ChatGPT
-https://marketplace.visualstudio.com/items?itemName=gencay.vscode-chatgpt
--C/C++ Extension Pack
-https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools-extension-pack
--Unreal Engine Python
-https://marketplace.visualstudio.com/items?itemName=NilsSoderman.ue-python
-
-ChatGPT API Visual Studio Code YouTube Tutorial:
-https://www.youtube.com/watch?v=jRl1mav35Tg
-
-
-How to start react editor:
--Open terminal in Visual Studio Code:
-<Terminal><New Terminal>
--In terminal:
-cd react/story-editor-1.0
-npm start
-
--Open Browser:
-enter: localhost:3000
