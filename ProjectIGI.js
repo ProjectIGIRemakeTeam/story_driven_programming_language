@@ -8,15 +8,22 @@
         </desc>
         <plot_menu main="true">Start menu with new game, select map, settings</plot_menu>
         <plot_menu ingame="true">Character is shown in Third Person View when the game is paused.</plot_menu>
-        <plot_element>Jones{"Protanogist"} can destroy many object on each level.</plot_element>
+        <plot_element>Jones can deactivate alarms.
+            <plot_character>Jones</plot_character>
+            <plot_action>can deactivate</plot_action>
+            <plot_object>alarms</plot_object>
+        </plot_element>
+        <plot_element>Jones{"Protanogist"} can climb a ladder.
+            <plot_character>Jones</plot_character>
+            <plot_action>can climb</plot_action>
+            <plot_object>a ladder</plot_object>
+        </plot_element>
+        <plot_element>Jones{"Protanogist"} can destroy many objects on each level.</plot_element>
         <plot_element>Jones{"Protanogist"} can hack any computer
             <plot_character>Jones</plot_character>
-            <plot_object>computer</plot_object>
             <plot_action>can hack any</plot_action>
+            <plot_object>computer</plot_object>
         </plot_element>
-        <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element>
-        <plot_element>Dynamic weather on all mission/plot_story</plot_element>
-        <plot_element playable="true">Our hero at the end of the mission on an airbase, steals of mig29 and got chased by enemy aircrafts</plot_element>
         <plot_element playable="true">
             {/* <!-- Our hero reaches the helicopter --> */}
             <description>
@@ -33,6 +40,10 @@
             <vehicle>Black Hawk helicopter</vehicle>
             <location>Airborne</location>
         </plot_element>
+
+        <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element>
+        <plot_element>Dynamic weather on all mission/plot_story</plot_element>
+        <plot_element playable="true">Our hero at the end of the mission on an airbase, steals of mig29 and got chased by enemy aircrafts</plot_element>
         <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation.
             <weapon>KRISS Vector</weapon>
             <weapon>Desert Eagle</weapon>
@@ -61,3 +72,6 @@
         <input_device>Keyboard and Mouse</input_device>
     </player_input>
 </story>
+
+
+

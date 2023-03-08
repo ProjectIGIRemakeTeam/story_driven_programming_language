@@ -2623,3 +2623,143 @@ New
 This CSS code will ensure that any new line characters entered into the input element are displayed as separate lines and can be scrolled through as necessary with the vertical scroll bar.
 
 Ask a question...
+
+
+story-driven programming language: I added a new plot_element <plot_element>Jones{"Protanogist"} can climb a ladder.</plot_element> create a c++ class based on this
+
+Regarding the C++ class creation, based on your prompt, you could create a Protagonist class with a function climbLadder() that allows the protagonist to climb the ladder. Here is an example:
+
+Copy
+Insert
+New
+class Protagonist {
+   public:
+      void climbLadder() {
+         // add code here for climbing ladder
+      }
+};
+You can then create an object of the Protagonist class named Jones, which will have access to its member functions:
+
+Copy
+Insert
+New
+int main() {
+   Protagonist Jones;
+   Jones.climbLadder();
+
+   return 0;
+}
+This is just a simple example, and you can add more functionality to the Protagonist class as needed.
+
+You
+
+<plot_element>Jones{"Protanogist"} can climb a ladder.</plot_element> <plot_element>Jones{"Protanogist"} can destroy many object on each level.</plot_element> <plot_element>Jones{"Protanogist"} can hack any computer <plot_character>Jones</plot_character> <plot_object>computer</plot_object> <plot_action>can hack any</plot_action> </plot_element> rewrite this based on plot_character, plot_object, plot_action
+ChatGPT
+Based on the given prompt, we can create a C++ class with the following attributes:
+
+Copy
+Insert
+New
+class PlotElement {
+    private:
+        std::string plotCharacter;
+        std::string plotObject;
+        std::string plotAction;
+
+    public:
+        PlotElement(std::string character, std::string object, std::string action) {
+            plotCharacter = character;
+            plotObject = object;
+            plotAction = action;
+        }
+
+        void display() {
+            std::cout << plotCharacter << " can " << plotAction << " " << plotObject << "." << std::endl;
+        }
+};
+And here is how we can use it to represent the given plot elements:
+
+Copy
+Insert
+New
+PlotElement climbLadder("Jones", "ladder", "climb");
+
+climbLadder.display(); // Output: Jones can climb ladder.
+
+PlotElement destroyObject("Jones", "many objects", "destroy");
+
+destroyObject.display(); // Output: Jones can destroy many objects.
+
+PlotElement hackComputer("Jones", "computer", "hack any");
+
+hackComputer.display(); // Output: Jones can hack any computer.
+By creating this PlotElement class, we can now easily store and manage multiple plot elements in a more organized manner.
+
+You
+
+<plot_element>Jones{"Protanogist"} can climb a ladder. <plot_character>Jones</plot_character> <plot_action>can climb</plot_action> <plot_object>a ladder</plot_object> </plot_element> <plot_element>Jones{"Protanogist"} can destroy many object on each level.</plot_element> <plot_element>Jones{"Protanogist"} can hack any computer <plot_character>Jones</plot_character> <plot_object>computer</plot_object> <plot_action>can hack any</plot_action> </plot_element>
+ChatGPT
+Here's a possible C++ class based on the <plot_element> tags:
+
+Copy
+Insert
+New
+#include <iostream>
+#include <string>
+
+class PlotElement {
+public:
+    PlotElement(const std::string& character, const std::string& object, const std::string& action)
+        : character_(character), object_(object), action_(action) {}
+
+    void Display() const {
+        std::cout << "The " << character_ << " " << action_ << " " << object_ << "." << std::endl;
+    }
+
+private:
+    std::string character_;
+    std::string object_;
+    std::string action_;
+};
+
+int main() {
+    PlotElement climb("Jones", "a ladder", "can climb");
+    climb.Display();
+    PlotElement hack("Jones", "computer", "can hack any");
+    hack.Display();
+    return 0;
+}
+The output of the code should be:
+
+Copy
+Insert
+New
+The Jones can climb a ladder.
+The Jones can hack any computer.
+
+
+You
+
+basically the idea is that when an author creates a <plot_element> gpt will translate into who(plot_character), does what(plot_action) with who/what(plot_object) and separates into these 3 sub
+ChatGPT
+Yes, that's correct! The tag is used to describe an important part of the story being created. By breaking it down into 3 parts: the character who performs the action, the action itself, and the object(s) involved in the action. This makes it easier to organize and analyze the various components of the story.
+
+You
+
+Ok. Help me to separate <plot_element> into <plot_character> <plot_action> <plot_object> I'm going to create a new plot_element: Jones can deactivate alarms.
+ChatGPT
+Certainly! Here's how you can separate the <plot_element> into <plot_character>, <plot_action>, and <plot_object> for the new plot element:
+
+<plot_character>Jones</plot_character>
+<plot_action>can deactivate</plot_action>
+<plot_object>alarms</plot_object>
+So the new plot element would look like this with the separated element tags:
+
+Copy
+Insert
+New
+<plot_element>Jones can deactivate alarms.
+    <plot_character>Jones</plot_character>
+    <plot_action>can deactivate</plot_action>
+    <plot_object>alarms</plot_object>
+</plot_element>
