@@ -14,7 +14,7 @@ function StoryEditor() {
 
   return (
     <div className="StoryEditor">
-        <input value={story} onChange={(e) => didChangeStoryText(e.target.value)}></input>
+        <textarea value={story} onChange={(e) => didChangeStoryText(e.target.value)}></textarea>
     </div>
   );
 }

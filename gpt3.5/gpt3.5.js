@@ -2523,3 +2523,103 @@ New
   
   "plot_character":[
     {"@name":"David Llewellyn Jones
+
+
+    You
+
+this has to show the text as an editable text: import {useEffect, useRef, useState} from "react"; import "./StoryEditor.css"; import plot_strong from "./plot_string.json"; function StoryEditor() { const [story, set_story] = useState(plot_strong); function didChangeStoryText(story_text) { set_story(story_text) } return ( <div className="StoryEditor"> <input value={story} onChange={(e) => didChangeStoryText(e.target.value)}></input> </div> ); } export default StoryEditor; .StoryEditor { display: block; width: 100%; height: 100%; position: absolute; } .StoryEditor input { display: block; width: 100%; height: 100%; position: absolute; background-color: darkgray; } storyeditor recognizes new lines. it also hide overflow-x overflow-y scroll
+ChatGPT
+To show the given text as an editable text, you can modify the code like this:
+
+Copy
+Insert
+New
+import React, { useState } from 'react';
+import './StoryEditor.css';
+
+function StoryEditor() {
+  const [story, setStory] = useState('<story>\n<engine src="unreal5" platform="macos" format="c++">\n{/* <!-- This part describes the video game engine and the platform used to write the video game --> */}\n</engine>\n<plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all">\n<desc>A First Person Shooter about two espionage agents. Co-op function up to 2 players, other online game modes. Protagonist David Jones and his analyst Anya learn that a Russian Arms dealer named Josef Priboi had been kidnapped by Russian Mafia and imprisoned in a Military Airbase. After rescue Josef admits that his uncle Jach is selling a nuclear warhead to someone. After capturing the uncle, Jach Priboi admits to selling it to a Russian leader named EKK. Jones gets orders to transport Jach to headquarters with a chopper .But the chopper gets shot down by Migs near the Russian Border . EKK captures Jach and orders Jones to be killed, but Jones escapes and crosses the border and is rescued by a chopper. He hijacks the train carrying Jach, but EKK derails the train. Jones and Jach escape by a chopper sent by Anya. Jones gets orders to retrieve the warhead and terminate EKK. But he discovers a broken warhead (used to make a nuclear bomb) and fails to kill EKK as she escapes. Then he infiltrates the nuclear base where EKK planted the bomb. Jones kills EKK ,and Anya defuses the bomb.</desc>\n<plot_menu main="true">Start menu with new game, select map, settings</plot_menu>\n<plot_menu ingame="true">Character is shown in Third Person View when the game is paused.</plot_menu>\n<plot_element>Jones{"Protanogist"} can destroy many object on each level.</plot_element>\n<plot_element>Jones{"Protanogist"} can hack any computer\n<plot_character>Jones</plot_character>\n<plot_object>computer</plot_object>\n<plot_action>can hack any</plot_action>\n</plot_element>\n<plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element>\n<plot_element>Dynamic weather on all mission/plot_story</plot_element>\n<plot_element playable="true">Our hero at the end of the mission on an airbase, steals of mig29 and got chased by enemy aircrafts</plot_element>\n<plot_element playable="true">{/* <!-- Our hero reaches the helicopter --> */}\n<description> Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side. </description>{/* <!-- Helicopter take off --> */}\n<action> As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission.</action>{/* <!-- Additional tags for categorization --> */}\n<setting>Army Base</setting>\n<character>Our hero</character>\n<vehicle>Black Hawk helicopter</vehicle>\n<location>Airborne</location>\n</plot_element>\n<plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy&apos;s operation. <weapon>KRISS Vector</weapon>\n<weapon>Desert Eagle</weapon></plot_story>\n<plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely. <weapon>AK-47</weapon>\n<weapon>RPG-7</weapon></plot_story>\n<plot_helper ai_agent="fps_soldier_ai"> This helps to lead the storyline. They acts as co-stars driving the story narrative. </plot_helper>\n<plot_character name="David Llewellyn Jones" occupation="I.G.I. agent, former British Special Air Service operator" role="Protagonist" />\n<plot_character name="Anya" occupation="Contact and mission director at headquarters" role="Mission director" />\n<plot_character name="Jach Priboi" occupation="Soviet arms dealer" role="Antagonist" />\n<plot_character name="Josef Priboi" occupation="Jach&apos;s nephew" role="Minor character" />\n<plot_character name="Ekk" occupation="Homicidal Russian woman" role="Antagonist" />\n<plot 
+You
+
+send only CSS code please
+ChatGPT
+Copy
+Insert
+New
+.StoryEditor {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow-x: hidden; /* hide horizontal scroll */
+  overflow-y: scroll; /* enable vertical scroll */
+}
+
+.StoryEditor input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: darkgray;
+  resize: none; /* disable resizing */
+  border: none; /* remove border */
+  padding: 10px; /* add some padding */
+  font-size: 16px; /* set font size */
+  line-height: 1.2em; /* set line height */
+  color: white; /* change font color */
+}
+
+
+You
+
+send only CSS code please
+ChatGPT
+Copy
+Insert
+New
+.StoryEditor {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow-x: hidden; /* hide horizontal scroll */
+  overflow-y: scroll; /* enable vertical scroll */
+}
+
+.StoryEditor input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: darkgray;
+  resize: none; /* disable resizing */
+  border: none; /* remove border */
+  padding: 10px; /* add some padding */
+  font-size: 16px; /* set font size */
+  line-height: 1.2em; /* set line height */
+  color: white; /* change font color */
+}
+You
+
+css input create new line on "\n"
+ChatGPT
+To display new lines entered into an input element as a separate line using CSS, you can use the white-space CSS property set to pre-wrap value. This will preserve whitespace in the text and wrap text when it reaches the end of the container.
+
+Here is the sample code that can be used:
+
+Copy
+Insert
+New
+.StoryEditor input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: darkgray;
+  overflow-x: hidden; /* hide horizontal scrollbar */
+  overflow-y: scroll; /* show vertical scrollbar */
+  white-space: pre-wrap; /* preserve whitespace */
+}
+This CSS code will ensure that any new line characters entered into the input element are displayed as separate lines and can be scrolled through as necessary with the vertical scroll bar.
+
+Ask a question...
