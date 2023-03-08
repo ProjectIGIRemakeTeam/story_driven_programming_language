@@ -1,6 +1,9 @@
 # story_driven_programming_language
 ## story->chatgpt->c++
 
+[![Follow on GitHub](https://img.shields.io/github/followers/USERNAME?label=Follow%20%40USERNAME&style=social)](https://github.com/USERNAME)
+
+
 Story-driven programming language is a unique type of programming language that integrates a detailed and structured story into code-writing. It is called story-driven programming because it allows developers to build their project's storyline parallelly alongside the code, helping them to visualize the end product while working simultaneously.
 
 This innovative approach to programming provides a more focused and intuitive way of working with a better understanding of the use case and desired outcomes. With this language, developers can tailor their code directly to specific needs within a broader context of the entire story or narrative.
@@ -28,6 +31,9 @@ https://marketplace.visualstudio.com/items?itemName=NilsSoderman.ue-python
 ChatGPT API Visual Studio Code YouTube Tutorial:
 https://www.youtube.com/watch?v=jRl1mav35Tg
 
+
+Discord Server:
+https://discord.gg/wWQtdzaSj3
 
 # How to start react editor:
 
