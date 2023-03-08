@@ -6,7 +6,7 @@
         <desc>A First Person Shooter about two espionage agents. Co-op function up to 2 players, other online game modes.
         Protagonist David Jones and his analyst Anya learn that a Russian Arms dealer named Josef Priboi had been kidnapped by Russian Mafia and imprisoned in a Military Airbase. After rescue Josef admits that his uncle Jach is selling a nuclear warhead to someone. After capturing the uncle, Jach Priboi admits to selling it to a Russian leader named EKK. Jones gets orders to transport Jach to headquarters with a chopper .But the chopper gets shot down by Migs near the Russian Border . EKK captures Jach and orders Jones to be killed, but Jones escapes and crosses the border and is rescued by a chopper. He hijacks the train carrying Jach, but EKK derails the train. Jones and Jach escape by a chopper sent by Anya. Jones gets orders to retrieve the warhead and terminate EKK. But he discovers a broken warhead (used to make a nuclear bomb) and fails to kill EKK as she escapes. Then he infiltrates the nuclear base where EKK planted the bomb. Jones kills EKK ,and Anya defuses the bomb. 
         </desc>
-        <plot_menu main="true">Start menu with new game, select map, settings</plot_menu>
+        <plot_menu main="true">Start menu with new game, select map, load game, settings, exit game</plot_menu>
         <plot_menu ingame="true">Character is shown in Third Person View when the game is paused.</plot_menu>
         <plot_element>Jones can deactivate alarms.
             <plot_character>Jones</plot_character>
