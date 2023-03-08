@@ -1,6 +1,6 @@
  import './App.css';
 
-import "./StoryEditor";
+import StoryEditor  from './StoryEditor';
 
 function App() {
   return (
