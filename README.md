@@ -1,4 +1,4 @@
-# story_driven_programming_language
+# Story-driven Programming Language
 ## story->chatgpt->c++
 
 [![Follow on GitHub](https://img.shields.io/github/followers/ProjectIGIRemakeTeam?label=Follow%20%40ProjectIGIRemakeTeam&style=social)](https://github.com/ProjectIGIRemakeTeam)
@@ -53,7 +53,7 @@ http://localhost:3000
 
 
 # Language rules:
-https://github.com/ProjectIGIRemakeTeam/story_driven_programming_language/blob/main/gpt3.5/language-rules.js
+https://github.com/ProjectIGIRemakeTeam/story_driven_programming_language/blob/main/gpt3.5/language-rules.md
 
 
 
