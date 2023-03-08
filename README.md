@@ -1,5 +1,5 @@
 # story_driven_programming_language
-story->chatgpt->c++
+## story->chatgpt->c++
 
 Story-driven programming language is a unique type of programming language that integrates a detailed and structured story into code-writing. It is called story-driven programming because it allows developers to build their project's storyline parallelly alongside the code, helping them to visualize the end product while working simultaneously.
 
@@ -12,7 +12,7 @@ In summary, Story-driven programming language opens up endless possibilities for
 Created by: Gabriel Majorsky
 https://github.com/ProjectIGIRemakeTeam/story_driven_programming_language/blob/main/ProjectIGI.js
 
-Installation guide:
+# Installation guide:
 
 Visual Studio Code:
 https://code.visualstudio.com/download
@@ -29,22 +29,22 @@ ChatGPT API Visual Studio Code YouTube Tutorial:
 https://www.youtube.com/watch?v=jRl1mav35Tg
 
 
-How to start react editor:
--Open terminal in Visual Studio Code:
+# How to start react editor:
+## Open terminal in Visual Studio Code:
 <Terminal><New Terminal>
--In terminal:
+## In terminal:
 cd react/story-editor-1.0
 npm start
--Open Browser:
+## Open Browser:
 enter: localhost:3000
 
 
-Language rules:
+# Language rules:
 https://github.com/ProjectIGIRemakeTeam/story_driven_programming_language/blob/main/gpt3.5/language-rules.js
 
 
 
-Story example:
+# Story example:
 
 ```<story>
     <engine src="unreal5" platform="macos" format="c++">
