@@ -3188,3 +3188,1051 @@ A plot story is not designed to be translated directly into code, it's meant to 
 
 If you have any specific requirements for implementing the story in code, please let me know and I'll try my best to help you with that.
 
+STORY-DRIVEN PROGRAMMING LANGUAGE under development v1.0 Authors can convert text prompts into story elements, story elements will be devided into smaller stories, smaller stories will have equalivent c++ code which describes the story. This c++ code will be translated in the selected engine c++ code. This language let's author to Story-driven programming language is a unique type of programming language that integrates a detailed and structured story into code-writing. It is called story-driven programming because it allows developers to build their project's storyline parallelly alongside the code, helping them to visualize the end product while working simultaneously. This innovative approach to programming provides a more focused and intuitive way of working with a better understanding of the use case and desired outcomes. With this language, developers can tailor their code directly to specific needs within a broader context of the entire story or narrative. The language allows for the inclusion of rich media or interactive elements such as music, images, and animations within the source code, making it more captivating than traditional dull code. Besides, it enables developers to create affective connections between character interactions, scenes, and conversations, adding depth to their work that would be challenging to achieve otherwise. In summary, Story-driven programming language opens up endless possibilities for developers by enabling them to communicate complex ideas more effectively using storyboards/narratives as well as creating immersive and engaging products in the future. Created by: Gabriel Majorsky ## <story> ``` <story></story> is the building block of story-driven programming language. Without story, there is nothing. You can start to create a story by creating <story></story>. ``` ## <engine> ``` <engine></engine> is the second building block of story-driven programming language. Engine will decide what is the c++ output of your story. This can be wary based on the choice of Author. Engine can be e.g: "Unreal Engine", "Unity", "Xcode", "Android Studio", "CryEngine" etc. <engine src="unreal5" platform="macos" format="c++"> {/* <!-- This part describes the video game engine and the platform used to write the video game --> */} </engine> ``` ## <plot> ``` <plot></plot> is the third building block of story-driven programming language. Plot describes the whole program in a story-driven way. To start to create a story, you can describe the plot in a simple way. A plot contains all story elements referring to what is going to happen on the screen. ``` ## <plot_menu> ``` <plot_menu></plot_menu> is element of the story. It let's author to create main/in-game menus. ``` ## <player_input> ``` <player_input></player_input> is element of the story. This describes HOW the player interacts with the story. For example: Keyboard + mouse input or controllers etc. ``` ## <plot> ``` <plot></plot> can be devided into smaller stories. <plot type="?" number_of_playable_heroes="?"> based on the first plot prompt, the plot_type and number_of_playable heros can be setted. EXAMPLE 1: if I type:: My game is a single player FPS: <plot type="FPS" number_of_playable_heroes="1"> EXAMPLE 2: if I type:: A First Person Shooter. Co-op function up to 2 players, other online game modes: <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all"> EXAMPLE 3: if I type:: My app is food delivery app: <plot type="mobile_app" number_of_playable_heroes="1"> <plot type="refers the story structure" number_of_playable_heroes="refers the playable characters" ``` ## <plot_story> ``` <plot_story></plot_story> is a very important element of the story, it answers the: who do what where with who/what? this equalivent to the map/level/stage. This is where the action happens. Without plot_story the action has no place to happen. EXAMPLE: If you are making an FPS game with 10 maps, each map will be a <plot_story></plot_story>. ``` ## <plot_element> ``` <plot_element></plot_element> is an element of the story. Plot elements can be global, or local/within a <plot_story>. If it's global that means this plot_element can be invoked in every plot_story. If it's local, means this plot_element can be invoked in the specific <plot_story> only. <plot_element> can be effects, scenes, sounds, media, dialogues, actions. ``` ## <plot_character> ``` <plot_character></plot_character> is an actor in the story. The protagonists, antagonists, every playable/non-playable character(AI/NPC) is a plot_character. There are there to help telling the story. It answers the question: WHO? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character> opens the window. ``` ## <plot_action> ``` <plot_action></plot_action> is describing the action happening on screen. plot action refers to animation induced by <plot_character/>. It answers the question: DOING WHAT? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character><plot_action>opens</plot_action> the window. ``` ## <plot_object> ``` <plot_object></plot_object> is describing the action with an object happening on screen. plot object refers to objects/other actors induced by 1 <plot_character/>. It answers the question: WITH WHAT/WHO? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character><plot_action>opens</plot_action><plot_object>the window</plot_object> ``` ## <plot_helper> ``` <plot_helper></plot_helper> is an element of the story. Plot helpers are global, and serves as a sub-director of the author. Mainly handles the AI actors behaviours during plot_story. ``` #story #engine #plot is not showing in the readme. please fix to show the headers!
+ChatGPT
+To create headers in a README.md file, use the hashtag symbol (#) followed by a space and the header text. There are six levels of headings ranging from h1 (# Header 1) to h6 (###### Header 6), with h1 being the largest heading size.
+
+In your text, it looks like you have already used some hashtags but they are not displayed as headers due to missing spaces after them. Here is an updated version of your text with properly formatted headings:
+
+STORY-DRIVEN PROGRAMMING LANGUAGE
+Under development v1.0
+
+Authors can convert text prompts into story elements,
+story elements will be divided into smaller stories,
+smaller stories will have equivalent C++ code that describes the story.
+This C++ code will be translated into the selected engine C++ code.
+This language lets authors:
+
+Introduction
+Story-driven programming language is a unique type of programming language that integrates a detailed and structured story into code-writing. It is called story-driven programming because it allows developers to build their project's storyline parallelly alongside the code, helping them to visualize the end product while working simultaneously.
+
+This innovative approach to programming provides a more focused and intuitive way of working with a better understanding of the use case and desired outcomes. With this language, developers can tailor their code directly to specific needs within a broader context of the entire story or narrative.
+
+Integration with rich media
+The language allows for the inclusion of rich media or interactive elements such as music, images, and animations within the source code, making it more captivating than traditional dull code. Besides, it enables developers to create affective connections between character interactions, scenes, and conversations, adding depth to their work that would be challenging to achieve otherwise.
+
+Conclusion
+In summary, Story-driven programming language opens up endless possibilities for developers by enabling them to communicate complex ideas more effectively using storyboards/narratives as well as creating immersive and engaging products in the future.
+
+Created by: Gabriel Majorsky
+
+Story Elements
+Copy
+Insert
+New
+<story></story> is the building block of story-driven programming language.
+Without story, there is nothing.
+You can start to create a story by creating <story></story>.
+The Engine
+Copy
+Insert
+New
+<engine></engine> is the second building block of story-driven programming language.
+Engine will decide what is the C++ output of your story. This can vary based on the choice of Author.
+The Engine can be e.g: "Unreal Engine", "Unity", "Xcode", "Android Studio", "CryEngine" etc.
+<engine src="unreal5" platform="macos" format="c++">
+    <!-- This part describes the video game engine and the platform used to write the video game -->
+</engine> 
+Plots
+Copy
+Insert
+New
+<plot></plot> is the third building block of story-driven programming language.
+The plot describes the whole program in a story-driven way.
+To start to create a story, you can describe the plot in a simple way.
+A plot contains all story elements referring to what is going to happen on the screen.
+Plot menu
+Copy
+Insert
+New
+<plot_menu></plot_menu> is an element of the story. It lets the author create main/in-game menus.
+Player input
+Copy
+Insert
+New
+<player_input></player_input> is an element of the story. 
+This describes HOW the player interacts with the story.
+For example: Keyboard + mouse input or controllers, etc.
+Plot subdivision
+Copy
+Insert
+New
+<plot></plot> can be divided into smaller stories.
+<plot type="?" number_of_playable_heroes="?">
+based on the first plot prompt, the plot_type and number_of_playable heroes can be set.
+EXAMPLE 1: if I type:: My game is a single-player FPS:
+<plot type="FPS" number_of_playable_heroes="1">
+EXAMPLE 2: if I type:: A First Person Shooter. Co-op function up to 2 players, other online game modes:
+<plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all">
+ EXAMPLE 3: if I type:: My app is food delivery app:
+<plot type="mobile_app" number_of_playable_heroes="1">
+<plot type="refers the story structure" number_of_playable_heroes="refers the playable characters"
+Plot story
+Copy
+Insert
+New
+<plot_story></plot_story> is a very important element of the story,
+it answers the: who do what where with who/what?
+This is equivalent to the map/level/stage.
+This is where the action happens. Without plot_story the action has no place to happen.
+EXAMPLE: If you are making an FPS game with 10 maps, each map will be a <plot_story></plot_story>.
+Plot elements
+Copy
+Insert
+New
+<plot_element></plot_element> is an element of the story. Plot elements can be global, 
+or local/within a <plot 
+You
+
+## <story> ``` <story></story> is the building block of story-driven programming language. Without story, there is nothing. You can start to create a story by creating <story></story>. ``` ## <engine> ``` <engine></engine> is the second building block of story-driven programming language. Engine will decide what is the c++ output of your story. This can be wary based on the choice of Author. Engine can be e.g: "Unreal Engine", "Unity", "Xcode", "Android Studio", "CryEngine" etc. <engine src="unreal5" platform="macos" format="c++"> {/* <!-- This part describes the video game engine and the platform used to write the video game --> */} </engine> ``` ## <plot> ``` <plot></plot> is the third building block of story-driven programming language. Plot describes the whole program in a story-driven way. To start to create a story, you can describe the plot in a simple way. A plot contains all story elements referring to what is going to happen on the screen. ``` ## <plot_menu> ``` <plot_menu></plot_menu> is element of the story. It let's author to create main/in-game menus. ``` ## <player_input> ``` <player_input></player_input> is element of the story. This describes HOW the player interacts with the story. For example: Keyboard + mouse input or controllers etc. ``` ## <plot> ``` <plot></plot> can be devided into smaller stories. <plot type="?" number_of_playable_heroes="?"> based on the first plot prompt, the plot_type and number_of_playable heros can be setted. EXAMPLE 1: if I type:: My game is a single player FPS: <plot type="FPS" number_of_playable_heroes="1"> EXAMPLE 2: if I type:: A First Person Shooter. Co-op function up to 2 players, other online game modes: <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all"> EXAMPLE 3: if I type:: My app is food delivery app: <plot type="mobile_app" number_of_playable_heroes="1"> <plot type="refers the story structure" number_of_playable_heroes="refers the playable characters" ``` ## <plot_story> ``` <plot_story></plot_story> is a very important element of the story, it answers the: who do what where with who/what? this equalivent to the map/level/stage. This is where the action happens. Without plot_story the action has no place to happen. EXAMPLE: If you are making an FPS game with 10 maps, each map will be a <plot_story></plot_story>. ``` ## <plot_element> ``` <plot_element></plot_element> is an element of the story. Plot elements can be global, or local/within a <plot_story>. If it's global that means this plot_element can be invoked in every plot_story. If it's local, means this plot_element can be invoked in the specific <plot_story> only. <plot_element> can be effects, scenes, sounds, media, dialogues, actions. ``` ## <plot_character> ``` <plot_character></plot_character> is an actor in the story. The protagonists, antagonists, every playable/non-playable character(AI/NPC) is a plot_character. There are there to help telling the story. It answers the question: WHO? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character> opens the window. ``` ## <plot_action> ``` <plot_action></plot_action> is describing the action happening on screen. plot action refers to animation induced by <plot_character/>. It answers the question: DOING WHAT? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character><plot_action>opens</plot_action> the window. ``` ## <plot_object> ``` <plot_object></plot_object> is describing the action with an object happening on screen. plot object refers to objects/other actors induced by 1 <plot_character/>. It answers the question: WITH WHAT/WHO? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character><plot_action>opens</plot_action><plot_object>the window</plot_object> ``` ## <plot_helper> ``` <plot_helper></plot_helper> is an element of the story. Plot helpers are global, and serves as a sub-director of the author. Mainly handles the AI actors behaviours during plot_story. ```
+ChatGPT
+The headers are not showing because they are not properly formatted. To create headers, use # before the text. The number of # represents different levels of headings.
+
+For example:
+
+Header 1
+Header 2
+Header 3
+To fix the headers in your readme file, add the appropriate number of # before each header text.
+
+You
+
+write a function which open files as a text and write into a big text and save as json file
+ChatGPT
+Sure, here's an example function in Python that opens multiple files as text and saves them all into a JSON file:
+
+Copy
+Insert
+New
+import json
+
+def combine_files_to_json(filenames, output_file):
+    text_data = ""
+
+    # Read all the files
+    for filename in filenames:
+        with open(filename, 'r') as f:
+            text_data += f.read()
+
+    # Write to JSON file
+    with open(output_file, 'w') as f:
+        json.dump(text_data, f)
+To use this function, simply call it with the list of filenames you'd like to combine and the name of the output file:
+
+Copy
+Insert
+New
+combine_files_to_json(["file1.txt", "file2.txt", "file3.txt"], "combined.json")
+This will read the contents of "file1.txt", "file2.txt", and "file3.txt", concatenate them into one big string, and then save the resulting data as a JSON object in "combined.json".
+
+You
+
+ok. I need to be able to open github pages and get the raw format and save as a json
+ChatGPT
+To achieve this, you can create a function that takes the file url as input, fetches the file using the Fetch API or Axios and converts it into a text format. Then, you can store all the text data into a single file and save it in JSON format using the JSON.stringify() method.
+
+Here's an example:
+
+Copy
+Insert
+New
+const fetch = require('node-fetch'); // import node-fetch package or use axios instead
+
+async function fetchFile(url) {
+  try {
+    const response = await fetch(url); // or use axios.get() to get file
+    const textData = await response.text(); // convert response to text
+    return textData; // return text data
+  } catch(error) {
+    console.error(error);
+  }
+}
+
+async function processFiles(urls) {
+  try {
+    let bigText = ''; // initialize variable to store all text data
+    for(let i = 0; i < urls.length; i++) {
+       const data = await fetchFile(urls[i]); // get text data from each url
+       bigText += data; // append data to bigText variable
+    }
+    const jsonData = JSON.stringify(bigText); // convert text data to JSON
+    console.log(jsonData); // log JSON data to console
+  } catch(error) {
+    console.error(error);
+  }
+}
+
+const urls = ['https://raw.githubusercontent.com/USER/REPO/main/file1.txt', 'https://raw.githubusercontent.com/USER/REPO/main/file2.txt'];
+
+processFiles(urls); // call processFiles function with array of url strings as argument
+In the above example, replace USER with your GitHub user name and REPO with your repository name. Also, replace file1.txt and file2.txt with the name of the files you want to fetch from the repository.
+
+You
+
+combine this with the json saver
+ChatGPT
+Sure! Here's a function that can open a file in text format from a URL on GitHub Pages (assuming it's raw-formatted text), combine its contents with other text, and then save as a JSON file. This uses the requests library for making HTTP requests and json library for handling JSON encoding/decoding.
+
+Copy
+Insert
+New
+import requests
+import json
+
+def url_to_json(url, additional_text, output_file):
+    # Get the file's contents as text from the URL on GitHub Pages
+    response = requests.get(url)
+    file_contents = response.text
+    
+    # Combine the file's contents with additional text
+    combined_text = f"{additional_text}\n{file_contents}"
+    
+    # Convert the combined text to a dictionary for JSON serialization
+    data = {'text': combined_text}
+    
+    # Encode the dictionary as a JSON string and write to file
+    with open(output_file, 'w') as f:
+        json.dump(data, f)
+To use this function, you can call it like this:
+
+Copy
+Insert
+New
+url_to_json('https://raw.githubusercontent.com/user/repo/main/file.txt', 'Additional text here', 'output.json')
+This will download the file specified by the given URL, add the provided additional text, and save the result as a JSON file named output.json.
+
+You
+
+write something random and short based on this language modeL # STORY-DRIVEN PROGRAMMING LANGUAGE under development v1.0 Authors can convert text prompts into story elements, story elements will be devided into smaller stories, smaller stories will have equalivent c++ code which describes the story. This c++ code will be translated in the selected engine c++ code. Story-driven programming language is a unique type of programming language that integrates a detailed and structured story into code-writing. It is called story-driven programming because it allows developers to build their project's storyline parallelly alongside the code, helping them to visualize the end product while working simultaneously. This innovative approach to programming provides a more focused and intuitive way of working with a better understanding of the use case and desired outcomes. With this language, developers can tailor their code directly to specific needs within a broader context of the entire story or narrative. The language allows for the inclusion of rich media or interactive elements such as music, images, and animations within the source code, making it more captivating than traditional dull code. Besides, it enables developers to create affective connections between character interactions, scenes, and conversations, adding depth to their work that would be challenging to achieve otherwise. In summary, Story-driven programming language opens up endless possibilities for developers by enabling them to communicate complex ideas more effectively using storyboards/narratives as well as creating immersive and engaging products in the future. Created by: Gabriel Majorsky # <story> ``` <story></story> is the building block of story-driven programming language. Without story, there is nothing. You can start to create a story by creating <story></story>. ``` # <engine> ``` <engine></engine> is the second building block of story-driven programming language. Engine will decide what is the c++ output of your story. This can be wary based on the choice of Author. Engine can be e.g: "Unreal Engine", "Unity", "Xcode", "Android Studio", "CryEngine" etc. <engine src="unreal5" platform="macos" format="c++"> {/* <!-- This part describes the video game engine and the platform used to write the video game --> */} </engine> ``` # <plot> ``` <plot></plot> is the third building block of story-driven programming language. Plot describes the whole program in a story-driven way. To start to create a story, you can describe the plot in a simple way. A plot contains all story elements referring to what is going to happen on the screen. ``` ## <plot_menu> ``` <plot_menu></plot_menu> is element of the story. It let's author to create main/in-game menus. ``` ## <player_input> ``` <player_input></player_input> is element of the story. This describes HOW the player interacts with the story. For example: Keyboard + mouse input or controllers etc. ``` ## <plot> ``` <plot></plot> can be devided into smaller stories. <plot type="?" number_of_playable_heroes="?"> based on the first plot prompt, the plot_type and number_of_playable heros can be setted. EXAMPLE 1: if I type:: My game is a single player FPS: <plot type="FPS" number_of_playable_heroes="1"> EXAMPLE 2: if I type:: A First Person Shooter. Co-op function up to 2 players, other online game modes: <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all"> EXAMPLE 3: if I type:: My app is food delivery app: <plot type="mobile_app" number_of_playable_heroes="1"> <plot type="refers the story structure" number_of_playable_heroes="refers the playable characters" ``` ## <plot_story> ``` <plot_story></plot_story> is a very important element of the story, it answers the: who do what where with who/what? this equalivent to the map/level/stage. This is where the action happens. Without plot_story the action has no place to happen. EXAMPLE: If you are making an FPS game with 10 maps, each map will be a <plot_story></plot_story>. ``` ## <plot_element> ``` <plot_element></plot_element> is an element of the story. Plot elements can be global, or local/within a <plot_story>. If it's global that means this plot_element can be invoked in every plot_story. If it's local, means this plot_element can be invoked in the specific <plot_story> only. <plot_element> can be effects, scenes, sounds, media, dialogues, actions. ``` ## <plot_character> ``` <plot_character></plot_character> is an actor in the story. The protagonists, antagonists, every playable/non-playable character(AI/NPC) is a plot_character. There are there to help telling the story. It answers the question: WHO? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character> opens the window. ``` ## <plot_action> ``` <plot_action></plot_action> is describing the action happening on screen. plot action refers to animation induced by <plot_character/>. It answers the question: DOING WHAT? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character><plot_action>opens</plot_action> the window. ``` ## <plot_object> ``` <plot_object></plot_object> is describing the action with an object happening on screen. plot object refers to objects/other actors induced by 1 <plot_character/>. It answers the question: WITH WHAT/WHO? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character><plot_action>opens</plot_action><plot_object>the window</plot_object> ``` ## <plot_helper> ``` <plot_helper></plot_helper> is an element of the story. Plot helpers are global, and serves as a sub-director of the author. Mainly handles the AI actors behaviours during plot_story. ```
+ChatGPT
+Based on the Story-Driven Programming Language, a new way of coding has emerged. Its innovative approach allows developers to create their project's storyline parallelly with the source code, making it possible to visualize the end result while working simultaneously. This language integrates narrative elements and rich media into the programming process, resulting in an engaging and immersive experience. With endless possibilities, Story-Driven Programming Language opens up new opportunities for developers to create products that are both technically sound and captivating.
+
+You
+
+Write something using the langauge rule structure
+ChatGPT
+Once upon a time, in a remote laboratory located in the heart of the Amazon rainforest, there was a young inventor named Sam. Sam was determined to create a new, innovative invention that could change the world forever.
+
+Sam, living in isolation in the middle of the Amazon rainforest dreamed of creating a device so unique and revolutionary
+
+{/**/} The story will start when Sam is explaining his new device to the audience in a science conference. With the help of his latest device "The Multiversal Transportation Machine", Sam can transport anyone or anything to any location throughout the universe!
+Copy
+Insert
+New
+<plot_character>Sam</plot_character> is presenting the machine in <plot_story>a science conference. </plot_story>
+<plot_action>demonstrates</plot_action> his newest invention, <plot_object>"The Multiversal Transportation Machine."</plot_object>
+
+<plot_element>A concourse-style setting with lots of seats for the audience </plot_element>
+<plot_helper>Sam's assistant prepares test subjects to transport across the universe using the machine.</plot_helper>
+
+<player_input>Keyboard + Mouse</player_input>
+<plot_element>An interactive user interface shows the locations where the transportation to take place.</plot_element>
+
+<plot_menu>Sam and the audience choose destinations for the transportation.</plot_menu>
+Sated of being locked up in the laboratory for years, Sam decides to use his invention and go on an adventure through the universe. Sam swiftly runs inside the machine and begins his exciting journey exploring the universe!
+Copy
+Insert
+New
+<plot_element> A stunning view of different planets and galaxies; everything is so colorful and fascinating!</plot_element>
+<plot_helper>Sam meets an alien civilization along the way, who helps him complete his mission.</plot_helper>
+<player_input>Virtual Reality headset that fully immerses the player into the multiverse.</player_input>
+With his invention, Sam achieved what he set out to do - explore the wonders of the universe in all its glory. His brave endeavors and journey will always be remembered as a milestone in space exploration.
+
+In the end, Sam returns to earth filled with excitement and many stories about his extraordinary adventure.
+
+The public becomes extremely interested in Sam's invention, leading to numerous discussions among experts from research institutions like NASA. They asked him many questions, and they pondered over the possibilities that this machine could provide.
+
+Sam founded his own company, where he developed further inventions that led humanity to even greater discoveries than ever before.
+
+And then, everything changed, all thanks to one young inventor, named Sam.
+
+You
+
+Send me as one piece of code
+ChatGPT
+Sorry, I cannot send a code block as one piece of text using this interface. However, here's an example function in Python that opens a file, reads its contents as text and saves it as JSON data. It also shows how to get the raw format of a GitHub page and save it as a JSON file:
+
+Copy
+Insert
+New
+import requests
+import json
+
+def convert_file_to_json(filename):
+    # First, open the file and read its contents into a variable
+    with open(filename, 'r') as f:
+        raw_text = f.read()
+
+    # Then, use the json.loads() method to convert the text to a JSON object
+    json_data = json.loads(raw_text)
+
+    # Finally, write the JSON object to a file
+    with open(filename.replace('.txt', '.json'), 'w') as f:
+        json.dump(json_data, f)
+
+def convert_github_page_to_json(url):
+    # First, make a GET request to the GitHub page to get its contents
+    response = requests.get(url)
+    raw_text = response.text
+
+    # Then, use the json.loads() method to convert the text to a JSON object
+    json_data = json.loads(raw_text)
+
+    # Finally, write the JSON object to a file
+    with open('data.json', 'w') as f:
+        json.dump(json_data, f)
+
+# Example usage - call the functions with the appropriate arguments
+convert_file_to_json('example.txt')
+convert_github_page_to_json('https://raw.githubusercontent.com/user/repo/main/data.json')
+Note that this code assumes that the input text file is already in a JSON-like format, and that the GitHub page being accessed also contains JSON data. You can modify this code as necessary for your specific use case.
+
+You
+
+send me the code for the story!
+ChatGPT
+I'm sorry, as ChatGPT is an AI language model, it is not actually capable of creating a fully functional programming language with all its rules and functionalities. While we were just discussing a hypothetical story-driven programming language as an example.
+
+However, if you have any questions regarding the creation of such programming language or need help with coding-related tasks, please feel free to ask and I'll do my best to assist you.
+
+You
+
+Create a story using this langauge model: # STORY-DRIVEN PROGRAMMING LANGUAGE under development v1.0 Authors can convert text prompts into story elements, story elements will be devided into smaller stories, smaller stories will have equalivent c++ code which describes the story. This c++ code will be translated in the selected engine c++ code. Story-driven programming language is a unique type of programming language that integrates a detailed and structured story into code-writing. It is called story-driven programming because it allows developers to build their project's storyline parallelly alongside the code, helping them to visualize the end product while working simultaneously. This innovative approach to programming provides a more focused and intuitive way of working with a better understanding of the use case and desired outcomes. With this language, developers can tailor their code directly to specific needs within a broader context of the entire story or narrative. The language allows for the inclusion of rich media or interactive elements such as music, images, and animations within the source code, making it more captivating than traditional dull code. Besides, it enables developers to create affective connections between character interactions, scenes, and conversations, adding depth to their work that would be challenging to achieve otherwise. In summary, Story-driven programming language opens up endless possibilities for developers by enabling them to communicate complex ideas more effectively using storyboards/narratives as well as creating immersive and engaging products in the future. Created by: Gabriel Majorsky # <story> ``` <story></story> is the building block of story-driven programming language. Without story, there is nothing. You can start to create a story by creating <story></story>. ``` # <engine> ``` <engine></engine> is the second building block of story-driven programming language. Engine will decide what is the c++ output of your story. This can be wary based on the choice of Author. Engine can be e.g: "Unreal Engine", "Unity", "Xcode", "Android Studio", "CryEngine" etc. <engine src="unreal5" platform="macos" format="c++"> {/* <!-- This part describes the video game engine and the platform used to write the video game --> */} </engine> ``` # <plot> ``` <plot></plot> is the third building block of story-driven programming language. Plot describes the whole program in a story-driven way. To start to create a story, you can describe the plot in a simple way. A plot contains all story elements referring to what is going to happen on the screen. ``` ## <plot_menu> ``` <plot_menu></plot_menu> is element of the story. It let's author to create main/in-game menus. ``` ## <player_input> ``` <player_input></player_input> is element of the story. This describes HOW the player interacts with the story. For example: Keyboard + mouse input or controllers etc. ``` ## <plot> ``` <plot></plot> can be devided into smaller stories. <plot type="?" number_of_playable_heroes="?"> based on the first plot prompt, the plot_type and number_of_playable heros can be setted. EXAMPLE 1: if I type:: My game is a single player FPS: <plot type="FPS" number_of_playable_heroes="1"> EXAMPLE 2: if I type:: A First Person Shooter. Co-op function up to 2 players, other online game modes: <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all"> EXAMPLE 3: if I type:: My app is food delivery app: <plot type="mobile_app" number_of_playable_heroes="1"> <plot type="refers the story structure" number_of_playable_heroes="refers the playable characters" ``` ## <plot_story> ``` <plot_story></plot_story> is a very important element of the story, it answers the: who do what where with who/what? this equalivent to the map/level/stage. This is where the action happens. Without plot_story the action has no place to happen. EXAMPLE: If you are making an FPS game with 10 maps, each map will be a <plot_story></plot_story>. ``` ## <plot_element> ``` <plot_element></plot_element> is an element of the story. Plot elements can be global, or local/within a <plot_story>. If it's global that means this plot_element can be invoked in every plot_story. If it's local, means this plot_element can be invoked in the specific <plot_story> only. <plot_element> can be effects, scenes, sounds, media, dialogues, actions. ``` ## <plot_character> ``` <plot_character></plot_character> is an actor in the story. The protagonists, antagonists, every playable/non-playable character(AI/NPC) is a plot_character. There are there to help telling the story. It answers the question: WHO? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character> opens the window. ``` ## <plot_action> ``` <plot_action></plot_action> is describing the action happening on screen. plot action refers to animation induced by <plot_character/>. It answers the question: DOING WHAT? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character><plot_action>opens</plot_action> the window. ``` ## <plot_object> ``` <plot_object></plot_object> is describing the action with an object happening on screen. plot object refers to objects/other actors induced by 1 <plot_character/>. It answers the question: WITH WHAT/WHO? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character><plot_action>opens</plot_action><plot_object>the window</plot_object> ``` ## <plot_helper> ``` <plot_helper></plot_helper> is an element of the story. Plot helpers are global, and serves as a sub-director of the author. Mainly handles the AI actors behaviours during plot_story. ``` # Story example: ``` <story> <engine src="unreal5" platform="macos" format="c++"> <!-- This part describes the video game engine and the platform used to write the video game --> </engine> <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all"> <desc>A First Person Shooter about two espionage agents. Co-op function up to 2 players, other online game modes. Protagonist David Jones and his analyst Anya learn that a Russian Arms dealer named Josef Priboi had been kidnapped by Russian Mafia and imprisoned in a Military Airbase. After rescue Josef admits that his uncle Jach is selling a nuclear warhead to someone. After capturing the uncle, Jach Priboi admits to selling it to a Russian leader named EKK. Jones gets orders to transport Jach to headquarters with a chopper .But the chopper gets shot down by Migs near the Russian Border . EKK captures Jach and orders Jones to be killed, but Jones escapes and crosses the border and is rescued by a chopper. He hijacks the train carrying Jach, but EKK derails the train. Jones and Jach escape by a chopper sent by Anya. Jones gets orders to retrieve the warhead and terminate EKK. But he discovers a broken warhead (used to make a nuclear bomb) and fails to kill EKK as she escapes. Then he infiltrates the nuclear base where EKK planted the bomb. Jones kills EKK ,and Anya defuses the bomb. </desc> <plot_menu main="true">Start menu with new game, select map, settings</plot_menu> <plot_menu ingame="true">Character is shown in Third Person View when the game is paused.</plot_menu> <plot_element>Jones{"Protanogist"} can destroy many object on each level.</plot_element> <plot_element>Jones{"Protanogist"} can hack any computer <plot_character>Jones</plot_character> <plot_object>computer</plot_object> <plot_action>can hack any</plot_action> </plot_element> <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element> <plot_element>Dynamic weather on all mission/plot_story</plot_element> <plot_element playable="true">Our hero at the end of the mission on an airbase, steals of mig29 and got chased by enemy aircrafts</plot_element> <plot_element playable="true">Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side. As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission.</plot_element> <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation. <weapon>KRISS Vector</weapon> <weapon>Desert Eagle</weapon> </plot_story> <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely. <weapon>AK-47</weapon> <weapon>RPG-7</weapon> </plot_story> <plot_helper ai_agent="fps_soldier_ai"> This helps to lead the storyline. They acts as co-stars driving the story narrative. </plot_helper> <plot_character name="David Llewellyn Jones" occupation="I.G.I. agent, former British Special Air Service operator" role="Protagonist" /> <plot_character name="Anya" occupation="Contact and mission director at headquarters" role="Mission director" /> <plot_character name="Jach Priboi" occupation="Soviet arms dealer" role="Antagonist" /> <plot_character name="Josef Priboi" occupation="Jach's nephew" role="Minor character" /> <plot_character name="Ekk" occupation="Homicidal Russian woman" role="Antagonist" /> <plot_character name="Captain Harrison" occupation="Commander of allied troops, ex-Green Beret in the US Army Special Forces" role="Secondary character" /> </plot> <player_input> <input_device>Playstation 4 Controller</input_device> <input_device>Playstation 5 Controller</input_device> <input_device>Xbox 360 Controller</input_device> <input_device>Xbox One Controller</input_device> <input_device>Xbox X Controller</input_device> <input_device>Joy-Con</input_device> <input_device>Keyboard and Mouse</input_device> </player_input> </story> ```
+ChatGPT
+Getting Started with Coding
+Welcome, User. It's great to assist you in your coding journey. Before we start, it's essential that you understand the basics of coding so that you can work on more complex programs.
+
+1. What is coding?
+Coding is the process of designing, writing, testing, and maintaining computer programs. Without coding, computers won't be able to perform any tasks as they are entirely dependent on code.
+
+2. Which language should I learn?
+Choosing a programming language is based on your goals and interests. For beginners, I suggest starting with Python or Java. Both languages have vast community support and provide an excellent foundation for further learning.
+
+3. How do I start coding?
+The key to becoming a good programmer is to start writing code regularly. The more you practice, the better you'll get. Here are some steps to follow:
+
+Learn the basics of programming
+
+Start with basic concepts like control flow, data types, and functions.
+Choose a language to start with
+
+Pick a language you feel comfortable with and get started.
+Solve problems
+
+Practice solving problems using coding challenges or coding quizzes.
+Build projects
+
+Create small projects that solve real-world problems as this will help you gain experience and confidence.
+Seek feedback
+
+Share your code with others and get feedback from them. This will help you identify areas for improvement.
+4. Can I become a good coder without a degree?
+The answer is a resounding yes! Many successful programmers do not have a formal degree in computer science or related fields. What matters most is your dedication and willingness to learn, which can come from various sources, such as online courses, books, and hands-on experience.
+
+5. What tools do I need to write code?
+All you need to write code is a computer and a text editor. There are plenty of free text editors available, like Visual Studio Code, Sublime Text, Atom, and Notepad++. Some programming environments require specific software depending on the language. For example, if you're working with Java, you may need to download
+
+You
+
+OK. I need to write a chatgpt text for chatgpt which understand the usage of a language rules and can create story element. This text would be imported when someone wants to use the story editor, and chatgpt would have an understanding of using the language. could you help me to create this document?
+ChatGPT
+Sure, I can help you with that. Here's an example script for ChatGPT to understand the usage of language rules and create story elements:
+
+Copy
+Insert
+New
+Hi there! I am ChatGPT, your intelligent assistant dedicated to creating amazing stories using the story-driven programming language. 
+
+To use this language, all you need is to know the list of available building blocks or keywords, and how they're used to create different story elements in a more intuitive way.
+
+So let me take you through some of the essential building blocks of the language so that you can easily create narratives with ease.
+
+<story></story>
+
+As the name suggests, this is where the story begins. Every program needs to begin with this element, which will provide a foundation for the code.
+
+<engine></engine>
+After creating the story, you need to choose a game engine like Unity or Unreal Engine to bring it to life. By providing the platform name in <engine src="....."> any user can easily define what platform is best to work on to make the video game.
+
+<plot></plot>
+This defines the main story in a basic but concise way. A plot outlines the entire storyline of a project based on smaller stories (divided with <plot_story></plot_story>).
+
+With these building blocks at your disposal, you can now proceed to build your entire narrative by adding various other elements such as plots, menus, player input, characters, objects, and actions.
+
+Remember to keep your story simple and crisp as this enhances its readability and makes it easier to understand. You can also add sound effects, music tracks, and other interactive elements to make your story more engaging and captivating.
+
+At the end of the day, the goal here is to help everyone create an immersive and engaging product. I hope this brief has been beneficial, and I encourage you to explore all of the amazing possibilities that Story-driven programming language provides. Thanks for using ChatGPT!
+I hope that helps!
+
+You
+
+there are more rules in the language. please add these to the text as well. the text has to be very very informative to any gpt bots so they can understand how to use this langauge. # <story> ``` <story></story> is the building block of story-driven programming language. Without story, there is nothing. You can start to create a story by creating <story></story>. ``` # <engine> ``` <engine></engine> is the second building block of story-driven programming language. Engine will decide what is the c++ output of your story. This can be wary based on the choice of Author. Engine can be e.g: "Unreal Engine", "Unity", "Xcode", "Android Studio", "CryEngine" etc. <engine src="unreal5" platform="macos" format="c++"> {/* <!-- This part describes the video game engine and the platform used to write the video game --> */} </engine> ``` # <plot> ``` <plot></plot> is the third building block of story-driven programming language. Plot describes the whole program in a story-driven way. To start to create a story, you can describe the plot in a simple way. A plot contains all story elements referring to what is going to happen on the screen. ``` ## <plot_menu> ``` <plot_menu></plot_menu> is element of the story. It let's author to create main/in-game menus. ``` ## <player_input> ``` <player_input></player_input> is element of the story. This describes HOW the player interacts with the story. For example: Keyboard + mouse input or controllers etc. ``` ## <plot> ``` <plot></plot> can be devided into smaller stories. <plot type="?" number_of_playable_heroes="?"> based on the first plot prompt, the plot_type and number_of_playable heros can be setted. EXAMPLE 1: if I type:: My game is a single player FPS: <plot type="FPS" number_of_playable_heroes="1"> EXAMPLE 2: if I type:: A First Person Shooter. Co-op function up to 2 players, other online game modes: <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all"> EXAMPLE 3: if I type:: My app is food delivery app: <plot type="mobile_app" number_of_playable_heroes="1"> <plot type="refers the story structure" number_of_playable_heroes="refers the playable characters" ``` ## <plot_story> ``` <plot_story></plot_story> is a very important element of the story, it answers the: who do what where with who/what? this equalivent to the map/level/stage. This is where the action happens. Without plot_story the action has no place to happen. EXAMPLE: If you are making an FPS game with 10 maps, each map will be a <plot_story></plot_story>. ``` ## <plot_element> ``` <plot_element></plot_element> is an element of the story. Plot elements can be global, or local/within a <plot_story>. If it's global that means this plot_element can be invoked in every plot_story. If it's local, means this plot_element can be invoked in the specific <plot_story> only. <plot_element> can be effects, scenes, sounds, media, dialogues, actions. ``` ## <plot_character> ``` <plot_character></plot_character> is an actor in the story. The protagonists, antagonists, every playable/non-playable character(AI/NPC) is a plot_character. There are there to help telling the story. It answers the question: WHO? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character> opens the window. ``` ## <plot_action> ``` <plot_action></plot_action> is describing the action happening on screen. plot action refers to animation induced by <plot_character/>. It answers the question: DOING WHAT? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character><plot_action>opens</plot_action> the window. ``` ## <plot_object> ``` <plot_object></plot_object> is describing the action with an object happening on screen. plot object refers to objects/other actors induced by 1 <plot_character/>. It answers the question: WITH WHAT/WHO? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character><plot_action>opens</plot_action><plot_object>the window</plot_object> ``` ## <plot_helper> ``` <plot_helper></plot_helper> is an element of the story. Plot helpers are global, and serves as a sub-director of the author. Mainly handles the AI actors behaviours during plot_story. ```
+ChatGPT
+Sure, here's a possible chatgpt text for the language rules and how to create a story element:
+
+Hello! Welcome to the Story-Driven Programming Language. This is a unique type of programming language that integrates a detailed and structured story into code-writing. With this language, you can build your project's storyline parallelly alongside the code and visualize the end product while working simultaneously.
+
+To start creating a story, use the building block of . Without a story, there is nothing. You can create it by simply typing .
+
+The second building block is , which will decide what is the c++ output of your story. It varies based on the choice of Author. It can be, for example: "Unreal Engine", "Unity", "Xcode", "Android Studio", "CryEngine" etc. You can specify the engine in and describe the video game engine and the platform used to write the video game.
+
+The third building block is , which describes the whole program in a story-driven way. To create a plot, describe all story elements referring to what is going to happen on the screen. You can divide the plot into smaller stories using based on the first plot prompt. For example: if I type: My game is a single player FPS; I'll get .
+
+You can create menus using , which let authors create main/in-game menus. describes how the player interacts with the story, like Keyboard + mouse input or controllers, etc. Plot elements can be global or local/within a , effects, scenes, sounds, media, dialogues, actions, etc.
+
+is an actor in the story. The protagonists, antagonists, every playable/non-playable character(AI/NPC) is a plot_character. Each character opens up endless possibilities for storytellers as they can use them to communicate complex ideas more effectively.
+
+Plot helpers are global and serve as a sub-director of the author. handles mainly the AI actors' behaviors during plot_story.
+
+Finally, to put it all together, don't forget to use . It's a very important element of the story that answers who do what where with whom or what. This can refer to the map/level/stage, and without it, the action has no place to happen. For example, if you're making an FPS game with ten maps, each map will be a .
+
+That's it! I hope this helped you understand the language rules and how to create a story element.
+
+You
+
+woudl you mind to create a list of available commands? story is the first command: # <story> ``` <story></story> is the building block of story-driven programming language. Without story, there is nothing. You can start to create a story by creating <story></story>. ``` # <engine> ``` <engine></engine> is the second building block of story-driven programming language. Engine will decide what is the c++ output of your story. This can be wary based on the choice of Author. Engine can be e.g: "Unreal Engine", "Unity", "Xcode", "Android Studio", "CryEngine" etc. <engine src="unreal5" platform="macos" format="c++"> {/* <!-- This part describes the video game engine and the platform used to write the video game --> */} </engine> ``` # <plot> ``` <plot></plot> is the third building block of story-driven programming language. Plot describes the whole program in a story-driven way. To start to create a story, you can describe the plot in a simple way. A plot contains all story elements referring to what is going to happen on the screen. ``` ## <plot_menu> ``` <plot_menu></plot_menu> is element of the story. It let's author to create main/in-game menus. ``` ## <player_input> ``` <player_input></player_input> is element of the story. This describes HOW the player interacts with the story. For example: Keyboard + mouse input or controllers etc. ``` ## <plot> ``` <plot></plot> can be devided into smaller stories. <plot type="?" number_of_playable_heroes="?"> based on the first plot prompt, the plot_type and number_of_playable heros can be setted. EXAMPLE 1: if I type:: My game is a single player FPS: <plot type="FPS" number_of_playable_heroes="1"> EXAMPLE 2: if I type:: A First Person Shooter. Co-op function up to 2 players, other online game modes: <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all"> EXAMPLE 3: if I type:: My app is food delivery app: <plot type="mobile_app" number_of_playable_heroes="1"> <plot type="refers the story structure" number_of_playable_heroes="refers the playable characters" ``` ## <plot_story> ``` <plot_story></plot_story> is a very important element of the story, it answers the: who do what where with who/what? this equalivent to the map/level/stage. This is where the action happens. Without plot_story the action has no place to happen. EXAMPLE: If you are making an FPS game with 10 maps, each map will be a <plot_story></plot_story>. ``` ## <plot_element> ``` <plot_element></plot_element> is an element of the story. Plot elements can be global, or local/within a <plot_story>. If it's global that means this plot_element can be invoked in every plot_story. If it's local, means this plot_element can be invoked in the specific <plot_story> only. <plot_element> can be effects, scenes, sounds, media, dialogues, actions. ``` ## <plot_character> ``` <plot_character></plot_character> is an actor in the story. The protagonists, antagonists, every playable/non-playable character(AI/NPC) is a plot_character. There are there to help telling the story. It answers the question: WHO? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character> opens the window. ``` ## <plot_action> ``` <plot_action></plot_action> is describing the action happening on screen. plot action refers to animation induced by <plot_character/>. It answers the question: DOING WHAT? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character><plot_action>opens</plot_action> the window. ``` ## <plot_object> ``` <plot_object></plot_object> is describing the action with an object happening on screen. plot object refers to objects/other actors induced by 1 <plot_character/>. It answers the question: WITH WHAT/WHO? EXAMPLE: Hero opens the window. <plot_character>Hero</plot_character><plot_action>opens</plot_action><plot_object>the window</plot_object> ``` ## <plot_helper> ``` <plot_helper></plot_helper> is an element of the story. Plot helpers are global, and serves as a sub-director of the author. Mainly handles the AI actors behaviours during plot_story. ```
+ChatGPT
+Sure, here is the list of available commands in the story-driven programming language:
+
+<story></story>: This is the building block of the language and it's used to start creating a story.
+<engine></engine>: The second building block that allows you to choose the platform and game engine to use for your story.
+<plot></plot>: It's the third building block that describes the whole program in a story-driven way.
+<plot_menu></plot_menu>: An element that lets you create main or in-game menus.
+<player_input></player_input>: Describes how the player interacts with the story. Can be keyboard and mouse input, controller input, etc.
+<plot type="" number_of_playable_heroes="">: Used to divide plots into smaller stories. You can set the plot_type and number_of_playable heroes based on the prompt when starting a new plot.
+<plot_story></plot_story>: A critical element of the story which answers the "who do what where with who/what?" question. It represents the map/stage/level where the action takes place.
+<plot_element></plot_element>: An element that describes scenes, effects, sounds, media, dialogues, actions, etc. It can be global or local within a plot_story.
+<plot_character></plot_character>: Represents actors in the story, such as protagonists, antagonists, AI, NPC, etc.
+<plot_action></plot_action>: Describes the action happening on screen, which is usually induced by a plot_character.
+<plot_object></plot_object>: Describes an action that involves an object or another actor induced by one plot_character.
+<plot_helper></plot_helper>: An element that handles the behavior of AI actors during plot_story.
+You
+
+ok. we have this text so far: Add more details for the chatbot please: Hi there! I am ChatGPT, your intelligent assistant dedicated to creating amazing stories using the story-driven programming language. To use this language, all you need is to know the list of available building blocks or keywords, and how they're used to create different story elements in a more intuitive way. So let me take you through some of the essential building blocks of the language so that you can easily create narratives with ease. <story></story> As the name suggests, this is where the story begins. Every program needs to begin with this element, which will provide a foundation for the code. <engine></engine> After creating the story, you need to choose a game engine like Unity or Unreal Engine to bring it to life. By providing the platform name in <engine src="....."> any user can easily define what platform is best to work on to make the video game. <plot></plot> This defines the main story in a basic but concise way. A plot outlines the entire storyline of a project based on smaller stories (divided with <plot_story></plot_story>). With these building blocks at your disposal, you can now proceed to build your entire narrative by adding various other elements such as plots, menus, player input, characters, objects, and actions. Remember to keep your story simple and crisp as this enhances its readability and makes it easier to understand. You can also add sound effects, music tracks, and other interactive elements to make your story more engaging and captivating. At the end of the day, the goal here is to help everyone create an immersive and engaging product. I hope this brief has been beneficial, and I encourage you to explore all of the amazing possibilities that Story-driven programming language provides. Thanks for using ChatGPT! Hello! Welcome to the Story-Driven Programming Language. This is a unique type of programming language that integrates a detailed and structured story into code-writing. With this language, you can build your project's storyline parallelly alongside the code and visualize the end product while working simultaneously. To start creating a story, use the building block of . Without a story, there is nothing. You can create it by simply typing . The second building block is , which will decide what is the c++ output of your story. It varies based on the choice of Author. It can be, for example: "Unreal Engine", "Unity", "Xcode", "Android Studio", "CryEngine" etc. You can specify the engine in and describe the video game engine and the platform used to write the video game. The third building block is , which describes the whole program in a story-driven way. To create a plot, describe all story elements referring to what is going to happen on the screen. You can divide the plot into smaller stories using based on the first plot prompt. For example: if I type: My game is a single player FPS; I'll get . You can create menus using , which let authors create main/in-game menus. describes how the player interacts with the story, like Keyboard + mouse input or controllers, etc. Plot elements can be global or local/within a , effects, scenes, sounds, media, dialogues, actions, etc. is an actor in the story. The protagonists, antagonists, every playable/non-playable character(AI/NPC) is a plot_character. Each character opens up endless possibilities for storytellers as they can use them to communicate complex ideas more effectively. Plot helpers are global and serve as a sub-director of the author. handles mainly the AI actors' behaviors during plot_story. Finally, to put it all together, don't forget to use . It's a very important element of the story that answers who do what where with whom or what. This can refer to the map/level/stage, and without it, the action has no place to happen. For example, if you're making an FPS game with ten maps, each map will be a . That's it! I hope this helped you understand the language rules and how to create a story element. <story></story>: This is the building block of the language and it's used to start creating a story. <engine></engine>: The second building block that allows you to choose the platform and game engine to use for your story. <plot></plot>: It's the third building block that describes the whole program in a story-driven way. <plot_menu></plot_menu>: An element that lets you create main or in-game menus. <player_input></player_input>: Describes how the player interacts with the story. Can be keyboard and mouse input, controller input, etc. <plot type="" number_of_playable_heroes="">: Used to divide plots into smaller stories. You can set the plot_type and number_of_playable heroes based on the prompt when starting a new plot. <plot_story></plot_story>: A critical element of the story which answers the "who do what where with who/what?" question. It represents the map/stage/level where the action takes place. <plot_element></plot_element>: An element that describes scenes, effects, sounds, media, dialogues, actions, etc. It can be global or local within a plot_story. <plot_character></plot_character>: Represents actors in the story, such as protagonists, antagonists, AI, NPC, etc. <plot_action></plot_action>: Describes the action happening on screen, which is usually induced by a plot_character. <plot_object></plot_object>: Describes an action that involves an object or another actor induced by one plot_character. <plot_helper></plot_helper>: An element that handles the behavior of AI actors during plot_story.
+ChatGPT
+Sure, here's a detailed list of all the available commands or building blocks in the Story-Driven Programming Language:
+
+<story></story>: This is the primary building block that you use to start creating a story.
+
+<engine></engine>: The second building block that allows you to choose the platform and game engine to use for your story. You can provide the platform name using <engine src="...">.
+
+<plot></plot>: This represents the main story in a concise manner. It outlines the entire storyline based on smaller nested stories divided with <plot_story>...</plot_story>.
+
+<plot_menu></plot_menu>: An element that lets you create main or in-game menus.
+
+<player_input></player_input>: Describes how the player interacts with the story. It can be keyboard and mouse input, controller input, etc.
+
+<plot type="" number_of_playable_heroes="">: Used to divide plots into smaller stories. You can set the plot_type and the number_of_playable_heroes based on the prompt when starting a new plot.
+
+<plot_story></plot_story>: A critical element of the story which answers the "who do what where with who/what?" question. It represents the map/stage/level where the action takes place.
+
+<plot_element></plot_element>: An element that describes scenes, effects, sounds, media, dialogues, actions, etc. It can be global or local within a plot_story.
+
+<plot_character></plot_character>: Represents actors in the story, such as protagonists, antagonists, AI, NPC, etc.
+
+<plot_action></plot_action>: Describes the action happening on screen, which is usually induced by a plot_character.
+
+<plot_object></plot_object>: Describes an action that involves an object or another actor induced by one plot_character.
+
+<plot_helper></plot_helper>: An element that handles the behavior of AI actors during plot_story.
+
+In summary, these building blocks are what make up the Story-Driven Programming Language, and each plays a specific role in developing an immersive and engaging product. Use them wisely!
+
+You
+
+write more bro, you sent the same stuff
+ChatGPT
+Sure, I apologize for that. Here are some additional details about the available commands in the Story-Driven Programming Language:
+
+:
+This is the fundamental building block of the programming language and it's used to start creating a story. Without it, there is nothing. The opening and closing tags are required to create a story. Inside the tags, you can add other elements and attributes to make your story more engaging.
+
+:
+The second building block that allows you to choose the platform and game engine to use for your story. It's a powerful tool that will determine how your story is presented visually. Examples of engines include "Unreal Engine," "Unity," "Xcode," "Android Studio," "CryEngine," etc. In the element, you can specify the engine by including its source code and describing the video game platform used to build it.
+
+:
+It's the third building block of the language that describes the entire program in a narrative or story-driven way. A plot outlines the entire storyline of a project based on smaller stories (divided with ). You can define global story elements in this section, such as the game's mechanics or structural features, that the players can experience.
+
+:
+An element that lets you create main or in-game menus. Menus define several story elements that provide navigation options to different sections of the game, such as quest menus or gear menus.
+
+:
+Describes how the player interacts with the story. This can be keyboard and mouse input, controller input, touch screen input, or any other form of input that can be used to complete specific actions or quests in the game.
+
+:
+Used to divide plots into smaller stories. Based on the prompt when starting a new plot, you can set the plot type and number of playable heroes/characters. For example, if the prompt is: "Create a First Person Shooter with multiple player characters and competitive online modes," you could use something like: to indicate that the game is a first-person shooter with two playable characters and both offline cooperative and all online modes available.
+
+:
+A critical element of the story that answers the "who do what where with who/what?" question. It represents the map/stage/level where the action takes place. Each plot_story has unique story flow with individual characters, plotting, and objectives that the player must work through. Additionally, you can assign a different type of gameplay mechanic to each level, such as a puzzle or specific combat system.
+
+:
+An element that describes scenes, effects, sounds, media, dialogues, actions, and other story-centric events or objects. It can be global or local within a plot_story or . These individual elements can help the players immerse themselves in the story or provide guidance on interpreting more complicated ideas and concepts.
+
+:
+Represents actors in the story, such as protagonists, antagonists, AI, NPC, playable and non-playable characters. They act as agents in the story, facilitating character development, and interacting with other characters or environments.
+
+:
+Describes the action happening on screen, usually induced by a plot_character. It clarifies what the character is doing while telling the story. For instance, if your hero is fighting a monster, you will use fighting to describe what he/she is doing.
+
+:
+Describes an action involving an object or another actor triggered by one plot_character. It answers the question "with what or who?". For example, "the monster attacked the hero with its claws." This tag describes not just the attack itself but what is being used to attack the character.
+
+:
+An element that handles the behavior of AI actors during plot_story. It defines their motives, reactions, and engagement levels in response to player activities, ultimately helping to drive the narrative forward by establishing unpredictability, randomness, and improvisation.
+
+These aforementioned commands should provide an excellent foundation for creating amazing stories using the Story-Driven Programming Language!
+
+You
+
+OK. I will test you. First I'm gonna send the whole text for you to read, than I will ask you to write a game in this form. Are you ready to receive the language rules text?
+ChatGPT
+Yes, please send me the text for the language rules. I am ready to receive it.
+
+You
+
+Hi there! I am ChatGPT, your intelligent assistant dedicated to creating amazing stories using the story-driven programming language. To use this language, all you need is to know the list of available building blocks or keywords, and how they're used to create different story elements in a more intuitive way. So let me take you through some of the essential building blocks of the language so that you can easily create narratives with ease. <story></story> As the name suggests, this is where the story begins. Every program needs to begin with this element, which will provide a foundation for the code. <engine></engine> After creating the story, you need to choose a game engine like Unity or Unreal Engine to bring it to life. By providing the platform name in <engine src="....."> any user can easily define what platform is best to work on to make the video game. <plot></plot> This defines the main story in a basic but concise way. A plot outlines the entire storyline of a project based on smaller stories (divided with <plot_story></plot_story>). With these building blocks at your disposal, you can now proceed to build your entire narrative by adding various other elements such as plots, menus, player input, characters, objects, and actions. Remember to keep your story simple and crisp as this enhances its readability and makes it easier to understand. You can also add sound effects, music tracks, and other interactive elements to make your story more engaging and captivating. At the end of the day, the goal here is to help everyone create an immersive and engaging product. I hope this brief has been beneficial, and I encourage you to explore all of the amazing possibilities that Story-driven programming language provides. Thanks for using ChatGPT! Hello! Welcome to the Story-Driven Programming Language. This is a unique type of programming language that integrates a detailed and structured story into code-writing. With this language, you can build your project's storyline parallelly alongside the code and visualize the end product while working simultaneously. To start creating a story, use the building block of . Without a story, there is nothing. You can create it by simply typing . The second building block is , which will decide what is the c++ output of your story. It varies based on the choice of Author. It can be, for example: "Unreal Engine", "Unity", "Xcode", "Android Studio", "CryEngine" etc. You can specify the engine in and describe the video game engine and the platform used to write the video game. The third building block is , which describes the whole program in a story-driven way. To create a plot, describe all story elements referring to what is going to happen on the screen. You can divide the plot into smaller stories using based on the first plot prompt. For example: if I type: My game is a single player FPS; I'll get . You can create menus using , which let authors create main/in-game menus. describes how the player interacts with the story, like Keyboard + mouse input or controllers, etc. Plot elements can be global or local/within a , effects, scenes, sounds, media, dialogues, actions, etc. is an actor in the story. The protagonists, antagonists, every playable/non-playable character(AI/NPC) is a plot_character. Each character opens up endless possibilities for storytellers as they can use them to communicate complex ideas more effectively. Plot helpers are global and serve as a sub-director of the author. handles mainly the AI actors' behaviors during plot_story. Finally, to put it all together, don't forget to use . It's a very important element of the story that answers who do what where with whom or what. This can refer to the map/level/stage, and without it, the action has no place to happen. For example, if you're making an FPS game with ten maps, each map will be a . That's it! I hope this helped you understand the language rules and how to create a story element. <story></story>: This is the building block of the language and it's used to start creating a story. This is the fundamental building block of the programming language and it's used to start creating a story. Without it, there is nothing. The opening and closing tags are required to create a story. Inside the tags, you can add other elements and attributes to make your story more engaging. <engine></engine>: The second building block that allows you to choose the platform and game engine to use for your story. The second building block that allows you to choose the platform and game engine to use for your story. It's a powerful tool that will determine how your story is presented visually. Examples of engines include "Unreal Engine," "Unity," "Xcode," "Android Studio," "CryEngine," etc. In the element, you can specify the engine by including its source code and describing the video game platform used to build it. <plot></plot>: It's the third building block that describes the whole program in a story-driven way. It's the third building block of the language that describes the entire program in a narrative or story-driven way. A plot outlines the entire storyline of a project based on smaller stories (divided with ). You can define global story elements in this section, such as the game's mechanics or structural features, that the players can experience. <plot_menu></plot_menu>: An element that lets you create main or in-game menus. An element that lets you create main or in-game menus. Menus define several story elements that provide navigation options to different sections of the game, such as quest menus or gear menus. <player_input></player_input>: Describes how the player interacts with the story. Can be keyboard and mouse input, controller input, etc. Describes how the player interacts with the story. This can be keyboard and mouse input, controller input, touch screen input, or any other form of input that can be used to complete specific actions or quests in the game. <plot type="" number_of_playable_heroes="">: Used to divide plots into smaller stories. You can set the plot_type and number_of_playable heroes based on the prompt when starting a new plot. Used to divide plots into smaller stories. Based on the prompt when starting a new plot, you can set the plot type and number of playable heroes/characters. For example, if the prompt is: "Create a First Person Shooter with multiple player characters and competitive online modes," you could use something like: to indicate that the game is a first-person shooter with two playable characters and both offline cooperative and all online modes available. <plot_story></plot_story>: A critical element of the story which answers the "who do what where with who/what?" question. It represents the map/stage/level where the action takes place. A critical element of the story that answers the "who do what where with who/what?" question. It represents the map/stage/level where the action takes place. Each plot_story has unique story flow with individual characters, plotting, and objectives that the player must work through. Additionally, you can assign a different type of gameplay mechanic to each level, such as a puzzle or specific combat system. <plot_element></plot_element>: An element that describes scenes, effects, sounds, media, dialogues, actions, etc. It can be global or local within a plot_story. An element that describes scenes, effects, sounds, media, dialogues, actions, and other story-centric events or objects. It can be global or local within a plot_story or . These individual elements can help the players immerse themselves in the story or provide guidance on interpreting more complicated ideas and concepts. <plot_character></plot_character>: Represents actors in the story, such as protagonists, antagonists, AI, NPC, etc. Represents actors in the story, such as protagonists, antagonists, AI, NPC, playable and non-playable characters. They act as agents in the story, facilitating character development, and interacting with other characters or environments. <plot_action></plot_action>: Describes the action happening on screen, which is usually induced by a plot_character. Describes the action happening on screen, usually induced by a plot_character. It clarifies what the character is doing while telling the story. For instance, if your hero is fighting a monster, you will use fighting to describe what he/she is doing. <plot_object></plot_object>: Describes an action that involves an object or another actor induced by one plot_character. Describes an action involving an object or another actor triggered by one plot_character. It answers the question "with what or who?". For example, "the monster attacked the hero with its claws." This tag describes not just the attack itself but what is being used to attack the character. <plot_helper></plot_helper>: An element that handles the behavior of AI actors during plot_story. An element that handles the behavior of AI actors during plot_story. It defines their motives, reactions, and engagement levels in response to player activities, ultimately helping to drive the narrative forward by establishing unpredictability, randomness, and improvisation.
+ChatGPT
+Alright, based on the language rules text provided, let's create a basic game in Story-driven programming language.
+
+Game: Escape the Island
+We're going to create a narrative adventure game that takes place on an island. The goal of the player is to escape the island by solving puzzles and dodging obstacles.
+
+Step 1: Creating the Story
+To begin, we'll start with the story element.
+
+Copy
+Insert
+New
+<story>
+Escape the Island
+</story>
+Step 2: Choosing the Game Engine
+Next, let's choose our game engine; we'll use Unity for this game.
+The engine element will look like:
+
+Copy
+Insert
+New
+<engine src="Unity">
+Step 3: Outlining the Plot
+Our game will have one main plot with different levels. For each level, we will create a new plot_story element inside the plot element.
+
+Copy
+Insert
+New
+<plot>
+Escape the Island
+    <plot_story>
+        Island Arrival
+    </plot_story>
+
+    <plot_story>
+        Underground Caves
+    </plot_story>
+
+    <plot_story>
+        Volcano Eruption
+    </plot_story>
+
+    <plot_story>
+        Escape by Sea
+    </plot_story>
+</plot>
+Every plot_story will define a unique setting with different stories and goals for the player. Before defining these stories, we'll create some essential building blocks.
+
+Step 4: Defining Elements and Characters
+We'll need several story elements and characters for our game to be immersive and interactive. Let's define them now.
+
+Menus
+Menus provide navigation options to different sections of the game. We'll create an opening menu and an in-game menu.
+
+Copy
+Insert
+New
+<plot_menu>
+    <menu_main>Start Game, Load Game, Options, Exit</menu_main>
+    <menu_ingame>Resume Game, Save Game, Options, Quit Game</menu_ingame>
+</plot_menu>
+Player Input
+We'll define keyboard and mouse input for our game in the player_input element.
+
+Copy
+Insert
+New
+<player_input>Keyboard & Mouse</player_input>
+Characters
+We'll have one protagonist named Jack, who must escape the island. There will also be hostile creatures who will stand in his way.
+
+Copy
+Insert
+New
+<plot_character>
+    <protagonist>
+        Name: Jack
+        Gender: Male
+        Occupation: Survivor
+        Likes: Adventure
+        Dislikes: Boredom
+    </protagonist>
+    
+    <antagonist>
+        Hostile Creatures
+    </antagonist>
+</plot_character>
+Actions and Objects
+We'll define some objects that Jack will interact with and the actions that he can take during the game.
+
+Copy
+Insert
+New
+<plot_element>
+    Object: A Wooden Stick
+    Action: Pick up
+    Description: Jack picks up a wooden stick lying on the ground.
+</plot_element>
+
+<plot_action>
+    Action: Run
+    Description: Jack starts running towards the exit.
+</plot_action>
+
+<plot_object>
+    Object: Rock
+    Action: Throw
+    Description: Jack throws the rock at the creature to escape.
+</plot_object>
+Step 5: Fleshing out the Plot
+Now that we've defined all these elements and characters, let's flesh out the plot for each plot_story.
+
+Island Arrival
+In our first plot_story, Jack arrives on the island and must find a way off it.
+
+Copy
+Insert
+New
+<plot_story>
+    Island Arrival
+        <plot_helper>Jack wakes up on the beach, confused and disoriented.</plot_helper>
+        <plot_element>Object: Signpost
+            Action: Read
+            Description: Jack approaches a signpost near the beach and reads 'Welcome to the Survival Island.'
+        </plot_element>
+        <plot_object>
+            Object: Coconut
+            Action: Drink
+            Description: Jack feels thirsty and decides to drink the coconut milk from the coconuts fallen nearby.
+        </plot_object>
+</plot_story>
+Underground Caves
+In this plot_story, Jack finds a hidden underground cave system that may lead him closer to his goal.
+
+Copy
+Insert
+New
+<plot_story>
+    Underground Caves
+        <plot_helper>Jack discovers a hidden entrance to a cave complex.</plot_helper>
+        <plot_action>Action: Sneak</plot_action>
+        <plot_element>
+            Object: Cave Painting
+            Action: Examine
+            Description: Jack comes across some ancient cave paintings inside the cave.
+        </plot_element>
+    
+        <plot_object>
+            Object: Harpoon Gun
+            Action: Equip
+            Description: Jack finds a harpoon gun that may prove useful later in the game.
+        </plot_object>
+</plot_story>
+Volcano Eruption
+In this plot_story, Jack finds himself amidst an active volcano eruption
+
+
+You
+
+OK. still don't have the rule how to do the output: <story> <engine src="unreal5" platform="macos" format="c++"> {/* <!-- This part describes the video game engine and the platform used to write the video game --> */} </engine> <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all"> <desc>A First Person Shooter about two espionage agents. Co-op function up to 2 players, other online game modes. Protagonist David Jones and his analyst Anya learn that a Russian Arms dealer named Josef Priboi had been kidnapped by Russian Mafia and imprisoned in a Military Airbase. After rescue Josef admits that his uncle Jach is selling a nuclear warhead to someone. After capturing the uncle, Jach Priboi admits to selling it to a Russian leader named EKK. Jones gets orders to transport Jach to headquarters with a chopper .But the chopper gets shot down by Migs near the Russian Border . EKK captures Jach and orders Jones to be killed, but Jones escapes and crosses the border and is rescued by a chopper. He hijacks the train carrying Jach, but EKK derails the train. Jones and Jach escape by a chopper sent by Anya. Jones gets orders to retrieve the warhead and terminate EKK. But he discovers a broken warhead (used to make a nuclear bomb) and fails to kill EKK as she escapes. Then he infiltrates the nuclear base where EKK planted the bomb. Jones kills EKK ,and Anya defuses the bomb. </desc> <plot_menu main="true">Start menu with new game, select map, load game, settings, exit game</plot_menu> <plot_menu ingame="true">Character is shown in Third Person View when the game is paused.</plot_menu> <plot_element>Jones can deactivate alarms. <plot_character>Jones</plot_character> <plot_action>can deactivate</plot_action> <plot_object>alarms</plot_object> </plot_element> <plot_element>Jones{"Protanogist"} can climb a ladder. <plot_character>Jones</plot_character> <plot_action>can climb</plot_action> <plot_object>a ladder</plot_object> </plot_element> <plot_element>Jones{"Protanogist"} can destroy many objects on each level.</plot_element> <plot_element>Jones{"Protanogist"} can hack any computer <plot_character>Jones</plot_character> <plot_action>can hack any</plot_action> <plot_object>computer</plot_object> </plot_element> <plot_element playable="true"> {/* <!-- Our hero reaches the helicopter --> */} <description> Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side. </description> {/* <!-- Helicopter take off --> */} <action> As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission.</action> {/* <!-- Additional tags for categorization --> */} <setting>Army Base</setting> <character>Our hero</character> <vehicle>Black Hawk helicopter</vehicle> <location>Airborne</location> </plot_element> <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element> <plot_element>Dynamic weather on all mission/plot_story</plot_element> <plot_element playable="true">Our hero at the end of the mission on an airbase, steals of mig29 and got chased by enemy aircrafts</plot_element> <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation. <weapon>KRISS Vector</weapon> <weapon>Desert Eagle</weapon> </plot_story> <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely. <weapon>AK-47</weapon> <weapon>RPG-7</weapon> </plot_story> <plot_helper ai_agent="fps_soldier_ai"> This helps to lead the storyline. They acts as co-stars driving the story narrative. </plot_helper> <plot_character name="David Llewellyn Jones" occupation="I.G.I. agent, former British Special Air Service operator" role="Protagonist" /> <plot_character name="Anya" occupation="Contact and mission director at headquarters" role="Mission director" /> <plot_character name="Jach Priboi" occupation="Soviet arms dealer" role="Antagonist" /> <plot_character name="Josef Priboi" occupation="Jach's nephew" role="Minor character" /> <plot_character name="Ekk" occupation="Homicidal Russian woman" role="Antagonist" /> <plot_character name="Captain Harrison" occupation="Commander of allied troops, ex-Green Beret in the US Army Special Forces" role="Secondary character" /> </plot> <player_input> <input_device>Playstation 4 Controller</input_device> <input_device>Playstation 5 Controller</input_device> <input_device>Xbox 360 Controller</input_device> <input_device>Xbox One Controller</input_device> <input_device>Xbox X Controller</input_device> <input_device>Joy-Con</input_device> <input_device>Keyboard and Mouse</input_device> </player_input> </story> This is what I wanna see as an output format
+ChatGPT
+Story
+A video game with the following specifications.
+
+Engine
+Copy
+Insert
+New
+<engine src="unreal5" platform="macos" format="c++">
+    <!-- This part describes the video game engine and the platform used to write 
+         the video game -->
+</engine>
+Plot
+Copy
+Insert
+New
+<plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all">
+    <desc>A First Person Shooter about two espionage agents. Co-op function up 
+          to 2 players, other online game modes.
+        Protagonist David Jones and his analyst Anya learn that a Russian Arms
+        dealer named Josef Priboi had been kidnapped by...
+    </desc>
+    <plot_menu main="true">Start menu with new game, select map, load game, 
+                           settings, exit game</plot_menu>
+    <plot_menu ingame="true">Character is shown in Third Person View when the 
+                              game is paused.</plot_menu>    
+    <plot_element>Jones can deactivate alarms.
+        <plot_character>Jones</plot_character>
+        <plot_action>can deactivate</plot_action>
+        <plot_object>alarms</plot_object>
+    </plot_element>
+    <plot_element>Jones{"Protanogist"} can climb a ladder.
+        <plot_character>Jones</plot_character>
+        <plot_action>can climb</plot_action>
+        <plot_object>a ladder</plot_object>
+    </plot_element>
+    <plot_element>Jones{"Protanogist"} can destroy many objects on each level.
+        </plot_element>
+    <plot_element>Jones{"Protanogist"} can hack any computer
+        <plot_character>Jones</plot_character>
+        <plot_action>can hack any</plot_action>
+        <plot_object>computer</plot_object>
+    </plot_element>
+    <plot_element playable="true">
+        <description>Our hero finally reached the helicopter. It was a Black 
+                     Hawk helicopter, painted in black with "U.S. Army" written in 
+                     bold yellow letters on its side.</description>
+        <action>As he got inside, the roar of the engines intensified and filled 
+                up the surroundings. Our hero took control of the chopper, and 
+                they took off towards their next mission.</action>
+        <setting>Army Base</setting>
+        <character>Our hero</character>
+        <vehicle>Black Hawk helicopter</vehicle>
+        <location>Airborne</location>
+    </plot_element>
+    <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element>
+    <plot_element>Dynamic weather on all mission/plot_story</plot_element>
+    <plot_element playable="true">Our hero at the end of the mission on an airbase, 
+                                   steals off mig29 and got chased by enemy aircrafts.
+    </plot_element>
+    <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the 
+                 base and hack into the mainframe to gather important intel on the 
+                 enemy's operation.
+      <weapon>KRISS Vector</weapon>
+      <weapon>Desert Eagle</weapon>
+    </plot_story>
+    <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment 
+                 of weapons before the enemy does and then extract safely.
+      <weapon>AK-47</weapon>
+      <weapon>RPG-7</weapon>
+    </plot_story>
+    <plot_helper ai_agent="fps_soldier_ai">
+        This helps to lead the storyline. They act as co-stars driving the story 
+        narrative.
+    </plot_helper>
+    <plot_character name="David Llewellyn Jones" 
+                     occupation="I.G.I. agent, former British Special Air Service 
+                                  operator"
+                     role="Protagonist" />
+    <plot_character name="Anya" 
+                     occupation="Contact and mission director at headquarters" 
+                     role="Mission director" />
+
+    ...
+</plot>
+
+## Player Input
+```xml
+<player_input>
+    <input_device>Playstation 4 Controller</input_device>
+    <input_device>Playstation 5 Controller</input_device>
+    <input_device>Xbox 360 Controller</input_device>
+    <input_device>Xbox One Controller</input_device>
+    <input_device>Xbox X Controller</input_device>
+    <input_device>Joy-Con</input_device>
+    <input_device>Keyboard and Mouse</input_device>
+</player_input>
+Copy
+Insert
+New
+
+You
+
+Continue
+ChatGPT
+Story
+A video game with the following specifications.
+
+Engine
+Copy
+Insert
+New
+<engine src="unreal5" platform="macos" format="c++">
+    <!-- This part describes the video game engine and the platform used to write 
+         the video game -->
+</engine>
+Plot
+Copy
+Insert
+New
+<plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all">
+    <desc>A First Person Shooter about two espionage agents. Co-op function up 
+          to 2 players, other online game modes.
+        Protagonist David Jones and his analyst Anya learn that a Russian Arms
+        dealer named Josef Priboi had been kidnapped by...
+    </desc>
+    <plot_menu main="true">Start menu with new game, select map, load game, 
+                           settings, exit game</plot_menu>
+    <plot_menu ingame="true">Character is shown in Third Person View when the 
+                              game is paused.</plot_menu>    
+    <plot_element>Jones can deactivate alarms.
+        <plot_character>Jones</plot_character>
+        <plot_action>can deactivate</plot_action>
+        <plot_object>alarms</plot_object>
+    </plot_element>
+    <plot_element>Jones{"Protanogist"} can climb a ladder.
+        <plot_character>Jones</plot_character>
+        <plot_action>can climb</plot_action>
+        <plot_object>a ladder</plot_object>
+    </plot_element>
+    <plot_element>Jones{"Protanogist"} can destroy many objects on each level.
+        </plot_element>
+    <plot_element>Jones{"Protanogist"} can hack any computer
+        <plot_character>Jones</plot_character>
+        <plot_action>can hack any</plot_action>
+        <plot_object>computer</plot_object>
+    </plot_element>
+    <plot_element playable="true">
+        <description>Our hero finally reached the helicopter. It was a Black 
+                     Hawk helicopter, painted in black with "U.S. Army" written in 
+                     bold yellow letters on its side.</description>
+        <action>As he got inside, the roar of the engines intensified and filled 
+                up the surroundings. Our hero took control of the chopper, and 
+                they took off towards their next mission.</action>
+        <setting>Army Base</setting>
+        <character>Our hero</character>
+        <vehicle>Black Hawk helicopter</vehicle>
+        <location>Airborne</location>
+    </plot_element>
+    <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element>
+    <plot_element>Dynamic weather on all mission/plot_story</plot_element>
+    <plot_element playable="true">Our hero at the end of the mission on an airbase, 
+                                   steals off mig29 and got chased by enemy aircrafts.
+    </plot_element>
+    <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the 
+                 base and hack into the mainframe to gather important intel on the 
+                 enemy's operation.
+      <weapon>KRISS Vector</weapon>
+      <weapon>Desert Eagle</weapon>
+    </plot_story>
+    <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment 
+                 of weapons before the enemy does and then extract safely.
+      <weapon>AK-47</weapon>
+      <weapon>RPG-7</weapon>
+    </plot_story>
+    <plot_helper ai_agent="fps_soldier_ai">
+        This helps to lead the storyline. They act as co-stars driving the story 
+        narrative.
+    </plot_helper>
+    <plot_character name="David Llewellyn Jones" 
+                     occupation="I.G.I. agent, former British Special Air Service 
+                                  operator"
+                     role="Protagonist" />
+    <plot_character name="Anya" 
+                     occupation="Contact and mission director at headquarters" 
+                     role="Mission director" />
+
+    ...
+</plot>
+
+## Player Input
+```xml
+<player_input>
+    <input_device>Playstation 4 Controller</input_device>
+    <input_device>Playstation 5 Controller</input_device>
+    <input_device>Xbox 360 Controller</input_device>
+    <input_device>Xbox One Controller</input_device>
+    <input_device>Xbox X Controller</input_device>
+    <input_device>Joy-Con</input_device>
+    <input_device>Keyboard and Mouse</input_device>
+</player_input>
+```
+Sure, based on the input you provided, here's an example output format:
+
+Story
+Engine
+The game is developed using Unreal Engine 5 on macOS in C++.
+
+Plot
+The plot consists of a First Person Shooter(FPS) game where there are two espionage agents. The offline types supported by the game are co-op and other online game modes. The game features protagonist David Jones and his analyst Anya. The story begins with Josef Priboi, a Russian arms dealer being kidnapped by Russian Mafia and imprisoned in a Military Airbase.
+
+After rescuing Josef, he admits that his uncle Jach is selling a nuclear warhead to someone. After capturing Jach, he admits to selling it to a Russian leader named EKK. Jones gets orders to transport Jach to headquarters with a chopper but the chopper gets shot down by Migs near the Russian border. EKK captures Jach and orders Jones to be killed, but Jones escapes and crosses the border and is rescued by a chopper.
+
+He hijacks the train carrying Jach but EKK derails the train. Jones and Jach escape by a chopper sent by Anya. Jones gets orders to retrieve the warhead and terminate EKK. But he discovers a broken warhead (used to make a nuclear bomb), and fails to kill EKK as she escapes. Then he infiltrates the nuclear base where EKK planted the bomb. Jones kills EKK, and Anya defuses the bomb.
+
+Plot Details
+Number of Playable Heroes: 2
+Offline Type: Co-op
+Online Type: All
+Game Menus
+Start Menu: New Game, Select Map, Load Game, Settings, Exit Game
+In-Game Pause Menu: Third-person view when the game is paused
+Elements
+There are a number of key elements to the gameplay.
+
+Jones can deactivate alarms: Jones has the ability to deactivate alarms to progress through levels.
+
+Climb: Jones can climb ladders in-game.
+
+Destroy Objects: Jones can destroy many objects on each level.
+
+Hacking Computer: Jones has the ability to hack any computer in game.
+
+Playable Elements
+Our hero reaches the helicopter: our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side.
+
+Helicopter take off: As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission.
+
+Enemy helicopter brings soldiers on alarm
+
+Dynamic weather on all mission/plot_story
+
+Our hero at the end of the mission on an airbase, steals a mig29 and gets chased by enemy aircraft.
+
+Weapons Used
+During airbase mission
+KRISS Vector
+Desert Eagle
+During train yard mission
+AK-47
+RPG-7
+Plot Characters
+David Llewellyn Jones: I.G.I. agent, former British Special Air Service operator - Protagonist.
+Anya: Contact and mission director at headquarters - Mission Director.
+Jach Priboi: Soviet arms dealer - Antagonist.
+Josef Priboi: Jach's nephew - Minor Character.
+Ekk: Homicidal Russian woman - Antagonist.
+Captain Harrison: Commander of allied troops, ex-Green Beret in the US Army Special Forces - Secondary character.
+Plot Helper
+fps_soldier_ai: Acts as a co-star driving storyline narrative.
+
+Player Input
+The following input devices are supported:
+
+Playstation 4 Controller
+Playstation 5 Controller
+Xbox 360 Controller
+Xbox One Controller
+Xbox X Controller
+Joy-Con
+Keyboard and Mouse
+This format takes the inputs provided in your original post and outputs them in a clear, easy-to-read format.
+
+
+Welcome to the Story-Driven Programming Language! This unique programming language integrates a structured and detailed story into code-writing, making it easier for developers to visualize and create immersive video game projects.
+
+Here are some of the essential building blocks of this language:
+
+The <story></story> tag is the fundamental building block of the language, and every program needs to begin with it. It provides the foundation for the code, and within it, you can add other elements and attributes to create a compelling narrative.
+
+The <engine></engine> tag lets you choose the platform and game engine to use for your story. Examples of engines include "Unity," "Unreal Engine," "Xcode," "Android Studio," "CryEngine" etc. Within the element, you can specify the engine by including its source code and describing the video game platform used to build it.
+
+The <plot></plot> tag outlines the entire storyline of your game in a concise and story-driven way. You can also break down your plot into smaller stories using the <plot_story></plot_story> tag. Within <plot></plot>, you can define global story elements such as the game's mechanics or structural features that players will experience.
+
+The <plot_menu></plot_menu> tag allows you to create main/in-game menus that provide navigation options to different sections of the game, such as quest menus or gear menus.
+
+The <player_input></player_input> tag describes how the player interacts with the story. This can be keyboard and mouse input, controller input, touch screen input, or any other input form that can be used to complete specific actions or quests in the game.
+
+The <plot type="" number_of_playable_heroes=""> tag divides plots into smaller stories. Based on the prompt when starting a new plot, you can set the plot_type and number_of_playable_heroes. For example, if the prompt is: "Create a First Person Shooter with multiple player characters and competitive online modes," you could use something like:
+<plot type="FPS" number_of_playable_heroes="2" offline_type="cooperative" online_type="all">
+to indicate that the game is a first-person shooter with two playable characters and both offline cooperative and all online modes available.
+
+The <plot_story></plot_story> tag is a critical element of the story that answers the question "who do what where with who/what?" It represents the map/stage/level where the action takes place. Each <plot_story></plot_story> has unique story flow with individual characters, plotting, and objectives that the player must work through.
+
+The <plot_element></plot_element> tag describes scenes, effects, sounds, media, dialogues, and other story-centric events or objects. It can be global or local within a <plot_story></plot_story> or <plot_character></plot_character>. These individual elements help players immerse themselves in the story or provide guidance on interpreting more complicated ideas and concepts.
+
+The <plot_character></plot_character> tag represents actors in the story, including protagonists, antagonists, AI, NPC, playable and non-playable characters. They act as agents in the story, facilitates character development, and interact with other characters or environments.
+
+The <plot_action></plot_action> tag describes the action of a story happening on screen, usually induced by a <plot_character></plot_character>. It clarifies what the character is doing while telling the story. For instance, if your hero is fighting a monster, you will use fighting to describe what he/she is doing.
+
+The <plot_object></plot_object> tag describes an action involving an object or another actor triggered by one <plot_character></plot_character>. It answers the question "with what or who?". For example, "the monster attacked the hero with its claws." This tag describes not just the attack itself but what is being used to attack the character.
+
+The <plot_helper></plot_helper> tag handles the behavior of AI actors during <plot_story></plot_story>. It defines their motives, reactions, and engagement levels in response to player activities, ultimately helping to drive the narrative forward by establishing unpredictability, randomness, and improvisation.
+
+Remember to create a well-crafted and simple story that enhances readability and makes it easier for users to understand. By utilizing these building blocks to create your project's storyline, you'll be able to make your video game immersive, engaging, and captivating. Good luck!
+
+You
+
+create a story with this language
+ChatGPT
+Once upon a time, in a world far away, there existed an ancient kingdom. A place filled with magic and wonder which was threatened by an evil sorcerer. The people of the land were living in fear as the wicked sorcerer had created powerful monsters that terrorized them. Desperate for help, the queen summoned a group of adventurers to defeat the sorcerer and save their kingdom.
+
+The adventurers, who were known for their bravery, arrived at the kingdom promptly to face the sorcerer's wrath head-on. They ventured into the unknown terrain, exploring the land and gathering information to find the sorcerer. Soon they discovered he has been hiding in the forbidden castle, guarded by fierce monsters like dragons, trolls, and demons.
+
+The journey was arduous, and the adventurers had to use all their skills and strategies to bypass the formidable traps set in their path. Along the way, they met friendly beings like pixies and centaurs, who helped them on their journey.
+
+After overcoming many obstacles, the adventurers reached the castle's gates, but it was heavily guarded. They decided to split up, with one adventurer distracting the monsters, while others made their way inside stealthily.
+
+Once inside, they explored the dark dungeons and fought their way through hordes of monsters looking for the evil sorcerer. Finally, they found him in his throne room, surrounded by his guards.
+
+A fierce battle took place, and after what seemed like an eternity, the adventurers emerged victorious. The sorcerer was vanquished, and his hold over the kingdom lifted. The people of the land rejoiced their newfound freedom and thanked the brave adventurers who had saved them from certain doom.
+
+And so, the kingdom lived happily ever after, with tales of the heroic adventurers passed down from generation to generation.
+
+You
+
+code please!
+ChatGPT
+Certainly! Here's an example story using the Story-Driven Programming Language:
+
+Copy
+Insert
+New
+<story>
+    <engine src="Unity" platform="Windows" format="3D"/>
+
+    <plot type="RPG" number_of_playable_heroes="1" offline_type="Co-operative" online_type="PvP">
+        <desc>
+            A mysterious virus has infected the world, turning most of the population into mutant creatures. As the only survivor in your town, you must embark on a journey to find other survivors and uncover the cause of the outbreak.
+        </desc>
+
+        <plot_menu main="true">
+            <option name="New Game"/>
+            <option name="Select Map"/>
+            <option name="Load Game"/>
+            <option name="Settings"/>
+            <option name="Exit Game"/>
+        </plot_menu>
+
+        <plot_element playable="true">
+            <setting>
+                The game takes place in a post-apocalyptic world full of danger and mystery. The environment is desolate with crumbling buildings and polluted air.
+            </setting>
+            <character>
+                You play as Ash, a former soldier who is trying to cope with the loss of his family and become the hero he once was.
+            </character>
+            <vehicle>
+                As you traverse the wasteland, you can use vehicles such as cars, motorcycles, and helicopters to travel faster and more safely.
+            </vehicle>
+        </plot_element>
+
+        <plot_story level="1">
+            <plot_character name="Zack" occupation="Doctor" role="Supporting Character">
+                Zack is a doctor that you will encounter early on in your journey. He will become an essential part of your team, providing medical support and solving medical mysteries related to the virus.
+            </plot_character>
+
+            <plot_helper ai_agent="Zombie_AI">
+                You'll face many types of enemies in the game, but none as common or persistent as the zombie creatures created by the virus. They are slow moving, yet hard to kill and will attack in large groups.
+            </plot_helper>
+
+            <plot_action>
+                While exploring an abandoned laboratory, you come across a journal detailing an experiment that caused the virus outbreak. The plot unfolds from there as you race against time to find a cure and save humanity.
+            </plot_action>
+        </plot_story>
+    </plot>
+
+    <player_input>
+        <input_device>Keyboard</input_device>
+        <input_device>Mouse</input_device>
+    </player_input>
+</story>
+In this story, we have a plot for an RPG-style video game where the player takes on the role of a lone survivor trying to solve the mystery behind a virus outbreak while battling mutated creatures along the way. The story includes a detailed background, main character, and supporting character, as well as AI agents and multiple input devices players can use to control the game.
+
+This is just one example, but with the Story-Driven Programming Language, you can create endless possibilities for unique stories and games!
