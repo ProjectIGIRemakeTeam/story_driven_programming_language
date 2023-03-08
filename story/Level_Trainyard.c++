@@ -1,3 +1,9 @@
+#include<iostream>
+#include<vector>
+#include<string>
+
+using namespace std;
+
 class level_Trainyard {
     public:
         // Some variables to store information about the level

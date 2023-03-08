@@ -1,3 +1,9 @@
+#include<iostream>
+#include<vector>
+#include<string>
+
+using namespace std;
+
 class weapon_AK47 {
 public:
     int damage = 200;

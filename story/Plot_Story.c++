@@ -1,3 +1,9 @@
+#include<iostream>
+#include<vector>
+#include<string>
+
+using namespace std;
+
 class level_Trainyard {
 public:
     int width = 800; #trainyard,#width, #level, #plot_story

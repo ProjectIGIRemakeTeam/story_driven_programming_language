@@ -1,3 +1,10 @@
+#include<iostream>
+#include<vector>
+#include<string>
+
+using namespace std;
+
+
 #include "unreal5.h"
 
 enum CameraDirection { FRONT_VIEW, BACK_VIEW, LEFT_VIEW, RIGHT_VIEW };

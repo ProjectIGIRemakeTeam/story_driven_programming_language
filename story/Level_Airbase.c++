@@ -1,3 +1,9 @@
+#include<iostream>
+#include<vector>
+#include<string>
+
+using namespace std;
+
 class level_Airbase {
     public:
         // Some variables to store information about the level

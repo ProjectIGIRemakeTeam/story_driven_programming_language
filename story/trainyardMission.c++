@@ -1,3 +1,10 @@
+#include<iostream>
+#include<vector>
+#include<string>
+
+using namespace std;
+
+
 // Function to start the trainyard mission
 void trainyardMission() {
     // Load the trainyard level and set up game objects

@@ -1,3 +1,9 @@
+#include<iostream>
+#include<vector>
+#include<string>
+
+using namespace std;
+
 class PlotMenu_Main {
 public:
     // Variables to store information about the main menu

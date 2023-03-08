@@ -1,3 +1,9 @@
+#include<iostream>
+#include<vector>
+#include<string>
+
+using namespace std;
+
 #include "unreal5.h"
 
 // Declare the Helicopter class

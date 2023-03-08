@@ -1,3 +1,9 @@
+#include<iostream>
+#include<vector>
+#include<string>
+
+using namespace std;
+
 void hackComputer(PlotCharacter &Jones, PlotObject &computer) {
     // Perform the action of hacking the computer using Jones' hacking abilities
     // This code assumes that there is some sort of logic or algorithm to determine whether or not the hack was successful.

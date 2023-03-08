@@ -1,3 +1,9 @@
+#include<iostream>
+#include<vector>
+#include<string>
+
+using namespace std;
+
 #include "unreal5.h"
 
 class Plot_Type_Character_FPS 

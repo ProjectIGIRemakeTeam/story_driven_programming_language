@@ -1,3 +1,9 @@
+#include<iostream>
+#include<vector>
+#include<string>
+
+using namespace std;
+
 class Weather {
 private:
     string weatherType; // The type of weather currently active in game
