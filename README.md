@@ -52,8 +52,8 @@ Open Browser:
 http://localhost:3000
 
 
-# Language rules:
-https://github.com/ProjectIGIRemakeTeam/story_driven_programming_language/blob/main/gpt3.5/language-rules.md
+# Language rules(gpt_rules1.2.0):
+https://github.com/ProjectIGIRemakeTeam/story_driven_programming_language/blob/main/gpt3.5/gpt_rules1.2.0.md
 
 
 

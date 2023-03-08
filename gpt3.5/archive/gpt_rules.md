@@ -141,3 +141,35 @@ The input devices used for playing the game will be listed using the <player_inp
 <input_device> tag syntax:
 - Must be nested inside a <player_input> tag
 - Should contain the name of an input device for controlling the game
+
+
+Start with a root element called "story".
+Inside the "story" element, add an "engine" element with at least one attribute named "src" containing the name of the game engine used for the game development (e.g. Unity) and an attribute named "platform" that states the compatible platform (e.g. Windows) along with an optional attribute named "format" representing 3D or 2D game development.
+Next, add a "plot" element with attributes like "type", which defines the gameplay type (e.g. RPG, FPS, etc.), "number_of_playable_heroes", which will define the number of playable heroes, and both "offline_type" & "online_type", which respectively demonstrate Co-operative or PvP gaming modes.
+Within the "plot" tag, place a description element ("desc") that highlights the game backstory or the current situation the player is in.
+After the "desc" element, you should include the "plot_menu" element using different "option" elements where every option element serves various features related to the game.
+Below the "plot_menu" element, include another element called "plot_element" which must comprise 3 sub-elements; "setting", "character", and "object/vehicle". That indicates game settings, character's details, and objects/vehicles you can interact with in the game world.
+Following the "plot_element", enter the main body of the story carrying its main components called "plot_story" utilizing some attributes called "level" for determining the same level levels throughout the game.
+Inside the "plot_story", present numerous "plot_characters", "plot_helpers", and "plot_actions".
+Finally, include a "player_input" element that features all the input devices such as mouse, keyboard, gamepad, touchpad you can utilize to play the game.
+By following this format, we can create a well-structured story which will potentially offer the players an excellent in-game experience.
+
+
+The format you see in the text is called XML markup language, which stands for "Extensible Markup Language." XML is a widely used language for designing and sharing data across different platforms or programming languages.
+
+This particular format consists of a hierarchy of tags enclosed in angle brackets, with one root element at the top level. Each tag declares properties about the data it contains or its relationship with other tags.
+
+To write data in this format, one must follow strict rules about opening and closing tags, nesting levels, and attribute values. The output must be structured exactly like the example provided, with the same tags, attributes, and text contents where applicable.
+
+So, if you want to create data that conforms to this format, you should write your code carefully and make sure to include all necessary opening and closing tags, observe the proper syntax rules and put everything into the correct order.
+
+
+The story element acts as the root node of the entire document. Within this, there are several sub-elements that provide details about different aspects of the story such as the game engine used (engine), type of plot (plot), settings (setting), characters (character), actions (action), etc.
+
+Each sub-element contains mostly attributes and nested elements with their own content or values. For instance, the plot element has several attributes like type, number_of_playable_heroes, offline_type, and online_type. It also contains child nodes like desc, plot_menu, plot_element, and plot_story.
+
+Nested within these are even more detailed elements describing other things that goes into the full story.
+
+It's important to follow the exact format as provided because any deviation will result in errors or inaccuracies with the output of the code or information that it holds.
+
+So, when producing outputs or creating new XML files, ensure that each tag, attribute, and value is accurate, and properly nested under the correct parent element while maintaining the tags' opening and closing structures.

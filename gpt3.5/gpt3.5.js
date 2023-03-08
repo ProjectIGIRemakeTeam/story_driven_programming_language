@@ -4236,3 +4236,342 @@ New
 In this story, we have a plot for an RPG-style video game where the player takes on the role of a lone survivor trying to solve the mystery behind a virus outbreak while battling mutated creatures along the way. The story includes a detailed background, main character, and supporting character, as well as AI agents and multiple input devices players can use to control the game.
 
 This is just one example, but with the Story-Driven Programming Language, you can create endless possibilities for unique stories and games!
+
+
+As an AI language model, I am programmed to generate text-based outputs using natural language. However, I can provide you with a structured XML template that you can use as a basis for your video game story if you'd like!
+
+You
+
+yes
+ChatGPT
+My apologies, here is the updated story in XML markup language:
+
+Copy
+Insert
+New
+<story>
+  <engine src="game_engine" platform="PC" format="3D" />
+  <plot type="action" number_of_playable_heroes="1" offline_type="singleplayer" online_type="multiplayer">
+    <desc>A futuristic world where players must fight against an evil corporation to save humanity from destruction.</desc>
+
+    <plot_menu>
+      <plot_element name="New Game" />
+      <plot_element name="Load Game" />
+      <plot_element name="Settings" />
+      <plot_element name="Exit Game" />
+    </plot_menu>
+
+    <plot_story>
+      <plot_character playable="true" name="Jake" occupation="former soldier" role="protagonist">
+        <desc>Jake is a highly skilled soldier who is recruited by a group of rebels to help take down the evil corporation.</desc>
+      </plot_character>
+  
+      <plot_character enemy="true" name="Xander" occupation="CEO of the corporation" role="antagonist">
+        <desc>Xander is the CEO of the corporation who will stop at nothing to achieve his goals, even if it means destroying humanity.</desc>
+      </plot_character>
+  
+      <plot_element name="Prologue">
+        <desc>Jake is recruited by the rebels to infiltrate the corporation and gather intel.</desc>
+      </plot_element>
+
+      <!-- More plot elements and character interactions go here -->
+      
+    </plot_story>
+    
+    <plot_helper name="AI_enemy">
+      <desc>This helper controls the behavior of the enemy AI units that Jake must face throughout the game.</desc>
+    </plot_helper>
+
+    <player_input>
+      <input_device>Keyboard</input_device>
+      <input_device>Mouse</input_device>
+      <input_device>Controller</input_device>
+    </player_input>
+  
+  </plot>
+</story>
+The story sets up a world where players must fight against an evil corporation to save humanity from destruction. The main character, Jake, is a highly skilled soldier who is recruited by a group of rebels to help take down the corporation. As Jake progresses through the game, he faces various challenges and enemies orchestrated by Xander, the CEO of the corporation who is the main antagonist of the game.
+
+The plot elements are organized into a plot menu with options for new games, loading games, settings, and exiting the game. There is also a plot helper named "AI_enemy" that controls the behavior of enemy AI units that Jake must face throughout the game.
+
+The player input section specifies the available input devices including keyboard, mouse, and controller. With this structure and organization, the story provides a strong foundation for the video game experience.
+
+You
+
+OK. so far it does creating coherent storyline, but there are issues in related the player_input for example. THIS IS WRONG: <player_input> <input_device name="keyboard"> <input_option>Ask about the victim</input_option> <input_option>Ask about suspect 1</input_option> <input_option>Accuse the suspect</input_option> </input_device> </player_input> Player input is always global value, therefore it is within the <plot> but not within the <plot_story>, <plot_element> or anyting. also I say sometimes it generated mouse and keyboard separately, while it has to be 1 thing. how to write a very specific language rule for this? In this example the input is placed as a global value and add the values <story> <engine src="unreal5" platform="macos" format="c++"> {/* <!-- This part describes the video game engine and the platform used to write the video game --> */} </engine> <plot type="FPS" number_of_playable_heroes="2" offline_type="coop" online_type="all"> <desc>A First Person Shooter about two espionage agents. Co-op function up to 2 players, other online game modes. Protagonist David Jones and his analyst Anya learn that a Russian Arms dealer named Josef Priboi had been kidnapped by Russian Mafia and imprisoned in a Military Airbase. After rescue Josef admits that his uncle Jach is selling a nuclear warhead to someone. After capturing the uncle, Jach Priboi admits to selling it to a Russian leader named EKK. Jones gets orders to transport Jach to headquarters with a chopper .But the chopper gets shot down by Migs near the Russian Border . EKK captures Jach and orders Jones to be killed, but Jones escapes and crosses the border and is rescued by a chopper. He hijacks the train carrying Jach, but EKK derails the train. Jones and Jach escape by a chopper sent by Anya. Jones gets orders to retrieve the warhead and terminate EKK. But he discovers a broken warhead (used to make a nuclear bomb) and fails to kill EKK as she escapes. Then he infiltrates the nuclear base where EKK planted the bomb. Jones kills EKK ,and Anya defuses the bomb. </desc> <plot_menu main="true">Start menu with new game, select map, load game, settings, exit game</plot_menu> <plot_menu ingame="true">Character is shown in Third Person View when the game is paused.</plot_menu> <plot_element>Jones can deactivate alarms. <plot_character>Jones</plot_character> <plot_action>can deactivate</plot_action> <plot_object>alarms</plot_object> </plot_element> <plot_element>Jones{"Protanogist"} can climb a ladder. <plot_character>Jones</plot_character> <plot_action>can climb</plot_action> <plot_object>a ladder</plot_object> </plot_element> <plot_element>Jones{"Protanogist"} can destroy many objects on each level.</plot_element> <plot_element>Jones{"Protanogist"} can hack any computer <plot_character>Jones</plot_character> <plot_action>can hack any</plot_action> <plot_object>computer</plot_object> </plot_element> <plot_element playable="true"> {/* <!-- Our hero reaches the helicopter --> */} <description> Our hero finally reached the helicopter. It was a Black Hawk helicopter, painted in black with "U.S. Army" written in bold yellow letters on its side. </description> {/* <!-- Helicopter take off --> */} <action> As he got inside, the roar of the engines intensified and filled up the surroundings. Our hero took control of the chopper, and they took off towards their next mission.</action> {/* <!-- Additional tags for categorization --> */} <setting>Army Base</setting> <character>Our hero</character> <vehicle>Black Hawk helicopter</vehicle> <location>Airborne</location> </plot_element> <plot_element enemy="true">Enemy helicopter brings soldiers on alarm</plot_element> <plot_element>Dynamic weather on all mission/plot_story</plot_element> <plot_element playable="true">Our hero at the end of the mission on an airbase, steals of mig29 and got chased by enemy aircrafts</plot_element> <plot_story>Our hero has a mission on an airbase. He needs to infiltrate the base and hack into the mainframe to gather important intel on the enemy's operation. <weapon>KRISS Vector</weapon> <weapon>Desert Eagle</weapon> </plot_story> <plot_story>Our hero has a mission on a trainyard. He needs to secure a shipment of weapons before the enemy does and then extract safely. <weapon>AK-47</weapon> <weapon>RPG-7</weapon> </plot_story> <plot_helper ai_agent="fps_soldier_ai"> This helps to lead the storyline. They acts as co-stars driving the story narrative. </plot_helper> <plot_character name="David Llewellyn Jones" occupation="I.G.I. agent, former British Special Air Service operator" role="Protagonist" /> <plot_character name="Anya" occupation="Contact and mission director at headquarters" role="Mission director" /> <plot_character name="Jach Priboi" occupation="Soviet arms dealer" role="Antagonist" /> <plot_character name="Josef Priboi" occupation="Jach's nephew" role="Minor character" /> <plot_character name="Ekk" occupation="Homicidal Russian woman" role="Antagonist" /> <plot_character name="Captain Harrison" occupation="Commander of allied troops, ex-Green Beret in the US Army Special Forces" role="Secondary character" /> </plot> <player_input> <input_device>Playstation 4 Controller</input_device> <input_device>Playstation 5 Controller</input_device> <input_device>Xbox 360 Controller</input_device> <input_device>Xbox One Controller</input_device> <input_device>Xbox X Controller</input_device> <input_device>Joy-Con</input_device> <input_device>Keyboard and Mouse</input_device> </player_input> </story>
+ChatGPT
+Based on your input, it seems like there are a few issues related to the element and how it is structured within the larger XML document. Specifically, you mentioned that player_input is a global value and as such, should not be nested within any other element aside from the top-level element.
+
+To write a specific language rule for this, you could specify that the element must always come immediately after the closing tag of the last plot-related element. Additionally, you could specify that the contents of the element must consist only of tags, with each device name listed as a child of its corresponding tag.
+
+Here is an example of how you might modify the XML document provided to adhere to these rules:
+
+Copy
+Insert
+New
+<story>
+  <!-- engine and plot elements omitted for brevity -->
+  <plot>
+    <!-- plot-related elements here -->
+  </plot>
+  <player_input>
+    <input_device>Playstation 4 Controller</input_device>
+    <input_device>Playstation 5 Controller</input_device>
+    <input_device>Xbox 360 Controller</input_device>
+    <input_device>Xbox One Controller</input_device>
+    <input_device>Xbox X Controller</input_device>
+    <input_device>Joy-Con</input_device>
+    <input_device>Keyboard and Mouse</input_device>
+  </player_input>
+</story>
+By adhering to these rules, you can ensure that your XML document is structured in a consistent and easy-to-read way.
+
+You
+
+Woudl you mind to write a language rule for this please?
+ChatGPT
+Sure, here's a possible language rule for the <player_input> element in your XML:
+
+The <player_input> element must be a child of the root <story> element.
+It must contain one or more <input_device> elements, each of which represents a device that a player can use to control the game. The text content of an <input_device> element should be a string describing the device (e.g. "Playstation 4 Controller").
+The order of the <input_device> elements is not significant.
+The <input_option> elements that you have in your example are invalid and should not be present. As you mentioned, the input options are a global value rather than specific to a plot or plot element.
+Here's an updated version of your XML with these rules applied:
+
+Copy
+Insert
+New
+<story>
+    <!-- other elements here -->
+    <player_input>
+        <input_device>Playstation 4 Controller</input_device>
+        <input_device>Playstation 5 Controller</input_device>
+        <input_device>Xbox 360 Controller</input_device>
+        <input_device>Xbox One Controller</input_device>
+        <input_device>Xbox X Controller</input_device>
+        <input_device>Joy-Con</input_device>
+        <input_device>Keyboard and Mouse</input_device>
+    </player_input>
+</story>
+Hope this helps! Let me know if you have any questions.
+
+You
+
+Ok. what do you think so far about the langauge rule? Story-driven programming language: Use <story>, <engine>, <plot>, <plot_story>, and <menu> to create the story. Create <story>, <engine>, <plot>, <plot_menu>, <player_input> elements to create a story. Use them to define global story elements and how players interact with the story. Rules for using this language: <plot_type> and <plot_story> divide plots into smaller stories. <plot_element> describes scenes, effects, sounds, media, dialogues, actions, etc. <plot_character> represents actors in the story. <plot_action> describes action happening on screen. <plot_object> describes an action involving an object or another actor. <plot_helper> handles the behavior of AI actors. Rules for using this language: Start and end with <story> tag; use <engine> tag with src, platform, and format attributes; use <plot> tag with type, number_of_playable_heroes, offline_type, and online_type attributes; use <desc>, <plot_menu>, <plot_element>, <plot_story>, <plot_helper>, and <plot_character> tags; use <player_input> tag with <input_device> tags. Use the XML markup language to create a well-structured story for an in-game experience. Use tags like <plot>, <plot_element>, <plot_character>, <player_input>, and <input_device>. Include attributes like playable, enemy, name, occupation, role, src, platform, and format. The <player_input> element must be a child of the root <story> element. It must contain one or more <input_device> elements, each of which represents a device that a player can use to control the game. The text content of an <input_device> element should be a string describing the device (e.g. "Playstation 4 Controller"). The order of the <input_device> elements is not significant. The <input_option> elements that you have in your example are invalid and should not be present. As you mentioned, the input options are a global value rather than specific to a plot or plot element. <story> <!-- other elements here --> <player_input> <input_device>Playstation 4 Controller</input_device> <input_device>Playstation 5 Controller</input_device> <input_device>Xbox 360 Controller</input_device> <input_device>Xbox One Controller</input_device> <input_device>Xbox X Controller</input_device> <input_device>Joy-Con</input_device> <input_device>Keyboard and Mouse</input_device> </player_input> </story> Follow strict rules for opening/closing tags, nesting levels, and attribute values. All tags, attributes, and values must be accurate and properly nested. VERY IMPORTANT! The OUTPUT text has to be in XML format!!!
+ChatGPT
+Based on the information provided, I have created an updated language rule for the story-driven programming language. Here it is:
+
+Story-Driven Programming Language Rule
+The story-driven programming language is an XML-based language used to create well-structured stories for in-game experiences. It uses several tags and attributes to define global story elements, as well as how players interact with the story.
+
+Elements
+The following are the elements used in this language:
+
+<story>: This is the main element and must be the parent of all other elements. It defines the start and end of the story.
+<engine>: This element provides metadata about the game engine used to run the game. It must have three attributes: src, which denotes the source of the game engine; platform, which specifies the platform(s) the game can run on; and format, which indicates the file format used by the game engine.
+<plot>: This element represents a plot in the story. It should have four attributes: type, which describes the type of plot; number_of_playable_heroes, which indicates the number of playable characters involved in the plot; offline_type, which describes the offline mode for the plot; and online_type, which describes the online mode for the plot.
+<desc>: This element provides a brief description of the plot. It should be a child of the <plot> element.
+<plot_menu>: This element creates a menu that players can use to select different plots or options within a plot. It must contain one or more <plot_story> elements.
+<plot_element>: This element represents a scene, effect, sound, media, dialogue or action occurring in the story. It should be a child of <plot> and must have at least one <plot_character> and <plot_action> element.
+<plot_character>: This element represents an actor in the story. It must have at least one attribute (playable, enemy, etc.). The value of these attributes should be either true or false.
+<plot_action>: This element describes an action that happens on the screen during gameplay. It must have at least one attribute (name, short_desc, etc.).
+<input_device>: This element represents an input device that a player can use to control the game. It should be a child of the <player_input> element.
+<player_input>: This element must be a child of the root <story> element. It must contain one or more <input_device> elements.
+Rules
+The following are the rules for using this language:
+
+Every story must begin with a <story> tag and end with a closing </story> tag.
+The <engine> tag must be used to provide metadata about the game engine used to run the game. It must have all three required attributes: src, platform, and format.
+The <plot> tag must be used to represent a plot in the story. It must have all four required attributes: type, number_of_playable_heroes, offline_type, and online_type.
+The <plot_element> tag must be a child of the <plot> tag and contain at least one <plot_character> and <plot_action> element.
+The <player_input> tag must be a child of the root <story> element and must contain one or more <input_device> tags.
+The <input_device> tag must describe an input device that a player can use to control the game. Its text content should be a string describing the device (e.g. "Playstation 4 Controller").
+The order of the <input_device> tags is not significant.
+All tags, attributes, and values must be accurate and properly nested.
+Avoid using invalid elements like <input_option>.
+Remember, the output text must be in XML format!
+
+You
+
+OK. this is not good. gpt cannot understand. the prevouis one was better: Story-driven programming language: Use <story>, <engine>, <plot>, <plot_story>, and <menu> to create the story. Create <story>, <engine>, <plot>, <plot_menu>, <player_input> elements to create a story. Use them to define global story elements and how players interact with the story. Rules for using this language: <plot_type> and <plot_story> divide plots into smaller stories. <plot_element> describes scenes, effects, sounds, media, dialogues, actions, etc. <plot_character> represents actors in the story. <plot_action> describes action happening on screen. <plot_object> describes an action involving an object or another actor. <plot_helper> handles the behavior of AI actors. Rules for using this language: Start and end with <story> tag; use <engine> tag with src, platform, and format attributes; use <plot> tag with type, number_of_playable_heroes, offline_type, and online_type attributes; use <desc>, <plot_menu>, <plot_element>, <plot_story>, <plot_helper>, and <plot_character> tags; use <player_input> tag with <input_device> tags. Use the XML markup language to create a well-structured story for an in-game experience. Use tags like <plot>, <plot_element>, <plot_character>, <player_input>, and <input_device>. Include attributes like playable, enemy, name, occupation, role, src, platform, and format. The <player_input> element must be a child of the root <story> element. It must contain one or more <input_device> elements, each of which represents a device that a player can use to control the game. The text content of an <input_device> element should be a string describing the device (e.g. "Playstation 4 Controller"). The order of the <input_device> elements is not significant. The <input_option> elements that you have in your example are invalid and should not be present. As you mentioned, the input options are a global value rather than specific to a plot or plot element. <story> <!-- other elements here --> <player_input> <input_device>Playstation 4 Controller</input_device> <input_device>Playstation 5 Controller</input_device> <input_device>Xbox 360 Controller</input_device> <input_device>Xbox One Controller</input_device> <input_device>Xbox X Controller</input_device> <input_device>Joy-Con</input_device> <input_device>Keyboard and Mouse</input_device> </player_input> </story> Follow strict rules for opening/closing tags, nesting levels, and attribute values. All tags, attributes, and values must be accurate and properly nested. VERY IMPORTANT! The OUTPUT text has to be in XML format!!!
+ChatGPT
+Sure! Here's a language rule for the Story-Driven Programming Language you described:
+
+Copy
+Insert
+New
+Story-driven programming language:
+
+<story>
+    Use this tag to define the root element of your story.
+
+<engine src="[source]" platform="[platform]" format="[format]">
+    Add this tag to specify the source, platform, and format of your game engine.
+
+<plot type="[type]" number_of_playable_heroes="[number]" offline_type="[offline-type]" online_type="[online-type]">
+    This tag defines the plot elements of your story, including the type of plot, number of playable heroes, and offline/online types.
+
+<plot_story>
+    This tag is used to define smaller stories or sub-plots that make up the main plot.
+
+<menu>
+    Use this tag to create menus for your game, including the main menu, settings, pause menu, etc.
+
+<plot_element>
+    This tag defines the building blocks of your story, including scenes, effects, sounds, media, dialogues, actions, etc.
+
+<plot_character name="[name]" occupation="[occupation]" role="[role]" src="[source]" platform="[platform]">
+    Use this tag to define characters in your story, including their name, occupation, role, source, and platform.
+
+<plot_action>
+    This tag is used to describe actions that happen on screen during gameplay.
+
+<plot_object>
+    This tag describes an action involving an object or another actor (character).
+
+<plot_helper>
+    This tag handles the behavior of AI actors, including allies, enemies, and neutral characters.
+
+<player_input>
+    This tag allows players to control the game using different input devices.
+
+<input_device>
+    Add this tag within the player_input tag to list the input devices available for the game.
+
+Example:
+<story>
+    <engine src="game_engine.js" platform="web" format="HTML5"></engine>
+    <plot type="action-adventure" number_of_playable_heroes="1" offline_type="single-player" online_type="multiplayer"></plot>
+    <plot_story>...</plot_story>
+    <menu>...</menu>
+    <plot_element>...</plot_element>
+    <plot_character name="John" occupation="detective" role="protagonist" src="john.png" platform="PC"></plot_character>
+    <plot_action>...</plot_action>
+    <plot_object>...</plot_object>
+    <plot_helper>...</plot_helper>
+    <player_input>
+        <input_device>Keyboard</input_device>
+        <input_device>Mouse</input_device>
+        <input_device>Gamepad</input_device>
+    </player_input>
+</story>
+Make sure to follow strict rules for opening/closing tags, nesting levels, and attribute values. All tags, attributes, and values must be accurate and properly nested. Additionally, the output text should be in XML format.
+
+You
+
+OK. it can create a story by reading this langauge rule text. I still want to upadte this text: Story-driven programming language: Use <story>, <engine>, <plot>, <plot_story>, and <menu> to create the story. Create <story>, <engine>, <plot>, <plot_menu>, <player_input> elements to create a story. Use them to define global story elements and how players interact with the story. Rules for using this language: <plot_type> and <plot_story> divide plots into smaller stories. <plot_element> describes scenes, effects, sounds, media, dialogues, actions, etc. <plot_character> represents actors in the story. <plot_action> describes action happening on screen. <plot_object> describes an action involving an object or another actor. <plot_helper> handles the behavior of AI actors. Rules for using this language: Start and end with <story> tag; use <engine> tag with src, platform, and format attributes; use <plot> tag with type, number_of_playable_heroes, offline_type, and online_type attributes; use <desc>, <plot_menu>, <plot_element>, <plot_story>, <plot_helper>, and <plot_character> tags; use <player_input> tag with <input_device> tags. Use the XML markup language to create a well-structured story for an in-game experience. Use tags like <plot>, <plot_element>, <plot_character>, <player_input>, and <input_device>. Include attributes like playable, enemy, name, occupation, role, src, platform, and format. The <player_input> element must be a child of the root <story> element. It must contain one or more <input_device> elements, each of which represents a device that a player can use to control the game. The text content of an <input_device> element should be a string describing the device (e.g. "Playstation 4 Controller"). The order of the <input_device> elements is not significant. The <input_option> elements that you have in your example are invalid and should not be present. As you mentioned, the input options are a global value rather than specific to a plot or plot element. <story> <!-- other elements here --> <player_input> <input_device>Playstation 4 Controller</input_device> <input_device>Playstation 5 Controller</input_device> <input_device>Xbox 360 Controller</input_device> <input_device>Xbox One Controller</input_device> <input_device>Xbox X Controller</input_device> <input_device>Joy-Con</input_device> <input_device>Keyboard and Mouse</input_device> </player_input> </story> Follow strict rules for opening/closing tags, nesting levels, and attribute values. All tags, attributes, and values must be accurate and properly nested. VERY IMPORTANT! The OUTPUT text has to be in XML format!!! Story-driven programming language: <story> Use this tag to define the root element of your story. <engine src="[source]" platform="[platform]" format="[format]"> Add this tag to specify the source, platform, and format of your game engine. <plot type="[type]" number_of_playable_heroes="[number]" offline_type="[offline-type]" online_type="[online-type]"> This tag defines the plot elements of your story, including the type of plot, number of playable heroes, and offline/online types. <plot_story> This tag is used to define smaller stories or sub-plots that make up the main plot. <menu> Use this tag to create menus for your game, including the main menu, settings, pause menu, etc. <plot_element> This tag defines the building blocks of your story, including scenes, effects, sounds, media, dialogues, actions, etc. <plot_character name="[name]" occupation="[occupation]" role="[role]" src="[source]" platform="[platform]"> Use this tag to define characters in your story, including their name, occupation, role, source, and platform. <plot_action> This tag is used to describe actions that happen on screen during gameplay. <plot_object> This tag describes an action involving an object or another actor (character). <plot_helper> This tag handles the behavior of AI actors, including allies, enemies, and neutral characters. <player_input> This tag allows players to control the game using different input devices. <input_device> Add this tag within the player_input tag to list the input devices available for the game. Example: <story> <engine src="game_engine.js" platform="web" format="HTML5"></engine> <plot type="action-adventure" number_of_playable_heroes="1" offline_type="single-player" online_type="multiplayer"></plot> <plot_story>...</plot_story> <menu>...</menu> <plot_element>...</plot_element> <plot_character name="John" occupation="detective" role="protagonist" src="john.png"></plot_character> <plot_action>...</plot_action> <plot_object>...</plot_object> <plot_helper>...</plot_helper> <player_input> <input_device>Keyboard/Mouse</input_device> <input_device>Gamepad</input_device> </player_input> </story> Make sure to follow strict rules for opening/closing tags, nesting levels, and attribute values. All tags, attributes, and values must be accurate and properly nested. Additionally, the output text should be in XML format!!!
+ChatGPT
+Thank you for the feedback. Here is an updated version of the story-driven programming language rules:
+
+Story-Driven Programming Language
+Use the following elements to create a structured, story-driven game experience with XML markup language.
+
+Story
+Use the <story> tag to define the root element of your story.
+
+Engine
+Add the <engine> tag to specify the source, platform, and format of your game engine.
+
+Copy
+Insert
+New
+<engine src="[source]" platform="[platform]" format="[format]">
+Plot
+Define the plot elements of your story with the <plot> tag, including the type of plot, number of playable heroes, and offline/online types.
+
+Copy
+Insert
+New
+<plot type="[type]" number_of_playable_heroes="[number]" offline_type="[offline-type]" online_type="[online-type]">
+Plot Story
+The <plot_story> tag is used to define smaller stories or sub-plots that make up the main plot.
+
+Copy
+Insert
+New
+<plot_story>
+Menu
+Use the <menu> tag to create menus for your game, including the main menu, settings, pause menu, etc.
+
+Copy
+Insert
+New
+<menu>
+Plot Element
+The <plot_element> tag defines the building blocks of your story, including scenes, effects, sounds, media, dialogues, actions, etc.
+
+Copy
+Insert
+New
+<plot_element>
+Plot Character
+Use the <plot_character> tag to define characters in your story, including their name, occupation, role, source, and platform.
+
+Copy
+Insert
+New
+<plot_character name="[name]" occupation="[occupation]" role="[role]" src="[source]" platform="[platform]">
+Plot Action
+The <plot_action> tag is used to describe actions that happen on screen during gameplay.
+
+Copy
+Insert
+New
+<plot_action>
+Plot Object
+The <plot_object> tag describes an action involving an object or another actor (character).
+
+Copy
+Insert
+New
+<plot_object>
+Plot Helper
+The <plot_helper> tag handles the behavior of AI actors, including allies, enemies, and neutral characters.
+
+Copy
+Insert
+New
+<plot_helper>
+Player Input
+The <player_input> tag allows players to control the game using different input devices.
+
+Copy
+Insert
+New
+<player_input>
+Input Device
+Add the <input_device> tag within the player_input tag to list the input devices available for the game.
+
+Copy
+Insert
+New
+<input_device>
+Example
+Here's an example of how all these tags come together:
+
+Copy
+Insert
+New
+<story>
+  <engine src="game_engine.js" platform="web" format="HTML5"></engine>
+  <plot type="action-adventure" number_of_playable_heroes="1" offline_type="single-player" online_type="multiplayer"></plot>
+  <plot_story>...</plot_story>
+  <menu>...</menu>
+  <plot_element>...</plot_element>
+  <plot_character name="John" occupation="detective" role="protagonist" src="john.png"></plot_character>
+  <plot_action>...</plot_action>
+  <plot_object>...</plot_object>
+  <plot_helper>...</plot_helper>
+  <player_input>
+    <input_device>Keyboard/Mouse</input_device>
+    <input_device>Gamepad</input_device>
+  </player_input>
+</story>
+It's important to follow strict rules for opening/closing tags, nesting levels, and attribute values. All tags, attributes, and values must be accurate and properly nested. Additionally, remember that the output text should be in XML format!
+
+You
+
+what do you think about this? Story-Driven Programming Language Use the following elements to create a structured, story-driven game experience with XML markup language. Story Use the <story> tag to define the root element of your story. Engine Add the <engine> tag to specify the source, platform, and format of your game engine. <engine src="[source]" platform="[platform]" format="[format]"> Plot Define the plot elements of your story with the <plot> tag, including the type of plot, number of playable heroes, and offline/online types. <plot type="[type]" number_of_playable_heroes="[number]" offline_type="[offline-type]" online_type="[online-type]"> Plot Story The <plot_story> tag is used to define smaller stories or sub-plots that make up the main plot. <plot_story> - this element is always global, it's root is the <story> Menu Use the <menu> tag to create menus for your game, including the main menu, settings, pause menu, etc. <menu> Plot Element The <plot_element> tag defines the building blocks of your story, including scenes, effects, sounds, media, dialogues, actions, etc. <plot_element> - this element is can be global/local based on the plot. If hero can do things in every <plot_story> it is a global element. If hero do something in specific <plot_story> , it will be a local element and <plot_story> will be it's root. Plot Character Use the <plot_character> tag to define characters in your story, including their name, occupation, role, source, and platform. <plot_character name="[name]" occupation="[occupation]" role="[role]" src="[source]" platform="[platform]"> Plot Action The <plot_action> tag is used to describe actions that happen on screen during gameplay. <plot_action> Plot Object The <plot_object> tag describes an action involving an object or another actor (character). <plot_object> Plot Helper The <plot_helper> tag handles the behavior of AI actors, including allies, enemies, and neutral characters. <plot_helper> Player Input The <player_input> tag allows players to control the game using different input devices. <player_input> Input Device Add the <input_device> tag within the player_input tag to list the input devices available for the game. <input_device> Playstation 4 Controller,Playstation 5 Controller,Xbox 360 Controller,Xbox One Controller,Xbox X Controller,Joy-Con,Keyboard and Mouse Example Here's an example of how all these tags come together: <story> <engine src="game_engine.js" platform="web" format="HTML5"></engine> <plot type="action-adventure" number_of_playable_heroes="1" offline_type="single-player" online_type="multiplayer"></plot> <plot_story>...</plot_story> <menu>...</menu> <plot_element>...</plot_element> <plot_character name="John" occupation="detective" role="protagonist" src="john.png"></plot_character> <plot_action>...</plot_action> <plot_object>...</plot_object> <plot_helper>...</plot_helper> <player_input> <input_device>Keyboard/Mouse</input_device> <input_device>Gamepad</input_device> </player_input> </story> It's important to follow strict rules for opening/closing tags, nesting levels, and attribute values. All tags, attributes, and values must be accurate and properly nested. Additionally, remember that the output text should be in XML format!
+ChatGPT
+Your updated text looks great! It clearly defines all the necessary elements of the story-driven programming language and provides a good example of how these elements can be combined to create a game experience. I particularly appreciate the clarification on when is used globally or locally to a specific . Keep in mind that it's always important to follow XML formatting rules, including proper indentation, closing tags, and attributes. Overall, well-done!
+
