@@ -2983,3 +2983,35 @@ The only difference between the original code and this one is the addition of th
 
 Ask a question...
 
+
+You
+
+ORIGINAL PROMPT: <plot_menu main="true">Start menu with new game, select map, settings, exit game</plot_menu> AUTHOR CHANGED STORY TO: <plot_menu main="true">Start menu with new game, select map, load game, settings, exit game</plot_menu>
+ChatGPT
+Here is the modified code based on the updated story element:
+
+Copy
+Insert
+New
+#include<iostream>
+#include<vector>
+#include<string>
+
+using namespace std;
+
+class PlotMenu_Main {
+public:
+    // Variables to store information about the main menu
+    string title = "Game Menu"; // #plot_menu, #main_menu, #title
+    vector<string> options = {"New Game", "Select Map","Load Game", "Settings", "Exit"}; // #plot_menu, #main_menu, #options
+    
+    void displayMenu() {
+        // Display the main menu with its options
+        cout << "===== " << title << " =====" << endl;
+        for(int i=0; i<options.size(); i++) {
+            cout << i+1 << ". " << options[i] << endl;
+        }
+    }
+};
+The options vector now includes a new option Load Game, which has been inserted between Select Map and Settings. Also, the Exit option has been added, as per the updated story element. The displayMenu() function will output this additional option when called.
+
