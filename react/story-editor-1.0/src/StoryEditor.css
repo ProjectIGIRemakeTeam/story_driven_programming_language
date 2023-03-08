@@ -20,6 +20,8 @@
     font-size: 16px;
     white-space: pre-wrap; /* new line on "\n" */
     overflow-y: scroll; /* vertical scrolling */
+    padding: 12px;
   }
+
   
   

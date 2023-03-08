@@ -79,3 +79,13 @@ https://marketplace.visualstudio.com/items?itemName=NilsSoderman.ue-python
 ChatGPT API Visual Studio Code YouTube Tutorial:
 https://www.youtube.com/watch?v=jRl1mav35Tg
 
+
+How to start react editor:
+Open terminal in Visual Studio Code:
+<Terminal><New Terminal>
+in terminal:
+cd react/story-editor-1.0
+npm start
+
+Browser:
+localhost:3000
