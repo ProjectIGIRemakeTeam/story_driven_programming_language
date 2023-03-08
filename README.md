@@ -81,11 +81,11 @@ https://www.youtube.com/watch?v=jRl1mav35Tg
 
 
 How to start react editor:
-Open terminal in Visual Studio Code:
+-Open terminal in Visual Studio Code:
 <Terminal><New Terminal>
-in terminal:
+-In terminal:
 cd react/story-editor-1.0
 npm start
 
-Browser:
-localhost:3000
+-Open Browser:
+enter: localhost:3000
