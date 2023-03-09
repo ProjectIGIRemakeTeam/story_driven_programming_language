@@ -75,7 +75,8 @@ Example
 Here's an example of how all these tags come together: 
 <story>
   <engine src="game_engine.js" platform="web" format="HTML5"></engine>
-  <plot type="action-adventure" number_of_playable_heroes="1" offline_type="single-player" online_type="multiplayer"></plot>
+  <plot type="action-adventure" number_of_playable_heroes="1" offline_type="single-player" online_type="multiplayer">
+  <desc></desc>
   <plot_story>...</plot_story>
   <menu>...</menu>
   <plot_element>...</plot_element>
@@ -83,6 +84,7 @@ Here's an example of how all these tags come together:
   <plot_action>...</plot_action>
   <plot_object>...</plot_object>
   <plot_helper>...</plot_helper>
+  </plot>
   <player_input>
     <input_device>Keyboard/Mouse</input_device>
     <input_device>Gamepad</input_device>
