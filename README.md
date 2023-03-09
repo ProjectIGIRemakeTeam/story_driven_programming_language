@@ -93,20 +93,6 @@ Here's an example of how all these tags come together:
 
 if there is no <desc> field in <plot_story> add the input message prompt in the <desc></desc>.
 
-////USER_RULE
-CREATING REACT COMPONENTS RULES:
--> install npm react-app + instructions
--> npm install react-router-dom (For Router of the PlotStory elements) ROUTER IS IMPORTANT AS WELL
- components for Menu, and every PlotStory first. everything has to be translated into <div> elements. name the div element's class to represent the story element. eg: Menu -> <div className="Menu">;Item -> <div className="MenuItem">; Plot -> <Router>, PlotElement -> <div className="PlotElement. + name">; PlotStory => <div className="PlotStory." + PlotStory name, etc
-
-react-router-dom > *6
-import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
-
-
-
-COMMUNICATION BETWEEN AUTHOR AND GPT:
-Please ask back questions when I say this is not aligned with the story! -> this means the thing written in the story and the thing I see on screen is not the same. This means gpt has to change the related code based on the story!
-
 
  Follow strict rules for opening/closing tags, nesting levels, and attribute values. All tags, attributes, and values must be accurate and properly nested.
 
