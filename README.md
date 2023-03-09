@@ -24,7 +24,12 @@ https://github.com/ProjectIGIRemakeTeam/story_driven_programming_language/blob/m
 
 # Current usage:
 Open https://chat.openai.com/chat
-Write a story prompt: example: Food delivery app for iOS; Lord of the Rings fighing game for Playstation; 
+
+Write a story prompt for example: 
+
+Food delivery app for iOS; 
+Lord of the Rings fighing game for Playstation; 
+
 Add this code after your story prompt and it will generate a story which can be used to create equalivent code in any selected language. 
 ```
 Story-Driven Programming Language
