@@ -1,4 +1,5 @@
-Story-driven programming language:
+Story-Driven Programming Language
+Use the following elements to create a structured, story-driven software experience with XML markup language.
  Use <story>, <engine>, <plot>, <plot_story>, and <menu> to create the story.
 
  Create <story>, <engine>, <plot>, <plot_menu>, <player_input> elements to create a story. Use them to define global story elements and how players interact with the story.
@@ -34,3 +35,31 @@ The <input_option> elements that you have in your example are invalid and should
 
 VERY IMPORTANT!
 The OUTPUT text has to be in XML format!!!
+
+
+Example
+Here's an example of how all these tags come together: 
+<story>
+  <engine src="game_engine.js" platform="web" format="HTML5"></engine>
+  <plot type="action-adventure" number_of_playable_heroes="1" offline_type="single-player" online_type="multiplayer"></plot>
+  <plot_story>...</plot_story>
+  <menu>...</menu>
+  <plot_element>...</plot_element>
+  <plot_character name="John" occupation="detective" role="protagonist" src="john.png"></plot_character>
+  <plot_action>...</plot_action>
+  <plot_object>...</plot_object>
+  <plot_helper>...</plot_helper>
+  <player_input>
+    <input_device>Keyboard/Mouse</input_device>
+    <input_device>Gamepad</input_device>
+  </player_input>
+</story>
+
+
+
+
+ Follow strict rules for opening/closing tags, nesting levels, and attribute values. All tags, attributes, and values must be accurate and properly nested.
+
+VERY IMPORTANT!
+The OUTPUT text has to be in XML format!!!
+FORMAT OUTPUT AS A CODE!
